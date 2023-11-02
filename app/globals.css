@@ -298,7 +298,6 @@ textarea {
 
 @media screen and (max-width: 1400px) {
   .about {
-    /* margin: 50px 0px; */
     width: 65vw !important;
   }
 }
@@ -354,7 +353,7 @@ textarea {
     font-size: 25px !important;
   }
 
-  */ .movie-scroll-labels span {
+  .movie-scroll-labels span {
     margin: 0 !important;
   }
 }
