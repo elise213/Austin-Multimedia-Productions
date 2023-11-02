@@ -17,23 +17,6 @@ const getState = ({ getStore, getActions, setStore }) => {
         },
       ],
       movies: [
-        // {
-        //   title: "The Taking of Pelham one two three",
-        //   year: "1974",
-        //   image: "/img/the-taking-of-pelham-one-two-three-1974.jpeg",
-        //   category: "suspense",
-        // category2: "newtofree"
-        // },
-        // {
-        //   title: "Apocalypse Now",
-        //   year: "1979",
-        //   image: "/img/apocalypse-now-1979.jpeg",
-        //   category: "suspense",
-        //   category2: "new",
-        //   trailer: "https://youtu.be/9l-ViOOFH-s",
-        //   description: "this is the description",
-        // },
-
         {
           title: "DIY 16mm",
           year: "2023",
@@ -42,23 +25,23 @@ const getState = ({ getStore, getActions, setStore }) => {
           bullet: "January 1st",
           bullet2: "Austin, TX",
           description:
-            "We are dedicated to nurturing a deeper appreciation for 8mm and 16mm filmmaking. Our workshops offer hands-on experience shooting and editing analog film using our Bolex Reflex cameras and analog editing equipment. Our development sessions introduce participants to natural processing methods using household items to develop film in a manner that's non-toxic, and inexpensive.",
+            "We are dedicated to nurturing a deeper appreciation for 8mm and 16mm filmmaking. Our analog film workshops offer hands-on experience shooting and editing analog film using our Bolex Reflex cameras and analog editing equipment. Our development sessions introduce participants to natural processing methods using nnon-toxic household items.",
           instruction:
-            "Our next cohort begins January 1st. Please email us at info@ccearts.org for more information",
+            "Our next cohort begins January 1st. E-mail info@ccearts.org for more information",
         },
         {
           title: "Workshop",
-          subtitle: "Legal challenges in documentary film",
+          subtitle: "Legal challenges in documentary filmmaking",
           year: "2023",
           image: "/img/mwmc.png",
           category: "staff",
+          bullet1: "Livestream",
           bullet2: "February 1st",
-          // category2: "newtofree",
           bullet: "Legal challenges in documentary filmmaking",
           description:
             "Documentary filmmaking can pose many legal challenges that are best to think about early in your project. This workshop will help you navigate some of the most common legal issues from fundraising through production and distribution of your film.  There will also be a Q&A at the end where you can come with your own questions..",
           instruction: "The next workshop is January 15th.",
-          instruction2: "Please email us at info@ccearts.org to be included.",
+          instruction2: "E-mail info@ccearts.org to be included.",
         },
         // {
         //   title: "Begotten",

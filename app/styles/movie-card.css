@@ -86,12 +86,9 @@ p {
   font-size: x-large;
   align-items: center;
   border: double 12px rgb(250, 106, 103);
-  /* border: double 12px rgb(19, 115, 33); */
   border-radius: 15px 15px 0 0;
   background-color: rgb(245, 186, 77);
-  /* background-color: rgb(175, 250, 165); */
   padding: 10px;
-  /* margin-top: 30px; */
 }
 
 .modal-footer {
@@ -108,12 +105,11 @@ p {
 }
 
 .modal-body {
-  /* background-color: whitesmoke; */
   background-color: rgb(228, 244, 222);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid rgb(250, 106, 103);
+  /* border: 3px solid rgb(250, 106, 103); */
   border-radius: 4px;
   max-height: 80vh;
   overflow-x: hidden;
