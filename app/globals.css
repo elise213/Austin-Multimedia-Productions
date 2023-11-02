@@ -240,21 +240,6 @@ textarea {
   min-height: 100px;
 }
 
-/* .movie-scroll-labels {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.movie-scroll-labels span {
-  font-size: 40px;
-  letter-spacing: 2px;
-  color: black;
-  font-family: "AwsumSans", sans-serif;
-  margin-bottom: 20px;
-  font-weight: 400 !important;
-} */
-
 .movie-scroll-labels {
   margin: 0 60px;
   display: flex;
@@ -265,17 +250,16 @@ textarea {
 }
 
 .separator {
-  margin: 0 10px; /* Add some space between "Workshops" and "Events" */
+  margin: 0 10px;
 }
 
-/* Media query for small screens */
 @media screen and (max-width: 600px) {
   .movie-scroll-labels {
-    flex-direction: column; /* Stack vertically on small screens */
+    flex-direction: column;
   }
 
   .separator {
-    margin: 5px 0; /* Adjust the spacing for stacked elements */
+    margin: 5px 0;
   }
 }
 
@@ -327,7 +311,6 @@ textarea {
 
 @media screen and (max-width: 1200px) {
   .about {
-    /* margin: 50px 0px; */
     width: 70vw !important;
   }
 }
@@ -370,11 +353,7 @@ textarea {
   .movie-scroll-labels span {
     font-size: 25px !important;
   }
-  /* .movie-scroll-labels {
-    /* flex-direction: column !important; */
-  /* margin: 0 60px;
-    flex-direction: column;
-  } */
+
   */ .movie-scroll-labels span {
     margin: 0 !important;
   }

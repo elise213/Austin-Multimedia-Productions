@@ -21,7 +21,7 @@ const Video = () => {
       <div className="mask-reference"></div>
       <video autoPlay loop muted playsInline className="video" ref={videoRef}>
         <source src="/img/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video tag
       </video>
     </div>
   );
