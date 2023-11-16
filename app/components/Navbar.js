@@ -12,10 +12,6 @@ const Navbar = ({ isLargeScreen }) => {
     setIsNavOpen(!isNavOpen);
   };
 
-  const toggleContactModal = () => {
-    setShowContactModal(!showContactModal);
-  };
-
   useEffect(() => {
     if (!isLargeScreen) {
       const handleClickOutside = (event) => {
@@ -45,6 +41,10 @@ const Navbar = ({ isLargeScreen }) => {
       body.classList.remove("no-scroll");
     }
   }, [isNavOpen, showContactModal, isLargeScreen]);
+
+  const toggleContactModal = () => {
+    setShowContactModal(!showContactModal);
+  };
 
   return (
     <>
@@ -115,10 +115,11 @@ const Navbar = ({ isLargeScreen }) => {
         {showContactModal && (
           <div className="modal-contact">
             <div className="modal-content-contact">
-              <span className="close" onClick={toggleContactModal}>
-                <i className="fa-solid fa-x"></i>
-              </span>
-              <Contact />
+              <Contact
+                showContactModal={showContactModal}
+                setShowContactModal={setShowContactModal}
+                toggleContactModal={toggleContactModal}
+              />
             </div>
           </div>
         )}

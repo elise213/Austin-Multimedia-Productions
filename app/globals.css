@@ -7,33 +7,6 @@
   font-style: normal;
 }
 
-/* Bold font */
-@font-face {
-  font-family: "AwsumSans";
-  src: url("/fonts/AwsumSansBold-BF64c08556665f3.ttf") format("truetype"),
-    url("/fonts/AwsumSansBold-BF64c08556c5095.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Italic font */
-@font-face {
-  font-family: "AwsumSans";
-  src: url("/fonts/AwsumSansItalic-BF64c085561b552.otf") format("opentype"),
-    url("/fonts/AwsumSansItalic-BF64c0855662543.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-/* Bold Italic font */
-@font-face {
-  font-family: "AwsumSans";
-  src: url("/fonts/AwsumSansBoldItalic-BF64c0855650966.ttf") format("truetype"),
-    url("/fonts/AwsumSansBoldItalic-BF64c08556c0bd3.otf") format("opentype");
-  font-weight: bold;
-  font-style: italic;
-}
-
 ___________________________________________________________________GLOBAL
   :root {
   --color1: rgb(251, 120, 106);
@@ -61,7 +34,7 @@ body {
   width: 100vw !important;
   overflow-x: hidden !important;
   scroll-behavior: smooth;
-  background-color: rgb(228, 244, 222);
+  /* background-color: rgb(228, 244, 222); */
 }
 
 body.navbar-open {
@@ -117,7 +90,7 @@ main {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .about {
@@ -125,7 +98,7 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 60vw;
+  /* width: 60vw; */
 }
 
 .about span {
@@ -241,12 +214,13 @@ textarea {
 }
 
 .movie-scroll-labels {
-  margin: 0 60px;
+  margin: 0 60px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-family: "AwsumSans", sans-serif;
   justify-content: center;
+  font-size: xx-large;
 }
 
 .separator {
@@ -291,56 +265,14 @@ textarea {
 
 .video-about {
   display: flex;
-  width: 100%;
+  width: 70%;
   flex-direction: column;
   align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
-  .about {
-    width: 65vw !important;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .movie-scroll-labels span {
-    font-size: 35px !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .about {
-    width: 70vw !important;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .movie-scroll-labels span {
-    font-size: 30px !important;
-  }
-
-  .movie-scroll-labels {
-    margin-top: 0 !important;
-  }
-
-  .about {
-    width: 60vw !important;
-  }
-}
-
 @media screen and (max-width: 900px) {
-  .about {
-    width: 65vw !important;
-    margin: 0 0 50px 0 !important;
-  }
   .about span {
-    font-size: 18px !important;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .about {
-    width: 80vw !important;
+    font-size: 20px !important;
   }
 }
 
@@ -352,17 +284,9 @@ textarea {
   .movie-scroll-labels span {
     font-size: 25px !important;
   }
-
-  .movie-scroll-labels span {
-    margin: 0 !important;
-  }
 }
 
 @media screen and (max-width: 500px) {
-  .about {
-    margin: 0 0 35px 0 !important;
-  }
-
   .about span {
     font-size: 14px;
   }

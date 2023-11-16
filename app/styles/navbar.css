@@ -13,6 +13,11 @@
   display: flex;
   justify-content: space-between;
   transition: left 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10001;
 }
 
 .new-navbar.open {
@@ -22,14 +27,8 @@
 .navbar-content {
   display: flex;
   align-items: center;
-  /* background-color: rgb(228, 244, 222); */
   border-radius: 3px;
-  /* border: 2px solid black; */
-  /* box-shadow: 0 0 0 4px white, 0 0 0 6px black, 0 0 0 8px white,
-    0 0 0 10px black, 0 0 0 12px white; */
   height: 80px;
-  margin: 10px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .navbar-content.open {
@@ -42,7 +41,6 @@
 
 .nav-item,
 .nav-item a {
-  font-weight: 600;
   letter-spacing: 1.5px;
   color: var(--color1);
   text-decoration: none;
@@ -64,7 +62,6 @@
 }
 
 .navbar-logo {
-  /* position: absolute; */
   right: 20px;
   top: 20px;
   width: 200px;
@@ -89,7 +86,7 @@
   left: -40px;
   top: 30px;
   transition: 0.3s ease !important;
-  z-index: 100001;
+  z-index: 995;
   color: salmon;
 }
 
@@ -113,7 +110,7 @@
   top: 0;
   position: fixed;
   z-index: 9998;
-  background-color: rgba(128, 128, 128, 1);
+
   border: none;
 }
 
@@ -124,10 +121,10 @@
 
 .modal-content-contact {
   max-width: 850px;
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: transparent;
-  width: 70vw;
   z-index: 9999;
+  border: 9px double salmon;
 }
 
 .close-div {
@@ -139,20 +136,8 @@
 .close-icon:focus,
 .open-icon:hover,
 .open-icon:focus {
-  /* color: lightgreen; */
   color: rgb(177, 135, 177);
   cursor: pointer;
-}
-
-/* MAX WIDTH */
-@media screen and (min-width: 900px) {
-  .new-navbar {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10001;
-    background-color: rgb(228, 244, 222);
-  }
 }
 
 /* MIN WIDTH */
@@ -163,7 +148,7 @@
     top: 0;
     left: -275px !important;
     height: 100%;
-    z-index: 10000;
+    z-index: 999;
     display: flex;
     justify-content: flex-start;
     transition: left 0.3s ease;
@@ -189,7 +174,6 @@
   }
 
   .nav-container {
-    height: 100vh;
     position: absolute;
   }
 
@@ -209,17 +193,17 @@
   .open-icon.closed {
     left: 300px;
   }
-}
 
-@media screen and (max-width: 1000px) {
+  .nav-item,
+  .nav-item a {
+    margin-bottom: 20px;
+  }
+
   .open-icon {
     font-size: 40px;
   }
-}
 
-@media screen and (max-width: 1000px) {
   .nav-container {
-    height: 100vh;
     position: absolute;
   }
 

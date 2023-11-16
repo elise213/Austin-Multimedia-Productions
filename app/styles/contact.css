@@ -1,9 +1,19 @@
+/* Regular font */
+@font-face {
+  font-family: "AwsumSans";
+  src: url("/fonts/AwsumSans-BF64c0855677e49.ttf") format("truetype"),
+    url("/fonts/AwsumSans-BF64c085572b0a6.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .contact-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 120px;
+  background-color: rgba(128, 128, 128, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .close {
@@ -21,6 +31,7 @@
 .contact-call {
   display: flex;
   justify-content: center;
+  padding: 10px 0 0 0;
 }
 
 .label {
@@ -86,7 +97,8 @@
 .circle-font {
   font-size: 30px;
   font-family: "Urbanist", sans-serif;
-  color: var(--color4);
+  /* font-family: "AwsumSans"; */
+  color: white;
 }
 
 input textarea {
