@@ -10,9 +10,8 @@
   color: var(--color1);
   font-size: 22px;
   z-index: 999;
-  margin-bottom: 20px;
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
-  margin: 3px 0;
+  margin: 50px 0 20px 0;
   text-decoration: none;
 }
 
@@ -36,7 +35,6 @@
   border: none;
   border-bottom: 1px solid salmon !important;
   background-color: transparent;
-  /* padding: 10px; */
   font-family: "Urbanist", sans-serif;
   min-width: 150px;
 }
@@ -50,7 +48,7 @@
 .email-list-container p,
 .email-list-input-div,
 .email-list-button-div {
-  margin: 0;
+  /* margin: 0; */
   font-size: 22px;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
@@ -76,10 +74,6 @@
 .email-logo {
   width: 150px;
   display: none;
-}
-
-.email-list-container {
-  justify-content: center;
 }
 
 @media screen and (max-width: 1000px) {

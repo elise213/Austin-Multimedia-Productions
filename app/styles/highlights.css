@@ -49,7 +49,6 @@
 }
 
 .learn-more-2 {
-  /* background-color: var(--color5); */
   background-color: black;
   color: rgb(252, 80, 60);
   font-size: medium;
@@ -62,7 +61,6 @@
   width: 75px;
   border-radius: 50%;
   z-index: 4;
-  /* position: absolute; */
   position: relative;
   right: -80px;
   bottom: -35px;
