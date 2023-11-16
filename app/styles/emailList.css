@@ -1,21 +1,19 @@
 .email-list-container {
-  position: relative;
-  background-color: transparent;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px 0 0 0;
+  margin: 0 40px;
 }
 
 .sign-up {
   font-weight: 600;
   letter-spacing: 1.5px;
   color: var(--color1);
-  font-size: 18px;
+  font-size: 22px;
   z-index: 999;
   margin-bottom: 20px;
-  font-family: unset !important;
+  font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
+  margin: 3px 0;
+  text-decoration: none;
 }
 
 .socials {
@@ -38,7 +36,7 @@
   border: none;
   border-bottom: 1px solid salmon !important;
   background-color: transparent;
-  padding: 10px;
+  /* padding: 10px; */
   font-family: "Urbanist", sans-serif;
   min-width: 150px;
 }
@@ -49,15 +47,11 @@
   align-items: center;
 }
 
-.email-list-container p {
-  color: var(--color4);
-}
-
 .email-list-container p,
 .email-list-input-div,
 .email-list-button-div {
   margin: 0;
-  font-size: large;
+  font-size: 22px;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
 }

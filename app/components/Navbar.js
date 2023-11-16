@@ -67,20 +67,15 @@ const Navbar = ({ isLargeScreen }) => {
           )}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
-            {!isLargeScreen && (
-              <img
-                src="/img/logo2.png"
-                alt="CCEA Logo"
-                className="navbar-logo"
-              />
-            )}
+            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-              <Link href="/" passHref className="nav-item">
+              <Link href="/" passHref>
                 HOME
               </Link>
             </span>
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-              <Link href="/fiscal" passHref className="nav-item">
+              <Link href="/fiscal" passHref>
                 FISCAL SPONSORSHIP
               </Link>
             </span>
@@ -108,7 +103,7 @@ const Navbar = ({ isLargeScreen }) => {
                   WORKSHOPS & CLASSES
                 </Link>
               </span> */}
-            {!isLargeScreen && <EmailList />}
+            <EmailList />
           </div>
         </nav>
 
