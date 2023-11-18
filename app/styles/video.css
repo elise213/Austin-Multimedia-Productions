@@ -45,3 +45,9 @@
     min-height: 400px !important;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .video-container {
+    min-height: 300px !important;
+  }
+}

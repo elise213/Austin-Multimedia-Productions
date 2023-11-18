@@ -18,7 +18,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       ],
       movies: [
         {
-          title: "DIY 16mm",
+          title: "DIY 16mm Filmmaking",
           year: "2023",
           image: "/img/bolex2.jpg",
           category: "new",

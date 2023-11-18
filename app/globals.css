@@ -272,19 +272,19 @@ textarea {
 .decoration {
   z-index: 9999;
   width: 100%;
-  height: 22vh;
+  height: 26vh;
   position: fixed;
   top: 0;
   background: radial-gradient(
       ellipse at left bottom,
       transparent 75%,
       /* Transparent part for the image */ violet 74%,
-      /* Start indigo ring */ blue 76%,
-      /* Start green ring */ yellow 77%,
-      /* Start yellow ring */ orange 78%,
-      /* Start orange ring */ red 79%,
-      /* Black ring */ salmon 80%,
-      /* White ring */ transparent 80.5% /* End of the salmon fill */
+      /* Start indigo ring */ blue 75%,
+      /* Start green ring */ yellow 76%,
+      /* Start yellow ring */ orange 77%,
+      /* Start orange ring */ red 78%,
+      /* Black ring */ salmon 79%,
+      /* White ring */ transparent 80% /* End of the salmon fill */
     ),
     url("/img/static.png") no-repeat center/cover;
   -webkit-mask-image: radial-gradient(

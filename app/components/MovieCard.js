@@ -43,31 +43,27 @@ const MovieCard = (props) => {
       {props.modalIsOpen && (
         <div className="modal">
           <div className="modal-content">
-            <div className="modal-header">
-              <div className="modal-title-div">
-                <span className="modal-title" id="exampleModalLabel">
-                  {props.result.subtitle
-                    ? props.result.subtitle
-                    : props.result.title}
-                </span>
-              </div>
-              <div className="close-div">
-                <button
-                  type="button"
-                  className="close-mc"
-                  onClick={props.toggleModal}
-                  aria-label="Close"
-                >
-                  <i className="fa-solid fa-xmark"></i>
-                </button>
-              </div>
-            </div>
             <div className="modal-body">
+              <div className="modal-header">
+                <div className="modal-title-div">
+                  <span className="modal-title" id="exampleModalLabel">
+                    {props.result.subtitle
+                      ? props.result.subtitle
+                      : props.result.title}
+                  </span>
+                </div>
+                <div className="close-div">
+                  <button
+                    type="button"
+                    className="close-mc"
+                    onClick={props.toggleModal}
+                    aria-label="Close"
+                  >
+                    <i className="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
               <div className="poster-div">
-                {/* {console.log("STICKER PROPS", props)} */}
-                {/* <div className="sticker-modal">
-                    <Sticker sticker={props.result} />
-                  </div> */}
                 <div className="together">
                   <Image
                     width={300}
