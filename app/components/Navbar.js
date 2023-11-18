@@ -5,7 +5,7 @@ import EmailList from "./EmailList";
 import Contact from "./Contact";
 
 const Navbar = ({ isLargeScreen }) => {
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
 
   const toggleNav = () => {

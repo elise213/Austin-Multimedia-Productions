@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useContext, useRef, useEffect } from "react";
 import styles from "../styles/contact.css";
-import CircleType from "circletype";
+// import CircleType from "circletype";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
@@ -10,21 +10,21 @@ const Contact = ({
   showContactModal,
   setShowContactModal,
 }) => {
-  const circleInstance = useRef();
+  // const circleInstance = useRef();
   const form = useRef();
   const SERVICE_ID = "service_betnze8";
   const TEMPLATE_ID = "template_99iigjc";
   const PUBLIC_KEY = "bSrh0TD_khQU1Jash";
 
-  useEffect(() => {
-    let circle1;
-    if (circleInstance.current) {
-      circle1 = new CircleType(circleInstance.current).radius(500);
-    }
-    return () => {
-      circle1 && circle1.destroy();
-    };
-  }, []);
+  // useEffect(() => {
+  //   let circle1;
+  //   if (circleInstance.current) {
+  //     circle1 = new CircleType(circleInstance.current).radius(500);
+  //   }
+  //   return () => {
+  //     circle1 && circle1.destroy();
+  //   };
+  // }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -52,11 +52,13 @@ const Contact = ({
   return (
     <div className="contact-page">
       <div className="contact-call">
-        <span className="close" onClick={toggleContactModal}>
-          <i className="fa-solid fa-x"></i>
-        </span>
-        <span className="circle-font" ref={circleInstance}>
+        {/* <span className="circle-font" ref={circleInstance}>
           Get in touch!
+        </span> */}
+
+        <img src="/img/logo2.png" alt="CCEA Logo" className="contact-logo" />
+        <span className="close-contact" onClick={toggleContactModal}>
+          <i className="fa-solid fa-x"></i>
         </span>
       </div>
 
@@ -89,9 +91,6 @@ const Contact = ({
         </div>
         <div className="contact-form-div">
           <div className="form-col-full">
-            {/* <label className="" htmlFor="contactTextArea">
-              Message
-            </label> */}
             <textarea
               id="contactTextArea"
               name="message"

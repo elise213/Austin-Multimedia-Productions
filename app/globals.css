@@ -98,7 +98,6 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  /* width: 60vw; */
 }
 
 .about span {
@@ -274,20 +273,24 @@ textarea {
   .about span {
     font-size: 20px !important;
   }
+
+  .about {
+    margin-top: 0 !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .about span {
-    font-size: medium;
+    font-size: 14px;
     line-height: 1.8;
   }
   .movie-scroll-labels span {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   .about span {
-    font-size: 14px;
+    font-size: 12px !important;
   }
 }

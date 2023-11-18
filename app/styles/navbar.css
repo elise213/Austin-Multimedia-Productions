@@ -44,7 +44,7 @@
 .nav-item,
 .nav-item a {
   letter-spacing: 1.5px;
-  color: var(--color1);
+  color: salmon;
   text-decoration: none;
   font-size: 22px;
   z-index: 999;
@@ -162,13 +162,10 @@
 
   .navbar-content {
     flex-direction: column;
-    padding: 5px;
     align-items: flex-start !important;
-
     margin: 0 0 0 20px;
     display: flex;
     box-shadow: none !important;
-    margin-bottom: 200px;
   }
 
   .nav-item {
