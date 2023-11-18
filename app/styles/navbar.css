@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10001;
+  z-index: 999999;
 }
 
 .new-navbar.open {
@@ -85,7 +85,7 @@
   left: -40px;
   top: 30px;
   transition: 0.3s ease !important;
-  z-index: 995;
+  z-index: 9999999;
   color: salmon;
 }
 
@@ -148,7 +148,6 @@
     top: 0;
     left: -275px !important;
     height: 100%;
-    z-index: 999;
     display: flex;
     justify-content: flex-start;
     transition: left 0.3s ease;
