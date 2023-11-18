@@ -65,9 +65,6 @@ const Contact = ({
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="contact-form-div">
           <div className="form-col">
-            {/* <label className="" htmlFor="nameInput">
-              Name
-            </label> */}
             <input
               type="text"
               id="nameInput"
@@ -77,9 +74,6 @@ const Contact = ({
             />
           </div>
           <div className="form-col">
-            {/* <label className="" htmlFor="emailInput">
-              Email
-            </label> */}
             <input
               type="text"
               id="emailInput"

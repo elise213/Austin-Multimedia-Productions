@@ -1,6 +1,6 @@
 .video-container {
-  display: flex;
   height: 1vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -26,12 +26,22 @@
   z-index: 3;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .video-container {
-    margin: 0 !important;
+    min-height: 500px !important;
   }
+}
 
+@media screen and (max-width: 800px) {
   .video-container {
+    /* min-height: 400px !important; */
+    margin: 0 !important;
     max-width: 90vw !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container {
+    min-height: 300px !important;
   }
 }

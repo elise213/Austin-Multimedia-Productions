@@ -44,7 +44,24 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className="home-body content">
-        {/* <EmailList /> */}
+        <div className="decoration">
+          {/* 
+            <img src="/img/logo2.png" alt="CCEA Logo" className="side-logo" />
+            <div className="socials">
+              <i className="fa-brands fa-instagram" />
+              <i className="fa-brands fa-twitter" />
+              <i className="fa-brands fa-facebook-f" />
+            </div>*/}
+        </div>
+
+        <svg width="0" height="0">
+          <defs>
+            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+              <path d="M 0,0 L 1,0 L 1,1 Q 0.5,1 0,1 Z" />
+            </clipPath>
+          </defs>
+        </svg>
+
         <div className="video-about">
           <Video />
           <div className="about">

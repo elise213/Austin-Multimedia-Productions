@@ -15,7 +15,7 @@ const Video = () => {
     <div
       className="video-container"
       style={{
-        minHeight: "300px",
+        minHeight: "600px",
       }}
     >
       <div className="mask-reference"></div>
