@@ -56,14 +56,11 @@
   cursor: pointer;
   transition: all 0.4s;
   font-family: "Urbanist", sans-serif;
-  height: 75px;
-  width: 75px;
   z-index: 4;
   position: relative;
   border-radius: 5px;
-  right: -80px;
-  bottom: -35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  right: -46px;
+  bottom: -10px;
 }
 
 .more-button {

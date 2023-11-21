@@ -50,21 +50,21 @@ const Navbar = ({ isLargeScreen }) => {
     <>
       <div className="nav-container">
         <nav className={`new-navbar ${isNavOpen ? "open" : ""}`}>
-          {!isLargeScreen && (
-            <div className="menu-icon" onClick={toggleNav}>
-              <div
-                className={`open-icon ${!isNavOpen ? "closed" : ""}`}
-                onClick={() => setIsNavOpen(true)}
-              >
-                <i className="fas fa-bars"></i>
-              </div>
-              <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
-                <span className="navbar-toggler">
-                  <i className="fa-solid fa-x"></i>
-                </span>
-              </div>
+          {/* {!isLargeScreen && ( */}
+          <div className="menu-icon" onClick={toggleNav}>
+            <div
+              className={`open-icon ${!isNavOpen ? "closed" : ""}`}
+              onClick={() => setIsNavOpen(true)}
+            >
+              <i className="fas fa-bars"></i>
             </div>
-          )}
+            <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
+              <span className="navbar-toggler">
+                <i className="fa-solid fa-x"></i>
+              </span>
+            </div>
+          </div>
+          {/* )} */}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>

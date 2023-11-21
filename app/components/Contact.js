@@ -55,8 +55,6 @@ const Contact = ({
         {/* <span className="circle-font" ref={circleInstance}>
           Get in touch!
         </span> */}
-
-        <img src="/img/logo2.png" alt="CCEA Logo" className="contact-logo" />
         <span className="close-contact" onClick={toggleContactModal}>
           <i className="fa-solid fa-x"></i>
         </span>
@@ -93,6 +91,7 @@ const Contact = ({
             ></textarea>
           </div>
         </div>
+        <img src="/img/logo2.png" alt="CCEA Logo" className="contact-logo" />
         <div className="form-col-full">
           <button className="send-button" type="submit">
             SEND
