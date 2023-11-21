@@ -42,7 +42,7 @@ const EmailList = () => {
         <i className="fa-brands fa-twitter" />
         <i className="fa-brands fa-facebook-f" />
       </div> */}
-      <p className="nav-item">NEWSLETTER</p>
+      <p className="nav-item newsletter">NEWSLETTER</p>
       <form
         ref={form}
         onSubmit={signUpForMailingList}
