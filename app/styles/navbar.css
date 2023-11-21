@@ -32,7 +32,7 @@
   padding: 20px;
   width: 100%;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .active {
@@ -67,14 +67,14 @@
 }
 
 .close-icon {
-  color: salmon;
+  color: lavender;
 }
 
 .close-icon,
 .open-icon {
   position: absolute;
   left: -40px;
-  top: 30px;
+  top: 20px;
   transition: 0.3s ease !important;
   z-index: 9999999;
 }
@@ -183,6 +183,7 @@
 
 .open-icon {
   font-size: 40px;
+  color: lavender;
 }
 
 .nav-container {

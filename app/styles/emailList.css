@@ -33,8 +33,7 @@
 .email-list-container p,
 .email-list-input-div,
 .email-list-button-div {
-  /* margin: 0; */
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
 }
@@ -44,12 +43,12 @@
 }
 
 .send-2 {
-  /* margin: 10px 0px !important; */
   border: none;
   font-size: medium;
   background-color: transparent;
-  color: salmon;
+  color: grey;
   padding: 0;
+  letter-spacing: 1px;
 }
 
 .send-2:hover {

@@ -17,9 +17,11 @@
   font-size: medium;
   margin: 5px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .highlight-title {
+  letter-spacing: 1px;
   font-size: x-large;
   font-weight: bolder;
   text-align: center;
@@ -58,9 +60,10 @@
   font-family: "Urbanist", sans-serif;
   z-index: 4;
   position: relative;
-  border-radius: 5px;
-  right: -46px;
+  border-radius: 4px;
+  right: -36px;
   bottom: -10px;
+  letter-spacing: 1px;
 }
 
 .more-button {

@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <>
-      <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+      {/* <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" /> */}
       <div className="fake-navbar"> </div>
       <main className={styles.main}>
         <div className="home-body content">
