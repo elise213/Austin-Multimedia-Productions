@@ -50,7 +50,7 @@ const Highlights = (props) => {
                   className="btn learn-more-2"
                   onClick={toggleModal}
                 >
-                  More
+                  Learn More
                 </button>
               </div>
             </>

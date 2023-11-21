@@ -8,20 +8,20 @@
   font-weight: 600;
   letter-spacing: 1.5px;
   color: var(--color1);
-  font-size: 22px;
+  font-size: 18px;
   z-index: 999;
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
-  margin: 50px 0 20px 0;
+  /* margin: 50px 0 20px 0; */
   text-decoration: none;
   color: salmon;
 }
 
 .socials {
   display: flex;
-  font-size: xx-large;
-  color: salmon;
+  font-size: large;
+  color: gray;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   box-sizing: border-box;
   padding: 5px;
   margin-bottom: 10px;
@@ -62,7 +62,7 @@
 .send-2 {
   /* margin: 10px 0px !important; */
   border: none;
-  font-size: x-large;
+  font-size: medium;
   background-color: transparent;
   color: salmon;
   padding: 0;

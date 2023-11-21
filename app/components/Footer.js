@@ -6,13 +6,13 @@ import EmailList from "./EmailList";
 const Footer = (isLargeScreen) => (
   <footer className="footer">
     <div className="footer-centered larger-footer-div">
-      {/* {isLargeScreen && ( */}
-      <>
-        {/* <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" /> */}
-        {/* <EmailList /> */}
-      </>
-      {/* )} */}
+      <div className="socials">
+        <i className="fa-brands fa-instagram" />
+        <i className="fa-brands fa-twitter" />
+        <i className="fa-brands fa-facebook-f" />
+      </div>
       <p className="foot">© 2023 Center for Cinematic and Experimental Arts</p>
+      <p className="foot">All Rights Reserved</p>
     </div>
   </footer>
 );

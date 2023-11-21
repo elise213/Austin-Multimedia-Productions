@@ -42,7 +42,7 @@ const EmailList = () => {
         <i className="fa-brands fa-twitter" />
         <i className="fa-brands fa-facebook-f" />
       </div> */}
-      <p className="sign-up">SUBSCRIBE</p>
+      <p className="nav-item">NEWSLETTER</p>
       <form
         ref={form}
         onSubmit={signUpForMailingList}
@@ -54,11 +54,12 @@ const EmailList = () => {
             id="emailListInput"
             name="email"
             className="emailListInput"
-            placeholder="Enter your Email"
+            placeholder="Email Address"
             required
           />
         </div>
         <button className="send-2" type="submit">
+          Sign Up
           <i className="fa-solid fa-angle-right"></i>
         </button>
       </form>

@@ -5,7 +5,7 @@
   align-items: center;
   box-sizing: border-box;
   margin: 0;
-  max-width: 80vw;
+  max-width: 70vw;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");
@@ -28,26 +28,18 @@
 
 @media screen and (max-width: 1000px) {
   .video-container {
-    min-height: 500px !important;
+    min-height: 400px !important;
   }
 }
 
 @media screen and (max-width: 800px) {
   .video-container {
-    /* min-height: 400px !important; */
     margin: 0 !important;
-    max-width: 90vw !important;
   }
 }
 
 @media screen and (max-width: 600px) {
   .video-container {
     min-height: 400px !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .video-container {
-    min-height: 300px !important;
   }
 }

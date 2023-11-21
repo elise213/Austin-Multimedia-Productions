@@ -67,13 +67,18 @@ const Navbar = ({ isLargeScreen }) => {
           )}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
-            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
-
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
               <Link href="/" passHref>
                 HOME
               </Link>
             </span>
+
+            <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+              <Link href="/about" passHref>
+                ABOUT
+              </Link>
+            </span>
+
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
               <Link href="/fiscal" passHref>
                 FISCAL SPONSORSHIP
