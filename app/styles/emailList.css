@@ -15,21 +15,6 @@
   color: salmon;
 }
 
-.socials {
-  display: flex;
-  font-size: large;
-  color: gray;
-  width: 100%;
-  justify-content: space-around;
-  box-sizing: border-box;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.socials i:hover {
-  color: lightgreen;
-}
-
 .emailListInput {
   width: 100%;
   border: none;

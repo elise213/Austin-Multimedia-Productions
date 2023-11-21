@@ -5,7 +5,8 @@
   align-items: center;
   box-sizing: border-box;
   margin: 0;
-  max-width: 70vw;
+  width: 70vw;
+  max-width: 800px;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");

@@ -28,12 +28,6 @@ const Navbar = ({ isLargeScreen }) => {
   }, [isNavOpen, isLargeScreen]);
 
   useEffect(() => {
-    if (isLargeScreen) {
-      setIsNavOpen(true);
-    }
-  }, [isLargeScreen]);
-
-  useEffect(() => {
     const body = document.body;
     if ((!isLargeScreen && isNavOpen) || showContactModal) {
       body.classList.add("no-scroll");
@@ -50,12 +44,8 @@ const Navbar = ({ isLargeScreen }) => {
     <>
       <div className="nav-container">
         <nav className={`new-navbar ${isNavOpen ? "open" : ""}`}>
-          {/* {!isLargeScreen && ( */}
           <div className="menu-icon" onClick={toggleNav}>
-            <div
-              className={`open-icon ${!isNavOpen ? "closed" : ""}`}
-              onClick={() => setIsNavOpen(true)}
-            >
+            <div className={`open-icon ${!isNavOpen ? "closed" : ""}`}>
               <i className="fas fa-bars"></i>
             </div>
             <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
@@ -93,21 +83,6 @@ const Navbar = ({ isLargeScreen }) => {
             >
               CONTACT
             </span>
-            {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-            <Link href="/about" passHref className="nav-item">
-              ABOUT
-            </Link>
-          </span> */}
-            {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-                <Link href="/screenings" passHref className="nav-item">
-                  SCREENINGS AND EVENTS
-                </Link>
-              </span> */}
-            {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-                <Link href="/workshops" passHref className="nav-item">
-                  WORKSHOPS & CLASSES
-                </Link>
-              </span> */}
             <EmailList />
           </div>
         </nav>
