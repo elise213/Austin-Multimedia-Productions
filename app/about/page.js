@@ -6,11 +6,12 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="about-container">
-      {/* <Image
-        height={600}
-        width={600}
-        className="screenings-image"
-        src={"/img/sample7.png"}
+      {/* <div className="line"></div>
+      <Image
+        height={100}
+        width={200}
+        className="about-image"
+        src={"/img/LOGO2.png"}
         alt=""
       ></Image> */}
 

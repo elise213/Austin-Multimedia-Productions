@@ -2,6 +2,23 @@
   margin: 60px 0;
 }
 
+.about-image {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .line {
+  width: 200px;
+  border-top: 2px solid gray;
+  height: 10px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
 .about {
   margin: 30px 0 0 0;
   text-align: justify;
