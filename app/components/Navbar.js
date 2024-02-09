@@ -50,10 +50,11 @@ const Navbar = ({ isLargeScreen }) => {
             </div>
             <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
               <span className="navbar-toggler">
-                <i className="fa-solid fa-x"></i>
+                <i className="fas fa-times"></i>
               </span>
             </div>
           </div>
+
           {/* )} */}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>

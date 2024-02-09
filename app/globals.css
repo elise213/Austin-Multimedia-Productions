@@ -7,6 +7,32 @@
   font-style: normal;
 }
 
+/* Bold font
+@font-face {
+  font-family: "AwsumSans";
+  src: url("/fonts/AwsumSansBold-BF64c08556665f3.ttf") format("truetype"),
+    url("/fonts/AwsumSansBold-BF64c08556c5095.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+} */
+
+/* Italic font */
+@font-face {
+  font-family: "AwsumSans";
+  src: url("/fonts/AwsumSansItalic-BF64c085561b552.otf") format("opentype"),
+    url("/fonts/AwsumSansItalic-BF64c0855662543.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold Italic font */
+@font-face {
+  font-family: "AwsumSans";
+  src: url("/fonts/AwsumSansBoldItalic-BF64c0855650966.ttf") format("truetype"),
+    url("/fonts/AwsumSansBoldItalic-BF64c08556c0bd3.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
 ___________________________________________________________________GLOBAL
   :root {
   --color1: rgb(251, 120, 106);
@@ -38,15 +64,6 @@ body {
 
 body.navbar-open {
   overflow: hidden;
-}
-
-.fake-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 110px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  z-index: 998;
 }
 
 .navbar-logo {
