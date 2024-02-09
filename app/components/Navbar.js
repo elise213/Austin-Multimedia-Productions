@@ -29,12 +29,12 @@ const Navbar = ({ isLargeScreen }) => {
 
   useEffect(() => {
     const body = document.body;
-    if ((!isLargeScreen && isNavOpen) || showContactModal) {
+    if (isNavOpen || showContactModal) {
       body.classList.add("no-scroll");
     } else {
       body.classList.remove("no-scroll");
     }
-  }, [isNavOpen, showContactModal, isLargeScreen]);
+  }, [isNavOpen, showContactModal]);
 
   const toggleContactModal = () => {
     setShowContactModal(!showContactModal);
@@ -58,19 +58,37 @@ const Navbar = ({ isLargeScreen }) => {
           {/* )} */}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
-            <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            <span
+              className="nav-item"
+              onClick={() => {
+                setIsNavOpen(false);
+                setShowContactModal(false);
+              }}
+            >
               <Link href="/" passHref>
                 HOME
               </Link>
             </span>
 
-            <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            <span
+              className="nav-item"
+              onClick={() => {
+                setIsNavOpen(false);
+                setShowContactModal(false);
+              }}
+            >
               <Link href="/about" passHref>
                 ABOUT
               </Link>
             </span>
 
-            <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            <span
+              className="nav-item"
+              onClick={() => {
+                setIsNavOpen(false);
+                setShowContactModal(false);
+              }}
+            >
               <Link href="/fiscal" passHref>
                 FISCAL SPONSORSHIP
               </Link>

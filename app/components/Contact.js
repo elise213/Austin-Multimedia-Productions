@@ -52,9 +52,6 @@ const Contact = ({
   return (
     <div className="contact-page">
       <div className="contact-call">
-        {/* <span className="circle-font" ref={circleInstance}>
-          Get in touch!
-        </span> */}
         <span className="close-contact" onClick={toggleContactModal}>
           <i className="fa-solid fa-x"></i>
         </span>

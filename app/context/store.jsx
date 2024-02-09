@@ -5,6 +5,25 @@ const getState = ({ getStore, getActions, setStore }) => {
       isLargeScreen: false,
       isClient: false,
       windowWidth: 0,
+      fiscalFilms: [
+        {
+          title: "All That's Left Of You",
+          type: "Fiction Feature",
+          status: "Pre-Production",
+          director: "Cherien Dabis",
+          producer: "Thanassis Karathanos",
+          execProducer: "Karim Amer",
+          image: "/img/all-thats-left-of-you.jpeg",
+          directorBio:
+            "Cherien Dabis is a critically acclaimed Palestinian American filmmaker and Emmy nominated television director. She is best known for her critically acclaimed independent feature films AMREEKA (2009) and MAY IN THE SUMMER (2013), which premiered at the Sundance, Cannes and Venice film festivals and won dozens of international awards. AMREEKA was nominated for three Independent Spirit Awards, including Best Picture, and broke records in its theatrical release by becoming the most-screened Arab-directed film in US-cinema history. Dabis is highly sought after in television for her standout episodic directing work on Emmy and Golden Globe-winning shows like ONLY MURDERS IN THE BUILDING (Hulu), RAMY (Hulu) and OZARK (Netflix)",
+          producerBio:
+            "Thanassis Karathanos studied political sciences and economics in Athens and Berlin. In 1998 he founded the film production company TWENTY TWENTY VISION in Berlin and in 2003 the production company PALLAS FILM in Halle (Saale). He has produced dozens of international films that have been celebrated at top tier film festivals and enjoy theatrical success worldwide. Recent credits include Cannes official selection MEDITERRANEAN FEVER (2022), THE GRAVEDIGGER’S WIFE (2021), academy award nominated THE MAN WHO SOLD HIS SKIN (2020) and Cannes competition title IT MUST BE HEAVEN (2019). He is a member of the European and German Film Academy.",
+          logline:
+            "In the moments before a Palestinian teen is confronted by Israeli soldiers at a protest in the West Bank, his mother recounts the series of events that led him to that fateful moment, starting with his grandfather’s displacement from Jaffa in 1948. All That’s Left of You is an epic historical drama chronicling the story of one family over three generations and examining the passage of trauma to each.",
+          synopsis:
+            "The year is 1948. Hundreds of thousands of Palestinians have been forced to flee their homes. But Palestinian citrus farmer SHARIF refuses to go anywhere. Instead, he sends his family to safety and stays behind to protect their multigenerational land. Soon after, the city falls, and Sharif is captured. Months go by, and his family fears the worst. Even his youngest son SALIM, who’s desperate to hold out hope, starts to mourn. A year later, they’ve given up on ever seeing Sharif again. That’s when Sharif unexpectedly turns up on their doorstep. A shadow of the man he used to be, he can barely hold himself upright. Salim can’t help but feel that he’s lost his father for good. Decades later, Sharif is still haunted by how quickly his life, his entire society was erased. He obsesses over what he could’ve done to change his family’s fate. His son SALIM now has a family of his own, and they’ve managed to build their lives in a dilapidated refugee camp in the occupied West Bank. One day, Salim is rushing his young son NOOR home at the onset of an unexpected curfew. But they’re caught by a group of Israeli soldiers. In a troubling encounter, Noor is forced to see that his own father can’t protect him. In that instant, his perspective shifts, and the man who was once his hero is deemed a coward.  Nearly a decade later, the West Bank is ablaze with resistance. NOOR, now a rebellious teen, fearlessly confronts Israeli soldiers at a protest that descends into chaos. He’s injured and taken to a hospital. As doctors set out to save their son, Salim and Hanan manage to find a glimmer of hope to help them make meaning of all the pain they’ve had to carry.",
+        },
+      ],
       content: [
         {
           title: "Apocalypse Now",

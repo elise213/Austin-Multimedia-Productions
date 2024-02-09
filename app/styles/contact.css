@@ -18,10 +18,15 @@
   color: lavender;
 }
 
+.close-contact:hover {
+  color: rgb(177, 135, 177);
+  cursor: pointer;
+}
+
 .contact-call {
   display: flex;
   padding: 10px 0 0 0;
-  width: 400px;
+  width: 500px;
   justify-content: flex-end;
 }
 
@@ -94,10 +99,11 @@
 }
 
 .contact-logo {
-  width: 150px;
+  /* width: 150px; */
+  height: 70px;
   position: absolute;
   right: 40px;
-  bottom: 46px;
+  bottom: 3px;
 }
 
 .circle-font {

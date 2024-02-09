@@ -2,7 +2,7 @@
 
 .no-scroll {
   overflow: hidden;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .new-navbar {
@@ -73,10 +73,6 @@
   color: white;
 }
 
-.close-icon {
-  color: lavender;
-}
-
 .close-icon,
 .open-icon {
   position: absolute;
@@ -84,6 +80,8 @@
   top: 20px;
   transition: 0.3s ease !important;
   z-index: 9999999;
+  color: salmon;
+  font-size: 40px;
 }
 
 .close-icon.open {
@@ -176,7 +174,7 @@
 
 .open-icon {
   font-size: 40px;
-  color: lavender;
+  /* color: lavender; */
 }
 
 .nav-container {
@@ -207,7 +205,6 @@
 .open-icon.closed {
   left: 300px !important;
 }
-/* } */
 
 @media screen and (max-width: 700px) {
   .modal-content-contact {

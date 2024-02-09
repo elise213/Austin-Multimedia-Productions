@@ -43,16 +43,9 @@ const Home = () => {
 
   return (
     <>
-      {/* <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" /> */}
       <div className="fake-navbar"> </div>
       <main className={styles.main}>
         <div className="home-body content">
-          {/* <div className="decoration"> */}
-          {/* 
-            <img src="/img/logo2.png" alt="CCEA Logo" className="side-logo" />
-
-        {/* </div> */}
-
           <svg width="0" height="0">
             <defs>
               <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
@@ -63,21 +56,8 @@ const Home = () => {
 
           <div className="video-about">
             <Video />
-            {/* <div className="about">
-            <span className="">
-              The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
-              nonprofit promoting high-quality cinematic experiences through
-              exhibition, workshops, and helping talented artists overcome the
-              challenges unique to independent filmmaking.
-            </span>
-          </div> */}
           </div>
           <div className="screenings-div">
-            {/* {store.windowWidth > 500 ? ( */}
-            {/* <div className="movie-scroll-labels">
-              <span>Upcoming Workshops and Events</span>
-            </div>
-          ) : ( */}
             <div className="movie-scroll-labels">
               <span>Upcoming Workshops</span>
               <span className="separator"></span>

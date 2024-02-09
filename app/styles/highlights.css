@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   border: double 8px rgb(250, 106, 103);
-  background-color: rgb(245, 186, 77);
+  background-color: rgb(239, 194, 110);
   border-radius: 3%;
   position: relative;
   padding: 10px;
@@ -51,16 +51,16 @@
 }
 
 .learn-more-2 {
-  background-color: black;
-  color: rgb(252, 80, 60);
+  /* background-color: rgb(250, 106, 103); */
+  color: rgb(103, 79, 103);
   font-size: medium;
-  border: 4px double lightgreen;
+  border: 4px double black;
   cursor: pointer;
   transition: all 0.4s;
   font-family: "Urbanist", sans-serif;
   z-index: 4;
   position: relative;
-  border-radius: 4px;
+  border-radius: 14px;
   right: -36px;
   bottom: -10px;
   letter-spacing: 1px;
@@ -76,7 +76,8 @@
 
 .learn-more-2:hover {
   background-color: lightgreen;
-  border: 2px solid var(--color5);
+  /* border: 2px solid var(--color5); */
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
