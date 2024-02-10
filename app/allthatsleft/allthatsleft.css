@@ -9,11 +9,18 @@
   margin-top: 60px;
   letter-spacing: 1px;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .landing-title {
   font-size: 35px;
   margin: 10px 0;
+}
+
+.landing-title-2 {
+  font-size: 35px;
+  margin: 0 0 10px 0;
 }
 
 .heading {

@@ -48,19 +48,6 @@ const allthatsleft = () => {
 
       <br />
 
-      <br />
-      <span className="heading">Synopsis:</span>
-      <span>{store.fiscalFilms[0].synopsis}</span>
-      <br />
-      <br />
-      <span className="heading">Director Bio:</span>
-      <span>{store.fiscalFilms[0].directorBio}</span>
-      <br />
-      <br />
-      <span className="heading">Producer Bio:</span>
-      <span>{store.fiscalFilms[0].producerBio}</span>
-      <br />
-
       <div
         className="donation-form"
         id="donation-form"
@@ -89,6 +76,25 @@ const allthatsleft = () => {
           allowtransparency="true"
         ></iframe>
       </div>
+
+      <br />
+      <div className="landing-title-2">{store.fiscalFilms[0].title}</div>
+      <br />
+      <span className="heading">Synopsis:</span>
+      <span>{store.fiscalFilms[0].synopsis}</span>
+      <br />
+      <br />
+      <span className="heading">Director:</span>
+      <span>{store.fiscalFilms[0].directorBio}</span>
+      <br />
+      <br />
+      <span className="heading">Producer:</span>
+      <span>{store.fiscalFilms[0].producerBio}</span>
+      <br />
+      <br />
+      <span className="heading">Executive Producer:</span>
+      <span>{store.fiscalFilms[0].execProducerBio}</span>
+      <br />
     </div>
   );
 };
