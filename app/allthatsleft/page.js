@@ -38,10 +38,9 @@ const allthatsleft = () => {
           <span className="heading">Executive Producer: </span>
           <span>{store.fiscalFilms[0].execProducer}</span>
         </div>
-        <div className="donate-first">
-          <a href="#donation-form" className="donate-to">
-            <p>Make a donation to </p>
-            <p className="title-2">{store.fiscalFilms[0].title}</p>
+        <div>
+          <a href="#landing-title-2" className="read-more">
+            <span>Read more about the movie and the team</span>
           </a>
         </div>
       </div>
@@ -51,13 +50,7 @@ const allthatsleft = () => {
       <div
         className="donation-form"
         id="donation-form"
-        style={{
-          position: "relative",
-          overflow: "hidden",
-          width: "100%",
-          height: "850px",
-          paddingTop: "100%",
-        }}
+        style={{ height: "1450px" }}
       >
         <iframe
           title="Donation form powered by Zeffy"
@@ -78,7 +71,9 @@ const allthatsleft = () => {
       </div>
 
       <br />
-      <div className="landing-title-2">{store.fiscalFilms[0].title}</div>
+      <div id="landing-title-2" className="landing-title-2">
+        {store.fiscalFilms[0].title}
+      </div>
       <br />
       <span className="heading">Synopsis:</span>
       <span>{store.fiscalFilms[0].synopsis}</span>
@@ -95,6 +90,12 @@ const allthatsleft = () => {
       <span className="heading">Executive Producer:</span>
       <span>{store.fiscalFilms[0].execProducerBio}</span>
       <br />
+      <div className="donate-first">
+        <a href="#donation-form" className="donate-to">
+          <p>Make a donation to </p>
+          <p className="title-2">{store.fiscalFilms[0].title}</p>
+        </a>
+      </div>
     </div>
   );
 };
