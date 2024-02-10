@@ -12,17 +12,17 @@ import { Context } from "./context/appContext";
 function RootLayout({ children }) {
   const { store, actions } = useContext(Context);
 
-  useEffect(() => {
-    actions.initializeScreenSize();
-  }, []);
+  // useEffect(() => {
+  //   actions.initializeScreenSize();
+  // }, []);
 
-  useEffect(() => {
-    const handleResize = actions.updateScreenSize;
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = actions.updateScreenSize;
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <html lang="en">

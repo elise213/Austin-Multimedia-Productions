@@ -74,6 +74,7 @@ p {
 .read-more {
   text-decoration: none !important;
   color: orangered;
+  font-weight: bold;
 }
 
 .read-more:hover {
@@ -81,18 +82,31 @@ p {
   cursor: pointer;
 }
 
+/* .smat288,
+.smat281,
+.smat283,
+.MuiGrid-root-178 {
+  display: hidden !important;
+} */
+
+@media screen and (min-width: 900px) {
+  .donation-form {
+    height: 1600px !important;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .landing-title {
     font-size: 25px;
   }
 
-  .donation-page {
-    height: 1800px !important;
+  .first-section {
+    flex-direction: column !important;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .first-section {
-    flex-direction: row !important;
+@media screen and (max-width: 600px) {
+  .donation-page {
+    height: 2000px !important;
   }
 }
