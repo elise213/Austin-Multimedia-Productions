@@ -6,33 +6,22 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="about-container">
-      {/* <div className="line"></div>
+      {/* <div className="line"></div> */}
       <Image
         height={100}
         width={200}
         className="about-image"
         src={"/img/LOGO2.png"}
         alt=""
-      ></Image> */}
+      ></Image>
 
       <div className="about">
         <span className="">
           The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
-          nonprofit promoting high-quality cinematic experiences through
-          exhibition, workshops, and helping talented artists overcome the
-          challenges unique to independent filmmaking.
-        </span>
-      </div>
-
-      <div className="about">
-        <span className="">
-          CCEA hosts screenings and hands-on workshops in Austin Texas and
-          throughout the World. We have a variety of ways to support filmmakers
-          including fiscal sponsorship, in-house legal consulting, support for
-          analog film workflows, workshops, and more. We champion creativity
-          over commercialism, and genuine excitement over hype. In doing so, we
-          aim to facilitate unique cinematic experiences that enrich our psyches
-          and communities.
+          nonprofit promoting high-quality cinematic experiences by helping
+          artists overcome the challenges of independent filmmaking by offering
+          hands-on workshops, fiscal sponsorship, in-house legal consulting,
+          support for analog film workflows, and more.
         </span>
       </div>
     </div>

@@ -41,7 +41,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           year: "2023",
           image: "/img/bolex2.jpg",
           category: "new",
-          bullet: "January 1st",
+          bullet: "April 1st",
           bullet2: "Austin, TX",
           description:
             "We are dedicated to nurturing a deeper appreciation for 8mm and 16mm filmmaking. Our analog film workshops offer hands-on experience shooting and editing analog film using our Bolex Reflex cameras and analog editing equipment. Our development sessions introduce participants to natural processing methods using nnon-toxic household items.",
@@ -55,7 +55,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           image: "/img/mwmc.png",
           category: "staff",
           bullet1: "Livestream",
-          bullet2: "February 1st",
+          bullet2: "May 1st",
           bullet: "Legal challenges in documentary filmmaking",
           description:
             "Documentary filmmaking can pose many legal challenges that are best to think about early in your project. This workshop will help you navigate some of the most common legal issues from fundraising through production and distribution of your film.  There will also be a Q&A at the end where you can come with your own questions..",

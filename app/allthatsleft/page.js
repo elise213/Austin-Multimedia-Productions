@@ -10,6 +10,9 @@ const allthatsleft = () => {
   return (
     <div className="landing-container">
       <div className="landing-title">{store.fiscalFilms[0].title}</div>
+      <br />
+      <div>{store.fiscalFilms[0].logline}</div>
+      <br />
       <Image
         height={600}
         width={600}
@@ -44,8 +47,7 @@ const allthatsleft = () => {
       </div>
 
       <br />
-      <br />
-      <div>{store.fiscalFilms[0].logline}</div>
+
       <br />
       <span className="heading">Synopsis:</span>
       <span>{store.fiscalFilms[0].synopsis}</span>
