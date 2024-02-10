@@ -3,6 +3,7 @@
   height: 100%;
   margin: 10px 0;
 }
+
 .landing-container {
   width: 80%;
   margin-top: 60px;
@@ -24,15 +25,25 @@
   margin: 30px 0px;
   text-decoration: none;
   text-align: center;
+  color: orangered;
+}
+
+.donation-form {
+  margin-top: 100px;
+}
+
+p {
+  margin: 0;
 }
 
 .donate-to:hover {
-  color: purple !important;
+  text-shadow: 8px 8px 18px green !important;
+  cursor: pointer;
 }
 
 .title-2 {
   font-weight: 600;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .first-section {

@@ -91,7 +91,7 @@ const Contact = ({
         <img src="/img/logo2.png" alt="CCEA Logo" className="contact-logo" />
         <div className="form-col-full">
           <button className="send-button" type="submit">
-            SEND
+            SEND TO
           </button>
         </div>
       </form>
