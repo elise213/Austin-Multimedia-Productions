@@ -9,7 +9,7 @@ const Footer = (isLargeScreen) => (
       <div className="all-rights">
         <div className="foot-cont">
           <p className="foot">
-            © 2023 Center for Cinematic and Experimental Arts
+            © 2024 Center for Cinematic and Experimental Arts
           </p>
           <p className="foot">All Rights Reserved</p>
         </div>

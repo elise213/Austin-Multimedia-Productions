@@ -59,9 +59,9 @@ const Home = () => {
           </div>
           <div className="screenings-div">
             <div className="movie-scroll-labels">
-              <span>Upcoming Workshops</span>
+              {/* <span>Upcoming Workshops</span>
               <span className="separator"></span>
-              <span>and Events</span>
+              <span>and Events</span> */}
             </div>
 
             {/* )} */}

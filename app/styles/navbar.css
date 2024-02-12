@@ -80,8 +80,8 @@
   top: 20px;
   transition: 0.3s ease !important;
   z-index: 9999999;
-  color: salmon;
-  font-size: 40px;
+
+  font-size: 50px;
 }
 
 .close-icon.open {
@@ -161,7 +161,8 @@
 }
 
 .close-icon {
-  font-size: 30px;
+  font-size: 40px;
+  color: salmon;
 }
 
 .close-icon.open {
