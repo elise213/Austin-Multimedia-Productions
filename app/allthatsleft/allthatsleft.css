@@ -9,9 +9,24 @@
   flex-direction: column;
 }
 
-.wire-info-2 {
+.wire-info {
+  font-size: 12px;
+  margin: 0 25px 0 0;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wire-info-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wire-container {
+  margin-top: 55px;
+  align-items: center;
 }
 
 .landing-container {
@@ -36,13 +51,6 @@
 .heading {
   font-weight: 800;
   margin-right: 10px;
-}
-
-.wire-info {
-  font-size: 10px;
-  margin: 20px 0 0 0;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .donate-to {
