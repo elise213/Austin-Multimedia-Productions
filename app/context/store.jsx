@@ -46,9 +46,10 @@ const getState = ({ getStore, getActions, setStore }) => {
           bullet: "April 1st",
           bullet2: "Austin, TX",
           description:
-            "We are dedicated to nurturing a deeper appreciation for 8mm and 16mm filmmaking. Our analog film workshops offer hands-on experience shooting and editing analog film using our Bolex Reflex cameras and analog editing equipment. Our development sessions introduce participants to natural processing methods using nnon-toxic household items.",
-          instruction:
-            "Our next cohort begins January 1st. E-mail info@ccearts.org for more information",
+            "This workshop offers hands-on experience shooting with a 16mm or 8mm Bolex Reflex camera, processing film using non-toxic household items, and editing by hand using analog equipment",
+          instruction: "",
+          instruction2:
+            "E-mail info@ccearts.org to be included in the next cohort.",
         },
         {
           title: "Legal challenges in documentary filmmaking",
@@ -58,9 +59,10 @@ const getState = ({ getStore, getActions, setStore }) => {
           bullet1: "Livestream",
           bullet2: "May 1st",
           description:
-            "Documentary filmmaking can pose many legal challenges that are best to think about early in your project. This workshop will help you navigate some of the most common legal issues from fundraising through production and distribution of your film.  There will also be a Q&A at the end where you can come with your own questions..",
-          instruction: "The next workshop is January 15th.",
-          instruction2: "E-mail info@ccearts.org to be included.",
+            "This workshop will help you navigate some of the most common legal issues in documentary filmmaking, including fundraising, production and distribution.  Come with questions.",
+          instruction: "",
+          instruction2:
+            "E-mail info@ccearts.org to be included in the next workshop.",
         },
         // {
         //   title: "Begotten",

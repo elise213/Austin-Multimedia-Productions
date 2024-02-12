@@ -16,16 +16,6 @@ const Contact = ({
   const TEMPLATE_ID = "template_99iigjc";
   const PUBLIC_KEY = "bSrh0TD_khQU1Jash";
 
-  // useEffect(() => {
-  //   let circle1;
-  //   if (circleInstance.current) {
-  //     circle1 = new CircleType(circleInstance.current).radius(500);
-  //   }
-  //   return () => {
-  //     circle1 && circle1.destroy();
-  //   };
-  // }, []);
-
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(form.current);

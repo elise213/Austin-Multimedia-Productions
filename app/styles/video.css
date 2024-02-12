@@ -30,17 +30,20 @@
 @media screen and (max-width: 1000px) {
   .video-container {
     min-height: 400px !important;
+    width: 80vw !important;
+    margin: 100px 0 0 0;
   }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .video-container {
-    margin: 0 !important;
+
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   .video-container {
     min-height: 400px !important;
+    width: 90vw !important;
   }
 }

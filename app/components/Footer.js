@@ -14,11 +14,11 @@ const Footer = (isLargeScreen) => (
           <p className="foot">All Rights Reserved</p>
         </div>
       </div>
-      <div className="socials">
+      {/* <div className="socials">
         <i className="fa-brands fa-instagram" />
         <i className="fa-brands fa-twitter" />
         <i className="fa-brands fa-facebook-f" />
-      </div>
+      </div> */}
     </div>
   </footer>
 );

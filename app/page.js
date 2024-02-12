@@ -43,7 +43,9 @@ const Home = () => {
 
   return (
     <>
-      <div className="fake-navbar"> </div>
+      <div className="fake-navbar">
+        <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+      </div>
       <main className={styles.main}>
         <div className="home-body content">
           <svg width="0" height="0">

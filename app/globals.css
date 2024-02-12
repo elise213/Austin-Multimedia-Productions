@@ -67,13 +67,12 @@ body.navbar-open {
 }
 
 .navbar-logo {
-  position: fixed !important;
+  /* position: relative;
   top: 0;
-  right: 0;
-  width: 150px;
+  right: 0; */
+  width: 200px;
   height: auto;
-  margin: 20px 20px 0 0;
-  z-index: 999;
+  margin: 26px 50px 0 0;
 }
 
 .navbar-logo:hover {

@@ -42,64 +42,59 @@ const MovieCard = (props) => {
     <div>
       {props.modalIsOpen && (
         <div className="modal">
-          <div className="modal-content">
-            <div className="modal-body">
-              <div className="modal-header">
-                <div className="modal-title-div">
-                  <span className="modal-title" id="exampleModalLabel">
+          <div
+            className="close-mc"
+            onClick={props.toggleModal}
+            aria-label="Close"
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </div>
+          {/* <div className="modal-content"> */}
+          <div className="modal-body">
+            <div className="poster-div">
+              <div className="together">
+                <Image
+                  width={300}
+                  height={450}
+                  className="movie-modal"
+                  src={props.result.image}
+                  alt=""
+                />
+                <div className="review-container">
+                  <span className="review-title" id="">
                     {props.result.subtitle
                       ? props.result.subtitle
                       : props.result.title}
                   </span>
-                </div>
-                <div className="close-div">
-                  <button
-                    type="button"
-                    className="close-mc"
-                    onClick={props.toggleModal}
-                    aria-label="Close"
-                  >
-                    <i className="fa-solid fa-xmark"></i>
-                  </button>
-                </div>
-              </div>
-              <div className="poster-div">
-                <div className="together">
-                  <Image
-                    width={300}
-                    height={450}
-                    className="movie"
-                    src={props.result.image}
-                    alt=""
-                  />
                   {props.result.instruction && (
                     <p className="review">{props.result.instruction}</p>
                   )}
                   {props.result.instruction2 && (
                     <p className="review">{props.result.instruction2}</p>
                   )}
+
+                  {props.result.description && (
+                    <p className="review">{props.result.description}</p>
+                  )}
+                  {trailerUrl ? (
+                    <div className="streaming-trailer-div">
+                      <div className="trailer-container">
+                        <iframe
+                          className="iframe-2"
+                          src={trailerUrl}
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
               </div>
-
-              {props.result.description && (
-                <p className="review">{props.result.description}</p>
-              )}
-              {trailerUrl ? (
-                <div className="streaming-trailer-div">
-                  <div className="trailer-container">
-                    <iframe
-                      className="iframe-2"
-                      src={trailerUrl}
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                </div>
-              ) : null}
             </div>
-            <div className="modal-footer"></div>
           </div>
+          <div className="modal-footer"></div>
+          {/* </div> */}
         </div>
       )}
     </div>

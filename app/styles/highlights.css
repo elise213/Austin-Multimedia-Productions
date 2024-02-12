@@ -53,7 +53,7 @@
   background-color: lightgreen;
   color: rgb(103, 79, 103);
   font-size: large;
-  padding: 2px 5px;
+  padding: 4px;
   border: 4px double black;
   cursor: pointer;
   transition: all 0.4s;
@@ -62,7 +62,7 @@
   position: relative;
   border-radius: 14px;
   right: -36px;
-  bottom: -30px;
+  bottom: -40px;
   letter-spacing: 1px;
   margin: 3px;
 }
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 500px) {
   .learn-more-2 {
-    font-size: 30px !important;
+    font-size: 15px !important;
   }
 
   .highlights {
@@ -113,9 +113,9 @@
 
   .learn-more-2 {
     right: -50px !important;
-    bottom: -55px !important;
-    height: 60px;
-    width: 60px;
+    bottom: -38px !important;
+    height: 40px;
+    width: 110px;
   }
   .highlight-title {
     font-size: medium !important;
