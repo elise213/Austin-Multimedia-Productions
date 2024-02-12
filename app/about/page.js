@@ -19,9 +19,9 @@ const About = () => {
         <span className="">
           The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
           nonprofit promoting high-quality cinematic experiences by helping
-          artists overcome the challenges of independent filmmaking by offering
+          artists overcome the challenges of independent filmmaking. We offer
           hands-on workshops, fiscal sponsorship, in-house legal consulting,
-          support for analog film workflows, and more.
+          support for analog film workflows, exhibition opportunities, and more.
         </span>
       </div>
     </div>

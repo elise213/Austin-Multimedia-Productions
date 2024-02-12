@@ -51,14 +51,12 @@ const getState = ({ getStore, getActions, setStore }) => {
             "Our next cohort begins January 1st. E-mail info@ccearts.org for more information",
         },
         {
-          title: "Workshop",
-          subtitle: "Legal challenges in documentary filmmaking",
+          title: "Legal challenges in documentary filmmaking",
           year: "2023",
           image: "/img/mwmc.png",
           category: "staff",
           bullet1: "Livestream",
           bullet2: "May 1st",
-          bullet: "Legal challenges in documentary filmmaking",
           description:
             "Documentary filmmaking can pose many legal challenges that are best to think about early in your project. This workshop will help you navigate some of the most common legal issues from fundraising through production and distribution of your film.  There will also be a Q&A at the end where you can come with your own questions..",
           instruction: "The next workshop is January 15th.",

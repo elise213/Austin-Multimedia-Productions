@@ -44,9 +44,29 @@ const allthatsleft = () => {
           </a>
         </div>
       </div>
-
-      <br />
-
+      <p className="wire-info">
+        For donations over $10,000 please use wire transfer.
+        <br />
+      </p>
+      <div className="wire-container">
+        <p className="wire-info">
+          Chase Bank
+          <br />
+          270 Park Ave.
+          <br />
+          New York, NY 10017
+          <br />
+          SWIFT Code: CHASUS33
+          <br />
+        </p>
+        <p className="wire-info">
+          <br />
+          ACCT: 583331023
+          <br />
+          ROUTING: 021000021
+          <br />
+        </p>
+      </div>
       <div
         className="donation-form"
         id="donation-form"

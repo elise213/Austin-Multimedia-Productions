@@ -25,7 +25,7 @@
   font-size: x-large;
   font-weight: bolder;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
   font-family: "AwsumSans", sans-serif;
 }
 
@@ -94,8 +94,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .learn-more-2 {
+    font-size: 30px !important;
+  }
+
   .highlights {
-    width: 110px !important;
+    width: 130px !important;
     padding: 0 !important;
     height: 180px !important;
   }
@@ -112,5 +116,18 @@
     bottom: -55px !important;
     height: 60px;
     width: 60px;
+  }
+  .highlight-title {
+    font-size: medium !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .highlights {
+    width: 110px !important;
+  }
+
+  .highlight-title {
+    font-size: small !important;
   }
 }
