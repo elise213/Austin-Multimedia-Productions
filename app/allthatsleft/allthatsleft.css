@@ -6,6 +6,12 @@
 .wire-container {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+}
+
+.wire-info-2 {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .landing-container {
@@ -120,7 +126,8 @@ p {
   .donation-page {
     height: 2000px !important;
   }
-  .basic-info span {
+  .basic-info span,
+  .read-more {
     font-size: 13px !important;
   }
 }
