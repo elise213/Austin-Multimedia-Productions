@@ -48,6 +48,8 @@ const allthatsleft = () => {
         <p className="wire-info">
           For donations over $10,000, please wire to Chase Bank.
           <br />
+          Donations ≥ $100,000 will earn an executive producer credit.
+          <br />
           <br />
         </p>
         <div className="wire-info-2">
