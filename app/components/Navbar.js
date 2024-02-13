@@ -1,123 +1,111 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { Context } from "../context/appContext";
 import Link from "next/link";
 import styles from "../styles/navbar.css";
 import EmailList from "./EmailList";
 import Contact from "./Contact";
 
-const Navbar = ({ isLargeScreen }) => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [showContactModal, setShowContactModal] = useState(false);
+const Navbar = () => {
+  const { store, actions } = useContext(Context);
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    actions.toggleNavOpen(!store.isNavOpen); // Corrected to use actions for state update
   };
 
-  useEffect(() => {
-    if (!isLargeScreen) {
-      const handleClickOutside = (event) => {
-        const nav = document.querySelector(".new-navbar");
-        if (nav && !nav.contains(event.target) && isNavOpen) {
-          setIsNavOpen(false);
-        }
-      };
-      document.addEventListener("click", handleClickOutside);
-      return () => {
-        document.removeEventListener("click", handleClickOutside);
-      };
-    }
-  }, [isNavOpen, isLargeScreen]);
-
-  useEffect(() => {
-    const body = document.body;
-    if (isNavOpen || showContactModal) {
-      body.classList.add("no-scroll");
-    } else {
-      body.classList.remove("no-scroll");
-    }
-  }, [isNavOpen, showContactModal]);
-
+  // Function to toggle the contact modal state
   const toggleContactModal = () => {
-    setShowContactModal(!showContactModal);
+    actions.setShowContactModal(!store.showContactModal); // Corrected to use actions for state update
   };
+
+  useEffect(() => {
+    // Function to handle clicks outside the navbar
+    const handleClickOutside = (event) => {
+      const nav = document.querySelector(".new-navbar");
+      if (nav && !nav.contains(event.target) && store.isNavOpen) {
+        actions.setIsNavOpen(false); // Use actions to update the state
+      }
+    };
+
+    // Add event listener for clicks
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      // Clean up the event listener on component unmount
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [store.isNavOpen, actions.setIsNavOpen]);
 
   return (
     <>
-      <div className="nav-container">
-        <nav className={`new-navbar ${isNavOpen ? "open" : ""}`}>
-          <div className="menu-icon" onClick={toggleNav}>
-            <div className={`open-icon ${!isNavOpen ? "closed" : ""}`}>
-              <i className="fas fa-bars"></i>
-            </div>
-            <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
-              <span className="navbar-toggler">
-                <i className="fas fa-times"></i>
-              </span>
-            </div>
+      <nav className={`new-navbar ${store.isNavOpen ? "open" : ""}`}>
+        <div className="menu-icon" onClick={toggleNav}>
+          <div className={`open-icon ${!store.isNavOpen ? "closed" : ""}`}>
+            <i className="fas fa-bars"></i>
           </div>
-
-          {/* )} */}
-
-          <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
-            <span
-              className="nav-item"
-              onClick={() => {
-                setIsNavOpen(false);
-                setShowContactModal(false);
-              }}
-            >
-              <Link href="/" passHref>
-                HOME
-              </Link>
+          <div className={`close-icon ${store.isNavOpen ? "open" : ""}`}>
+            <span className="navbar-toggler">
+              <i className="fas fa-times"></i>
             </span>
-
-            <span
-              className="nav-item"
-              onClick={() => {
-                setIsNavOpen(false);
-                setShowContactModal(false);
-              }}
-            >
-              <Link href="/about" passHref>
-                ABOUT
-              </Link>
-            </span>
-
-            <span
-              className="nav-item"
-              onClick={() => {
-                setIsNavOpen(false);
-                setShowContactModal(false);
-              }}
-            >
-              <Link href="/fiscal" passHref>
-                FISCAL SPONSORSHIP
-              </Link>
-            </span>
-            <span
-              className="nav-item"
-              onClick={() => {
-                setIsNavOpen(false);
-                toggleContactModal();
-              }}
-            >
-              CONTACT
-            </span>
-            <EmailList />
           </div>
-        </nav>
+        </div>
 
-        {showContactModal && (
-          <div className="modal-contact">
-            <div className="modal-content-contact">
-              <Contact
-                showContactModal={showContactModal}
-                setShowContactModal={setShowContactModal}
-                toggleContactModal={toggleContactModal}
-              />
-            </div>
+        {/* )} */}
+
+        <div className={`navbar-content ${store.isNavOpen ? "open" : ""}`}>
+          <span
+            className="nav-item"
+            onClick={() => {
+              actions.setIsNavOpen(false);
+              actions.setShowContactModal(false);
+            }}
+          >
+            <Link href="/" passHref>
+              HOME
+            </Link>
+          </span>
+
+          <span
+            className="nav-item"
+            onClick={() => {
+              actions.setIsNavOpen(false);
+              actions.setShowContactModal(false);
+            }}
+          >
+            <Link href="/about" passHref>
+              ABOUT
+            </Link>
+          </span>
+
+          <span
+            className="nav-item"
+            onClick={() => {
+              actions.setIsNavOpen(false);
+              actions.setShowContactModal(false);
+            }}
+          >
+            <Link href="/fiscal" passHref>
+              FISCAL SPONSORSHIP
+            </Link>
+          </span>
+          <span
+            className="nav-item"
+            onClick={() => {
+              actions.setIsNavOpen(false);
+              toggleContactModal();
+            }}
+          >
+            CONTACT
+          </span>
+          <EmailList />
+        </div>
+      </nav>
+
+      {store.showContactModal && (
+        <div className="modal-contact">
+          <div className="modal-content-contact">
+            <Contact />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };

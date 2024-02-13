@@ -19,14 +19,14 @@
 }
 
 .close-contact:hover {
-  color: rgb(177, 135, 177);
+  color: lightgreen;
   cursor: pointer;
 }
 
 .contact-call {
   display: flex;
   padding: 10px 0 0 0;
-  width: 500px;
+  width: 110%;
   justify-content: flex-end;
 }
 
@@ -101,7 +101,6 @@
 }
 
 .contact-logo {
-  /* width: 150px; */
   height: 70px;
   position: absolute;
   right: 30px;
@@ -111,7 +110,6 @@
 .circle-font {
   font-size: 30px;
   font-family: "Urbanist", sans-serif;
-  /* font-family: "AwsumSans"; */
   color: white;
 }
 
@@ -119,11 +117,11 @@ input textarea {
   font-size: large;
 }
 
-@media screen and (max-width: 800px) {
-  .contact-sticker {
+@media screen and (max-width: 900px) {
+  /* .contact-sticker {
     top: 180px !important;
     right: 9px;
-  }
+  } */
 
   .contact-form {
     padding: 20px 45px 20px 30px !important;
@@ -131,5 +129,14 @@ input textarea {
 
   .send-button {
     font-size: small;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
   }
 }
+
+/* @media screen and (max-width: 600px) {
+  .contact-logo {
+    right: 30px !important;
+  }
+} */

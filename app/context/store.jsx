@@ -2,6 +2,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
+      isNavOpen: false,
+      showContactModal: false,
       isLargeScreen: false,
       isClient: false,
       windowWidth: 0,
@@ -222,6 +224,20 @@ const getState = ({ getStore, getActions, setStore }) => {
           isLargeScreen: window.innerWidth > 1000,
           windowWidth: window.innerWidth,
         });
+      },
+      toggleNavOpen: () => {
+        const store = getStore();
+        setStore({ isNavOpen: !store.isNavOpen });
+      },
+      setShowContactModal: (show) => {
+        setStore({ showContactModal: show });
+      },
+      setIsNavOpen: (isOpen) => {
+        setStore({ isNavOpen: isOpen });
+      },
+      toggleContactModal: () => {
+        const store = getStore();
+        setStore({ showContactModal: !store.showContactModal });
       },
     },
   };

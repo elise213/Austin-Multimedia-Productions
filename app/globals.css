@@ -69,15 +69,19 @@ body.navbar-open {
 .navbar-logo {
   width: 200px;
   height: 110px;
-  margin: 25px 35px 0 0;
-}
-
-.navbar-logo:hover {
-  cursor: pointer;
+  margin: 25px 55px 0 0;
 }
 
 body.no-scroll {
   overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed; /* Prevents scrolling by fixing the position */
+  width: 100%; /* Ensures the body covers the full viewport width */
+  height: 100%; /* Ensures the body covers the full viewport height */
+  touch-action: none; /* Disables touch scrolling on touch devices */
 }
 
 body,
@@ -91,7 +95,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh !important;
 }
 
 .home-body {
@@ -207,10 +210,8 @@ textarea {
 }
 
 .movie-scroll-labels {
-  margin: 0 60px 30px;
   display: flex;
   flex-direction: column;
-  /* flex-direction: row; */
   align-items: center;
   font-family: "AwsumSans", sans-serif;
   justify-content: center;
@@ -240,12 +241,13 @@ textarea {
   overflow-x: scroll !important;
   overflow-y: hidden;
   display: flex;
+  margin: 60px 0;
 }
 
 .scroll-search-results ul {
   display: flex;
   gap: 3rem;
-  margin-bottom: 80px;
+  margin: 0 0 20px 0 !important;
   list-style-type: none;
   padding: 0 0 0 30px;
 }
@@ -328,6 +330,14 @@ textarea {
   }
   .movie-scroll-labels span {
     font-size: 20px !important;
+  }
+
+  .video-about {
+    margin-top: 0 !important;
+  }
+
+  .navbar-logo {
+    margin: 25px 25px 0 0 !important;
   }
 }
 

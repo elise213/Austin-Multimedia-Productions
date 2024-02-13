@@ -1,34 +1,28 @@
 "use client";
-import React, { useState, useContext, useRef, useEffect } from "react";
+import React, { useContext, useRef } from "react";
+import { Context } from "../context/appContext"; // Adjust the import path as necessary
 import styles from "../styles/contact.css";
-// import CircleType from "circletype";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
-const Contact = ({
-  toggleContactModal,
-  showContactModal,
-  setShowContactModal,
-}) => {
-  // const circleInstance = useRef();
+const Contact = () => {
+  const { actions } = useContext(Context); // Using useContext to access actions
   const form = useRef();
   const SERVICE_ID = "service_betnze8";
   const TEMPLATE_ID = "template_99iigjc";
   const PUBLIC_KEY = "bSrh0TD_khQU1Jash";
 
+  // Function to send an email
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
-        console.log(result);
         Swal.fire({
           icon: "success",
           title: "Message Sent Successfully",
         });
       },
       (error) => {
-        console.log(error.text);
         Swal.fire({
           icon: "error",
           title: "Ooops, something went wrong",
@@ -41,13 +35,12 @@ const Contact = ({
 
   return (
     <div className="contact-page">
-      <div className="contact-call">
-        <span className="close-contact" onClick={toggleContactModal}>
-          <i className="fa-solid fa-x"></i>
-        </span>
-      </div>
-
       <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <div className="contact-call">
+          <span className="close-contact" onClick={actions.toggleContactModal}>
+            <i className="fa-solid fa-x"></i>
+          </span>
+        </div>
         <div className="contact-form-div">
           <div className="form-col">
             <input

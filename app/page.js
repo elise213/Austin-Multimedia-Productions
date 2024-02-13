@@ -1,21 +1,15 @@
 "use client";
-import React, { useContext, useEffect, useState, useRef } from "react";
-import Link from "next/link";
-import Video from "../app/components/Video";
-import styles from "./globals.css";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "./context/appContext";
+import Video from "./components/Video";
 import EmailList from "./components/EmailList";
 import FrontPageCard from "./components/FrontPageCard";
+import styles from "./globals.css";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
   const scrollRef = useRef();
-
-  const [isClient, setIsClient] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(0);
-
-  console.log(store.windowWidth);
 
   const checkOverflow = () => {
     if (!scrollRef.current) return;
@@ -26,20 +20,24 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (!isClient) return;
+    const body = document.body;
+    if (store.isNavOpen || store.showContactModal) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
+  }, [store.isNavOpen, store.showContactModal]);
 
+  useEffect(() => {
+    checkOverflow();
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      actions.updateScreenSize();
       checkOverflow();
     };
 
     window.addEventListener("resize", handleResize);
-    checkOverflow();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [isClient, store.movies, windowWidth]);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>

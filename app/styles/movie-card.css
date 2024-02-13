@@ -82,7 +82,7 @@ p {
 
 .poster-div {
   display: flex;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex-direction: column;
 }
 
