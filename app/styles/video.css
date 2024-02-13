@@ -31,19 +31,12 @@
   .video-container {
     min-height: 400px !important;
     width: 80vw !important;
-    margin: 100px 0 0 0;
+    margin: 0 !important;
   }
 }
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .video-container {
-
-  }
-} */
-
-@media screen and (max-width: 600px) {
-  .video-container {
-    min-height: 400px !important;
-    width: 90vw !important;
+    width: 85vw !important;
   }
 }

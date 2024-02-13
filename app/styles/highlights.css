@@ -96,6 +96,7 @@
 @media screen and (max-width: 500px) {
   .learn-more-2 {
     font-size: 15px !important;
+    /* right: 0 !important; */
   }
 
   .highlights {
@@ -112,7 +113,7 @@
   }
 
   .learn-more-2 {
-    right: -50px !important;
+    right: 0px !important;
     bottom: -38px !important;
     height: 40px;
     width: 110px;

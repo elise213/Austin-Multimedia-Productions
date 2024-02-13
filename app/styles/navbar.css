@@ -219,7 +219,7 @@
   .close-icon,
   .open-icon {
     transition: left 0.3s ease;
-    left: -50px !important;
+    left: -60px !important;
   }
 
   .close-icon.open {
@@ -227,7 +227,7 @@
   }
 
   .open-icon.closed {
-    left: 300px !important;
+    left: 285px !important;
   }
 }
 
