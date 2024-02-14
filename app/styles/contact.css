@@ -69,16 +69,13 @@
 }
 
 .form-col {
-  padding: 10px;
-  box-sizing: border-box;
-  flex: 1;
-  margin: 0px 10px 0px 10px;
   width: 45%;
 }
 
-.form-col-full {
+.form-col-full,
+.form-col {
   width: 100%;
-  padding: 10px;
+  padding: 4px;
   box-sizing: border-box;
   flex: 1;
   margin: 0px 10px 0px 10px;
@@ -103,8 +100,8 @@
 .contact-logo {
   height: 70px;
   position: absolute;
-  right: 30px;
-  bottom: 3px;
+  right: 10px;
+  bottom: -3px;
 }
 
 .circle-font {
@@ -118,11 +115,6 @@ input textarea {
 }
 
 @media screen and (max-width: 900px) {
-  /* .contact-sticker {
-    top: 180px !important;
-    right: 9px;
-  } */
-
   .contact-form {
     padding: 20px 45px 20px 30px !important;
   }
@@ -130,13 +122,11 @@ input textarea {
   .send-button {
     font-size: small;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 30px;
+    justify-content: flex-end;
+    padding-right: 140px;
   }
-}
 
-/* @media screen and (max-width: 600px) {
   .contact-logo {
     right: 30px !important;
   }
-} */
+}

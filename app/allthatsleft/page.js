@@ -46,10 +46,10 @@ const allthatsleft = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          For donations over $10,000, please wire to Chase Bank.
+          Donations ≥ $100,000 will earn an Executive Producer credit.
           <br />
-          **Donations ≥ $100,000 will earn an Executive Producer credit.
           <br />
+          Please use a wire transfer for all donations ≥ $10,000
           <br />
         </p>
         <div className="wire-info-2">
@@ -58,12 +58,19 @@ const allthatsleft = () => {
             <br />
             ROUTING: 021000021
           </p>
+
           <p className="wire-info">
+            Chase Bank
+            <br />
             270 Park Ave.
             <br />
             New York, NY 10017
           </p>
         </div>
+        <br />
+        <p className="wire-info">
+          We can accept credit card payments for donations up to $1,000
+        </p>
       </div>
       <div
         className="donation-form"

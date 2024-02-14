@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../context/appContext";
 import Image from "next/image";
 import styles from "./screenings.css";
-import FrontPageCard from "../components/FrontPageCard";
+// import FrontPageCard from "../components/FrontPageCard";
 
 const Screenings = () => {
   const { store, actions } = useContext(Context);
@@ -29,16 +29,16 @@ const Screenings = () => {
       </div>
       <div className="scroll-search-results">
         <ul style={{ listStyleType: "none" }}>
-          {store.movies.map((result, i) => (
+          {store.events.map((result, i) => (
             <li
               key={i}
               style={
-                i === store.movies.length - 1 ? { paddingRight: "35px" } : {}
+                i === store.events.length - 1 ? { paddingRight: "35px" } : {}
               }
             >
-              <div>
+              {/* <div>
                 <FrontPageCard id={i} result={result} />
-              </div>
+              </div> */}
             </li>
           ))}
         </ul>
