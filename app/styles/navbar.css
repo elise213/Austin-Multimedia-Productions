@@ -196,6 +196,14 @@
   left: 300px !important;
 }
 
+@media screen and (max-width: 800px) {
+  .close-icon,
+  .open-icon {
+    left: -60px !important;
+    font-size: 50px !important;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .modal-content-contact {
     width: 100%;
@@ -208,12 +216,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .close-icon,
-  .open-icon {
-    left: -60px !important;
-    font-size: 50px !important;
-  }
-
   .close-icon.open {
     left: 235px !important;
   }

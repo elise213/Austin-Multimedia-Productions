@@ -4,7 +4,7 @@
 
 iframe {
   min-height: 56vh;
-  margin: 30px 0;
+  margin-bottom: 20px;
   border: double 12px rgb(234, 124, 73);
   border-radius: 15px;
   background-color: rgb(171, 94, 75);
@@ -16,7 +16,6 @@ iframe {
 }
 
 .fiscal-about {
-  margin: 80px 0 0 0;
   text-align: justify;
   align-items: center;
   display: flex;
@@ -43,7 +42,7 @@ iframe {
   font-size: 22px;
   letter-spacing: 1.2px;
   font-weight: 400;
-  margin: 0 100px;
+  margin: 40px 100px 0 100px;
 }
 
 .download-section {

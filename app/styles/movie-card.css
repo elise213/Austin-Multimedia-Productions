@@ -200,9 +200,10 @@ body.modal-open {
   font-weight: bolder;
   text-decoration: underline;
   font-family: "Urbanist", sans-serif;
-  margin-top: 20px;
+  margin: 20px;
   display: flex;
-  justify-content: center;
+  justify-self: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -214,7 +215,7 @@ body.modal-open {
 @media screen and (max-width: 900px) {
   .review-div,
   .review {
-    margin: 20px 50px !important;
+    margin: 20px !important;
     font-size: medium !important;
   }
 

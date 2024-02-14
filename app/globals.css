@@ -548,7 +548,7 @@ body.modal-open {
 @media screen and (max-width: 900px) {
   .review-div,
   .review {
-    margin: 20px 50px !important;
+    margin: 20px !important;
     font-size: medium !important;
   }
 }
