@@ -6,7 +6,7 @@ p {
 
 .modal {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   position: fixed;
   top: 0;
   left: 50%;
@@ -14,10 +14,11 @@ p {
   z-index: 9999;
   background-color: transparent;
   max-height: 100vh;
+  height: 100%;
 }
 
 .close-mc {
-  position: absolute;
+  /* position: absolute; */
   font-size: 40px;
   justify-content: flex-end;
   display: flex;
@@ -59,9 +60,9 @@ p {
   border: double 12px rgb(250, 106, 103);
   border-radius: 15px;
   background-color: white;
-  max-height: 95vh;
+  max-height: 90vh;
   overflow-y: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .together p {

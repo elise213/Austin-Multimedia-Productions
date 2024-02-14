@@ -49,21 +49,17 @@ const MovieCard = ({ result }) => {
     <div>
       {store.modalIsOpen && (
         <div className="modal">
-          <div
-            className="close-mc"
-            onClick={(e) => {
-              e.stopPropagation();
-              actions.toggleModal();
-            }}
-            aria-label="Close"
-          >
-            <i className="fa-solid fa-xmark"></i>
-          </div>
-
-          {/* <div className="modal-content"> */}
-          {/* <div className="modal-body"> */}
-          {/* <div className="poster-div"> */}
           <div className="together">
+            <div
+              className="close-mc"
+              onClick={(e) => {
+                e.stopPropagation();
+                actions.toggleModal();
+              }}
+              aria-label="Close"
+            >
+              <i className="fa-solid fa-xmark"></i>
+            </div>
             <Image
               width={300}
               height={450}
