@@ -22,13 +22,13 @@ p {
   font-size: 40px;
   justify-content: flex-end;
   display: flex;
-  color: salmon;
+  color: rgb(198, 132, 213);
   top: 60px;
   width: 96%;
 }
 
 .close-mc:hover {
-  color: white !important;
+  color: lightgreen !important;
 }
 
 .trailer-container {
