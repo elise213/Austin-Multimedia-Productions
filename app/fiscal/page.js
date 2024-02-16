@@ -7,6 +7,9 @@ const Fiscal = () => {
   return (
     <>
       <div className={`fiscal-container`}>
+        <div className="fake-navbar">
+          <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+        </div>
         <div className="fiscal-about">
           <span className="">
             CCEA's fiscal sponsorship program allows filmmakers to solicit and
