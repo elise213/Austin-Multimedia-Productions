@@ -4,10 +4,10 @@
 
 iframe {
   min-height: 56vh;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border: double 12px rgb(234, 124, 73);
   border-radius: 15px;
-  background-color: rgb(171, 94, 75);
+  /* background-color: rgb(171, 94, 75); */
 }
 
 .fiscal-container {
@@ -42,7 +42,7 @@ iframe {
   font-size: 22px;
   letter-spacing: 1.2px;
   font-weight: 400;
-  margin: 40px 100px 0 100px;
+  margin: 0 100px;
 }
 
 .download-section {
@@ -54,7 +54,7 @@ iframe {
     padding: 20px;
   }
   .fiscal-about span {
-    line-height: 2;
+    /* line-height: 2; */
     font-size: large !important;
   }
   /* .fiscal-container {

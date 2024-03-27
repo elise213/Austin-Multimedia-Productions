@@ -58,8 +58,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   width: 100vw !important;
-  overflow-x: hidden !important;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100vh;
 }
 
 body.navbar-open {
@@ -67,9 +67,13 @@ body.navbar-open {
 }
 
 .navbar-logo {
-  width: 200px;
-  height: 110px;
-  margin: 25px 55px 0 0;
+  width: 170px;
+  height: 90px;
+  margin: 0;
+  z-index: 9999;
+  right: 10px;
+  top: 10px;
+  position: absolute;
 }
 
 body.no-scroll {
@@ -241,7 +245,7 @@ textarea {
   overflow-x: scroll !important;
   overflow-y: hidden;
   display: flex;
-  margin: 60px 0;
+  /* margin: 20px 0; */
 }
 
 .scroll-search-results ul {
@@ -373,9 +377,9 @@ textarea {
     margin-top: 0 !important;
   }
 
-  .navbar-logo {
+  /* .navbar-logo {
     margin: 25px 25px 0 0 !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 500px) {
@@ -416,7 +420,7 @@ textarea {
   position: relative;
   padding: 10px;
   width: 170px;
-  height: 200px;
+  height: 120px;
 }
 
 .highlight {
@@ -432,7 +436,7 @@ textarea {
   font-size: x-large;
   font-weight: bolder;
   text-align: center;
-  margin: 20px;
+  margin: 0;
   font-family: "AwsumSans", sans-serif;
 }
 
@@ -449,40 +453,6 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 900px) {
-  .highlight-title {
-    font-size: large !important;
-  }
-  .highlight {
-    font-size: small !important;
-  }
-  .highlights {
-    width: 160px !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .highlights {
-    width: 130px !important;
-    padding: 0 !important;
-    height: 180px !important;
-  }
-
-  .highlight-title {
-    font-size: medium !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .highlights {
-    width: 110px !important;
-  }
-
-  .highlight-title {
-    font-size: small !important;
-  }
 }
 
 .learn-more {
@@ -535,7 +505,7 @@ body.modal-open {
   object-fit: cover;
   margin: 0;
   width: 180px !important;
-  height: 360px !important;
+  height: 245px !important;
   border-radius: 3px;
 }
 
@@ -553,9 +523,40 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .highlight-title {
+    font-size: large !important;
+  }
+  .highlight {
+    font-size: small !important;
+  }
+  .highlights {
+    width: 160px !important;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .movie {
     width: 120px !important;
     height: 240px !important;
+  }
+  .highlights {
+    width: 130px !important;
+    padding: 0 !important;
+    height: 180px !important;
+  }
+
+  .highlight-title {
+    font-size: medium !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .highlights {
+    width: 110px !important;
+  }
+
+  .highlight-title {
+    font-size: small !important;
   }
 }
