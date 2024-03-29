@@ -4,10 +4,7 @@
 
 iframe {
   min-height: 56vh;
-  /* margin-bottom: 20px; */
-  border: double 12px rgb(234, 124, 73);
   border-radius: 15px;
-  /* background-color: rgb(171, 94, 75); */
 }
 
 .fiscal-container {
@@ -39,7 +36,7 @@ iframe {
   font-size: x-large;
   font-family: "Urbanist", sans-serif;
   line-height: 2;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: 400;
   margin: 0 100px;
@@ -54,12 +51,8 @@ iframe {
     padding: 20px;
   }
   .fiscal-about span {
-    /* line-height: 2; */
     font-size: large !important;
   }
-  /* .fiscal-container {
-    margin-top: 20px !important;
-  } */
 }
 
 @media screen and (max-width: 600px) {

@@ -222,30 +222,17 @@ textarea {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .movie-scroll-labels {
-    flex-direction: column;
-  }
-
-  .separator {
-    margin: 5px 0;
-  }
-  .navbar-logo {
-    width: 150px !important;
-    height: 80px;
-  }
-}
-
 .scroll-search-results {
   width: 100vw;
   overflow-x: scroll !important;
   overflow-y: hidden;
   display: flex;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .scroll-search-results ul {
+  display: flex;
   gap: 3rem;
   width: 100%;
   justify-content: center;
@@ -264,14 +251,6 @@ textarea {
 
 .scroll-search-results::-webkit-scrollbar-thumb {
   background: transparent;
-}
-
-.video-about {
-  display: flex;
-  width: 70%;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 60px;
 }
 
 .sticker {
@@ -356,10 +335,6 @@ textarea {
   .about span {
     font-size: 20px !important;
   }
-
-  .video-about {
-    width: 80% !important;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -370,13 +345,20 @@ textarea {
   .movie-scroll-labels span {
     font-size: 20px !important;
   }
-
-  .video-about {
-    margin-top: 0 !important;
-  }
-
   .navbar-logo {
     margin: 25px 25px 0 0 !important;
+  }
+
+  .movie-scroll-labels {
+    flex-direction: column;
+  }
+
+  .separator {
+    margin: 5px 0;
+  }
+  .navbar-logo {
+    width: 150px !important;
+    height: 80px;
   }
 }
 
@@ -385,12 +367,6 @@ textarea {
     font-size: 12px !important;
   }
 
-  .video-about {
-    max-height: 350px;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .learn-more-2 {
     font-size: 15px !important;
     right: 0px !important;
@@ -443,48 +419,6 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.more-button {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 900px) {
-  .highlight-title {
-    font-size: large !important;
-  }
-  .highlight {
-    font-size: small !important;
-  }
-  .highlights {
-    width: 160px !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .highlights {
-    width: 130px !important;
-    padding: 0 !important;
-    height: 180px !important;
-  }
-
-  .highlight-title {
-    font-size: medium !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .highlights {
-    width: 110px !important;
-  }
-
-  .highlight-title {
-    font-size: small !important;
-  }
 }
 
 .learn-more {
@@ -547,7 +481,25 @@ body.modal-open {
   align-items: center;
 }
 
+.more-button {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 900px) {
+  .highlight-title {
+    font-size: large !important;
+  }
+  .highlight {
+    font-size: small !important;
+  }
+  .highlights {
+    width: 160px !important;
+  }
+
   .review-div,
   .review {
     margin: 20px !important;
@@ -556,8 +508,27 @@ body.modal-open {
 }
 
 @media screen and (max-width: 500px) {
+  .highlights {
+    width: 130px !important;
+    padding: 0 !important;
+    height: 180px !important;
+  }
+
+  .highlight-title {
+    font-size: medium !important;
+  }
   .movie {
     width: 120px !important;
     height: 240px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .highlights {
+    width: 110px !important;
+  }
+
+  .highlight-title {
+    font-size: small !important;
   }
 }
