@@ -6,12 +6,11 @@
 }
 
 .about {
-  margin: 150px 0;
+  margin: 100px 0;
   text-align: justify;
   align-items: center;
   display: flex;
   flex-direction: column;
-  /* width: 50vw; */
 }
 
 .about span {

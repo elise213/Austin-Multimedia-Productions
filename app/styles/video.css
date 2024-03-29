@@ -3,11 +3,10 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
-  margin: 0;
-  width: 70vw;
+  width: 60vw;
   max-width: 800px;
+  margin-top: 25px;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");

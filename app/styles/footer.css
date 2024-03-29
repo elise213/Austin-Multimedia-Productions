@@ -4,12 +4,23 @@
   min-height: 100vh;
 }
 
+.foot {
+  font-size: 14px;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 1.2px;
+  color: gray;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   z-index: 1000;
   justify-content: center;
   align-items: flex-end;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .socials {
@@ -26,15 +37,4 @@
 
 .socials i:hover {
   color: lightgreen;
-}
-
-.foot {
-  font-size: 14px;
-  text-align: center;
-  font-family: "Urbanist", sans-serif;
-  letter-spacing: 1.2px;
-  color: gray;
-  width: 100%;
-  position: sticky;
-  bottom: 0px;
 }
