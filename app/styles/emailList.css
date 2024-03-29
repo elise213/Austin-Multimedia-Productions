@@ -16,12 +16,13 @@
 }
 
 .emailListInput {
-  width: 100%;
+  width: 100px;
   border: none;
   border-bottom: 1px solid salmon !important;
   background-color: transparent;
   font-family: "Urbanist", sans-serif;
-  min-width: 150px;
+  /* min-width: 150px; */
+  margin-right: 20px;
 }
 
 .email-list-input-div {

@@ -26,8 +26,7 @@
   color: gray;
   justify-content: space-around;
   box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: 10px;
+  margin: 15px 0;
   font-size: 25px;
   color: lavender;
 }
@@ -37,13 +36,12 @@
 }
 
 .foot {
-  color: black;
-  text-decoration: none;
-  margin-top: 10px;
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
   color: gray;
   width: 100%;
+  position: absolute;
+  bottom: -70;
 }

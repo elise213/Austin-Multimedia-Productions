@@ -67,8 +67,8 @@ body.navbar-open {
 }
 
 .navbar-logo {
-  width: 200px;
-  height: 110px;
+  width: 160px;
+  height: 80px;
   margin: 25px 55px 0 0;
 }
 
@@ -241,7 +241,8 @@ textarea {
   overflow-x: scroll !important;
   overflow-y: hidden;
   display: flex;
-  margin: 60px 0;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 .scroll-search-results ul {
@@ -416,7 +417,7 @@ textarea {
   position: relative;
   padding: 10px;
   width: 170px;
-  height: 200px;
+  height: 150px;
 }
 
 .highlight {
@@ -429,10 +430,10 @@ textarea {
 
 .highlight-title {
   letter-spacing: 1px;
-  font-size: x-large;
+  font-size: large;
   font-weight: bolder;
   text-align: center;
-  margin: 20px;
+  /* margin: 20px; */
   font-family: "AwsumSans", sans-serif;
 }
 
@@ -535,7 +536,7 @@ body.modal-open {
   object-fit: cover;
   margin: 0;
   width: 180px !important;
-  height: 360px !important;
+  height: 250px;
   border-radius: 3px;
 }
 

@@ -82,7 +82,7 @@
   color: rgb(198, 132, 213);
   transition: 0.3s ease !important;
   z-index: 9997;
-  font-size: 60px;
+  font-size: 40px;
   left: -60px;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
