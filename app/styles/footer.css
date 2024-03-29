@@ -16,7 +16,7 @@
   width: 100%;
   position: sticky;
   bottom: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .socials {
@@ -38,6 +38,9 @@
 .foot {
   font-size: 14px;
   text-align: center;
+  margin-right: 10px;
+  font-size: 11px;
+  text-align: end;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
   color: gray;

@@ -2,10 +2,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "./context/appContext";
 import Video from "./components/Video";
-// import EmailList from "./components/EmailList";
-// import FrontPageCard from "./components/FrontPageCard";
 import styles from "./globals.css";
-// import Highlights from "./components/Highlights";
 import Sticker from "./components/Sticker";
 import Image from "next/image";
 import MovieCard from "./components/MovieCard";
@@ -24,7 +21,7 @@ const Home = () => {
   };
 
   const getActiveEvent = () => {
-    const { store } = useContext(Context); // Assuming Context is your global state context
+    const { store } = useContext(Context);
     return store.events.find((event) => event.id === store.activeEventId);
   };
 
@@ -142,7 +139,7 @@ const Home = () => {
                                       className="btn learn-more-2"
                                       onClick={() =>
                                         actions.toggleModal(result.id)
-                                      } // Pass the event index or ID
+                                      }
                                     >
                                       Learn More
                                     </button>
