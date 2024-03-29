@@ -246,11 +246,12 @@ textarea {
 }
 
 .scroll-search-results ul {
-  display: flex;
   gap: 3rem;
-  margin: 0 0 20px 0 !important;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  padding: 0 0 0 30px;
 }
 
 .scroll-search-results::-webkit-scrollbar {
