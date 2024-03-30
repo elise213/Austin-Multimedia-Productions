@@ -73,10 +73,7 @@ const Home = () => {
               </clipPath>
             </defs>
           </svg>
-
-          <div className="video-about">
-            <Video />
-          </div>
+          <Video />
           <div className="screenings-div">
             <div
               ref={scrollRef}
@@ -136,17 +133,6 @@ const Home = () => {
                                       {result.bullet3}
                                     </p>
                                   )}
-                                  {/* <div className="more-button">
-                                    <button
-                                      type="button"
-                                      className="btn learn-more-2"
-                                      onClick={() =>
-                                        actions.toggleModal(result.id)
-                                      }
-                                    >
-                                      Learn More
-                                    </button>
-                                  </div> */}
                                 </>
                               )}
                             </div>

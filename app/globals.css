@@ -57,8 +57,9 @@ body {
   align-items: center;
   box-sizing: border-box;
   margin: 0;
-  width: 100vw !important;
+  width: 100vw;
   overflow-x: hidden !important;
+  overflow-y: auto !important;
   scroll-behavior: smooth;
 }
 
@@ -146,27 +147,6 @@ main {
   object-fit: contain;
 }
 
-.user-profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 10%;
-  margin-right: 25px;
-}
-
-.favorites-container,
-.page-container,
-.profile-container,
-.details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.all-rights-div {
-  margin: 0px;
-  padding: 20px;
-}
-
 .dropdown-toggle {
   border: solid 1px lime !important;
   background-color: rgb(172, 172, 172) !important;
@@ -209,19 +189,6 @@ textarea {
   min-height: 100px;
 }
 
-.movie-scroll-labels {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "AwsumSans", sans-serif;
-  justify-content: center;
-  font-size: xx-large;
-}
-
-.separator {
-  margin: 0 10px;
-}
-
 .scroll-search-results {
   width: 100vw;
   overflow-x: scroll !important;
@@ -239,6 +206,10 @@ textarea {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.scroll-search-results ul li {
+  padding: 0 !important;
 }
 
 .scroll-search-results::-webkit-scrollbar {
@@ -259,35 +230,6 @@ textarea {
   top: -60px;
   left: 9px;
   z-index: 5;
-}
-
-.sticker-and-review {
-  display: flex;
-  align-items: first baseline;
-}
-
-.learn-more-2 {
-  background-color: lightgreen;
-  color: rgb(103, 79, 103);
-  font-size: large;
-  padding: 4px;
-  border: 4px double black;
-  cursor: pointer;
-  transition: all 0.4s;
-  font-family: "Urbanist", sans-serif;
-  z-index: 4;
-  position: relative;
-  border-radius: 14px;
-  right: -36px;
-  bottom: -40px;
-  letter-spacing: 1px;
-  margin: 3px;
-}
-
-.learn-more-2:hover {
-  background-color: rgb(123, 188, 123);
-  cursor: pointer;
-  color: darkgreen;
 }
 
 .decoration {
@@ -322,13 +264,6 @@ textarea {
     /* Mask starts here */ black 100%
       /* Mask ends, fully covering the rest of the image */
   );
-}
-
-.side-logo {
-  width: 150px;
-  margin: 0 0 20px 20px;
-  position: fixed;
-  bottom: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -367,19 +302,15 @@ textarea {
     font-size: 12px !important;
   }
 
-  .learn-more-2 {
-    font-size: 15px !important;
-    right: 0px !important;
-    bottom: -38px !important;
-    height: 40px;
-    width: 110px;
-  }
-
   .sticker {
     left: -25px !important;
     top: -40px !important;
     height: 60px;
     width: 60px;
+  }
+
+  .scroll-search-results ul {
+    gap: 1rem !important;
   }
 }
 
@@ -418,31 +349,6 @@ textarea {
   font-family: "AwsumSans", sans-serif;
 }
 
-.learn-more {
-  background-color: var(--color5);
-  color: rgb(252, 80, 60);
-  font-size: medium;
-  border: 1px solid lightgreen;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 50%;
-  font-family: "Urbanist", sans-serif;
-  font-size: large;
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  z-index: 4;
-  position: absolute;
-  bottom: -40px;
-  right: 9px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.learn-more:hover {
-  background-color: lightgreen;
-  border: 2px solid var(--color5);
-}
-
 .modal-open {
   overflow: hidden;
 }
@@ -452,12 +358,6 @@ body.modal-open {
   height: 100%;
   position: fixed;
   width: 100%;
-}
-
-.front-page-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .movie {
@@ -470,20 +370,6 @@ body.modal-open {
   width: 180px !important;
   height: 250px;
   border-radius: 3px;
-}
-
-.front-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.more-button {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 @media screen and (max-width: 900px) {

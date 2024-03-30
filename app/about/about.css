@@ -20,7 +20,6 @@
   font-family: "Urbanist", sans-serif;
   line-height: 2;
   font-size: 20px;
-  letter-spacing: 1.2px;
   font-weight: 400;
   margin: 0 100px;
 }
@@ -40,6 +39,9 @@
 
   .contact-div-footer {
     padding: 20px;
+  }
+  .about span {
+    margin: 0 20px !important;
   }
 }
 

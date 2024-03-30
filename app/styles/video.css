@@ -29,25 +29,26 @@
 
 @media screen and (max-width: 1300px) {
   .video-container {
-    width: 500px !important;
+    width: 700px !important;
+    min-height: 400px !important;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .video-container {
-    width: 450px !important;
+    width: 600px !important;
   }
 }
 
-/* @media screen and (max-width: 800px) {
-  .video-container {
-    width: 85vw !important;
-  }
-} */
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .video-container {
     width: 400px !important;
     min-height: 280px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video-container {
+    width: 300px !important;
   }
 }
