@@ -508,7 +508,7 @@ body.modal-open {
   .highlights {
     width: 130px !important;
     padding: 0 !important;
-    height: 180px !important;
+    height: 120px !important;
   }
 
   .highlight-title {
@@ -516,15 +516,11 @@ body.modal-open {
   }
   .movie {
     width: 120px !important;
-    height: 240px !important;
+    height: 170px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .highlights {
-    width: 110px !important;
-  }
-
   .highlight-title {
     font-size: small !important;
   }

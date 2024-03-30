@@ -4,9 +4,10 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  width: 50vw;
+  width: 600px;
   max-width: 800px;
   margin-top: 50px;
+  overflow-y: hidden;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");
@@ -15,7 +16,6 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-size: 100%;
-  overflow-y: hidden;
 }
 
 .home-logo {
@@ -27,20 +27,27 @@
   z-index: 3;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .video-container {
-    width: 80vw !important;
+    width: 500px !important;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+  .video-container {
+    width: 450px !important;
+  }
+}
+
+/* @media screen and (max-width: 800px) {
   .video-container {
     width: 85vw !important;
   }
-}
+} */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .video-container {
-    width: 90vw !important;
+    width: 400px !important;
+    min-height: 280px !important;
   }
 }
