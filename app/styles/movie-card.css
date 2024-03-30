@@ -17,6 +17,12 @@ p {
   height: 100%;
 }
 
+.event-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .close-mc {
   font-size: 40px;
   justify-content: flex-end;
@@ -53,6 +59,7 @@ p {
   height: 100%;
   width: auto;
   max-height: 350px;
+  margin-top: 20px;
 }
 
 .together {
@@ -66,10 +73,6 @@ p {
   background-color: white;
   max-height: 90vh;
   overflow-y: auto;
-}
-
-.together p {
-  line-height: 2;
 }
 
 .iframe-2 {
@@ -183,9 +186,10 @@ body.modal-open {
 .review {
   font-size: medium;
   font-family: "Urbanist", sans-serif;
-  line-height: 2;
-  display: flex;
-  align-items: center;
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  /* display: flex;
+  align-items: center; */
   /* text-align: justify; */
 }
 
@@ -194,7 +198,7 @@ body.modal-open {
   font-weight: bolder;
   text-decoration: underline;
   font-family: "Urbanist", sans-serif;
-  margin: 20px;
+  margin-top: 10px;
   display: flex;
   justify-self: center;
   text-align: center;
@@ -209,7 +213,7 @@ body.modal-open {
 @media screen and (max-width: 900px) {
   .review-div,
   .review {
-    margin: 20px !important;
+    /* margin: 20px !important; */
     font-size: medium !important;
   }
 
@@ -223,7 +227,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .review {
     font-size: medium !important;
     margin: 20px 20px 10px 20px !important;
@@ -231,4 +235,4 @@ body.modal-open {
   .together {
     max-height: 80vh !important;
   }
-}
+} */

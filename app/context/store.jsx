@@ -44,16 +44,16 @@ const getState = ({ getStore, getActions, setStore }) => {
       events: [
         {
           id: 1,
-          title: "DIY 16mm Filmmaking",
-          year: "2023",
+          title: "DIY Analog Filmmaking",
+          year: "2024",
           image: "/img/bolex2.jpg",
           category: "new",
-          bullet: "April 1st",
-          bullet2: "Austin, TX",
+          // bullet: "April 1st",
+          // bullet2: "Austin, TX",
           description:
-            "This workshop offers hands-on experience shooting with a 16mm or 8mm Bolex Reflex camera, processing film using non-toxic household items, and editing by hand using analog equipment",
-          instruction: "",
-          instruction2:
+            "Get hands-on experience shooting with a Bolex Reflex camera, processing film using non-toxic household items, and editing by hand using analog editing equipment. The workshop will take place in Austin Texas. (If you have access to the necessary equipment you're welcome to join us online!)",
+          instruction2: "",
+          instruction:
             "E-mail info@ccearts.org to be included in the next cohort.",
           trailer: "",
         },
@@ -64,12 +64,11 @@ const getState = ({ getStore, getActions, setStore }) => {
           image: "/img/mwmc.png",
           category: "staff",
           bullet1: "Livestream",
-          bullet2: "May 1st",
           description:
-            "This workshop will help you navigate some of the most common legal issues in documentary filmmaking, including fundraising, production and distribution.  Come with questions.",
-          instruction: "",
-          instruction2:
-            "E-mail info@ccearts.org to be included in the next workshop.",
+            "This livestream lasts about 90 minutes, and offers guidance on some of the most common legal issues in documentary filmmaking, including aspects of fundraising, and distribution.  We encourage you to come with questions!",
+          instruction2: "",
+          instruction:
+            "E-mail info@ccearts.org to be notified of the next workshop.",
           trailer: "",
         },
       ],

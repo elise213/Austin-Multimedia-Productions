@@ -328,7 +328,7 @@ textarea {
   height: 110px;
 }
 
-.highlights:hover {
+.event-container:hover {
   cursor: pointer;
 }
 
@@ -381,12 +381,6 @@ body.modal-open {
   }
   .highlights {
     width: 160px !important;
-  }
-
-  .review-div,
-  .review {
-    margin: 20px !important;
-    font-size: medium !important;
   }
 }
 

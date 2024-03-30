@@ -94,58 +94,54 @@ const Home = () => {
                           : {}
                       }
                     >
-                      <div className="front-page-div">
-                        <div className="front-container">
-                          <Image
-                            width={220}
-                            height={320}
-                            quality={70}
-                            className="movie"
-                            src={result.image}
-                            alt=""
-                          />
+                      {/* <div className=""> */}
+                      <div
+                        className="event-container"
+                        onClick={() => actions.toggleModal(result.id)}
+                      >
+                        <Image
+                          width={220}
+                          height={320}
+                          quality={70}
+                          className="movie"
+                          src={result.image}
+                          alt=""
+                        />
 
-                          <div
-                            className="highlights"
-                            onClick={() => actions.toggleModal(result.id)}
-                          >
-                            <div className="sticker-and-review">
-                              <Sticker className="sticker" sticker={result} />
-                            </div>
-                            <div className="center-column">
-                              {!store.modalIsOpen && (
-                                <>
-                                  {result.title && (
-                                    <p className="highlight-title">
-                                      {result.title}
-                                    </p>
-                                  )}
-                                  {result.bullet && (
-                                    <p className="highlight">{result.bullet}</p>
-                                  )}
-                                  {result.bullet2 && (
-                                    <p className="highlight">
-                                      {result.bullet2}
-                                    </p>
-                                  )}
-                                  {result.bullet3 && (
-                                    <p className="highlight">
-                                      {result.bullet3}
-                                    </p>
-                                  )}
-                                </>
-                              )}
-                            </div>
-
-                            {store.modalIsOpen && (
+                        <div className="highlights">
+                          <div className="sticker-and-review">
+                            <Sticker className="sticker" sticker={result} />
+                          </div>
+                          <div className="center-column">
+                            {!store.modalIsOpen && (
                               <>
-                                <div className="modal-overlay"></div>
-                                <MovieCard result={getActiveEvent()} />
+                                {result.title && (
+                                  <p className="highlight-title">
+                                    {result.title}
+                                  </p>
+                                )}
+                                {result.bullet && (
+                                  <p className="highlight">{result.bullet}</p>
+                                )}
+                                {result.bullet2 && (
+                                  <p className="highlight">{result.bullet2}</p>
+                                )}
+                                {result.bullet3 && (
+                                  <p className="highlight">{result.bullet3}</p>
+                                )}
                               </>
                             )}
                           </div>
+
+                          {store.modalIsOpen && (
+                            <>
+                              <div className="modal-overlay"></div>
+                              <MovieCard result={getActiveEvent()} />
+                            </>
+                          )}
                         </div>
                       </div>
+                      {/* </div> */}
                     </li>
                   );
                 })}

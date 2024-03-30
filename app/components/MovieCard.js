@@ -71,15 +71,15 @@ const MovieCard = ({ result }) => {
               <span className="review-title" id="">
                 {result.subtitle ? result.subtitle : result.title}
               </span>
+
+              {result.description && (
+                <p className="review">{result.description}</p>
+              )}
               {result.instruction && (
                 <p className="review">{result.instruction}</p>
               )}
               {result.instruction2 && (
                 <p className="review">{result.instruction2}</p>
-              )}
-
-              {result.description && (
-                <p className="review">{result.description}</p>
               )}
               {trailerUrl ? (
                 <div className="streaming-trailer-div">
@@ -96,10 +96,6 @@ const MovieCard = ({ result }) => {
               ) : null}
             </div>
           </div>
-
-          {/* </div> */}
-          <div className="modal-footer"></div>
-          {/* </div> */}
         </div>
       )}
     </div>
