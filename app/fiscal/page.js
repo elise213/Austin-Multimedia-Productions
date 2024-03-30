@@ -16,10 +16,10 @@ const Fiscal = () => {
           <span className="">
             CCEA's fiscal sponsorship program allows filmmakers to solicit and
             receive tax-deductible donations from individuals, and gifts from
-            foundations, to make art. Please read our
+            foundations, to make art. Please read the
             <Link href="/fiscalFAQ" passHref className="FAQ-link">
               {" "}
-              Fiscal Sponsorship FAQ{" "}
+              FAQ{" "}
             </Link>
             before applying to the program.
           </span>

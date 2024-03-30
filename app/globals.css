@@ -271,7 +271,9 @@ textarea {
     font-size: 20px !important;
   }
   .navbar-logo {
-    margin: 25px 25px 0 0 !important;
+    margin: 15px 15px 0 0 !important;
+    width: 150px !important;
+    height: 80px;
   }
 
   .movie-scroll-labels {
@@ -280,10 +282,6 @@ textarea {
 
   .separator {
     margin: 5px 0;
-  }
-  .navbar-logo {
-    width: 150px !important;
-    height: 80px;
   }
 }
 
@@ -383,6 +381,9 @@ body.modal-open {
   .movie {
     width: 120px !important;
     height: 170px !important;
+  }
+  .navbar-logo {
+    margin: 10px 10px 0 0 !important;
   }
 }
 

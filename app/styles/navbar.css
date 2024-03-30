@@ -222,18 +222,17 @@
     left: 235px !important;
   }
 
+  @media screen and (max-width: 600px) {
+    .open-icon {
+      top: 5px !important;
+    }
+
+    .close-icon,
+    .open-icon {
+      font-size: 40px !important;
+    }
+  }
   .open-icon.closed {
     left: 290px !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .open-icon {
-    top: 10px !important;
-  }
-
-  .close-icon,
-  .open-icon {
-    font-size: 40px !important;
   }
 }
