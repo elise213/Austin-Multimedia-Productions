@@ -266,17 +266,7 @@ textarea {
   );
 }
 
-@media screen and (max-width: 900px) {
-  .about span {
-    font-size: 20px !important;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  .about span {
-    font-size: 14px;
-    line-height: 1.8;
-  }
   .movie-scroll-labels span {
     font-size: 20px !important;
   }
@@ -298,10 +288,6 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
-  .about span {
-    font-size: 12px !important;
-  }
-
   .sticker {
     left: -25px !important;
     top: -40px !important;

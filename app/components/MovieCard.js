@@ -2,54 +2,58 @@ import React, { useEffect, useContext } from "react";
 import { Context } from "../context/appContext";
 import Image from "next/image";
 import styles from "../styles/movie-card.css";
-import Sticker from "./Sticker";
-import Streaming from "./Streaming";
 
 const MovieCard = ({ result }) => {
+  const { store, actions } = useContext(Context);
+
   if (!result) {
     return null;
   }
-  const { store, actions } = useContext(Context);
 
-  // const result = store.activeEventId;
-  const videoId =
-    result.trailer && result.trailer !== ""
-      ? result.trailer.split("https://youtu.be/")[1]
-      : null;
+  const videoId = result.trailer
+    ? new URL(result.trailer).searchParams.get("v")
+    : null;
   const trailerUrl = videoId
-    ? `https://www.youtube.com/embed/${videoId}?&loop=1&mute=1&&playlist=${videoId}&showinfo=0&rel=0&enablejsapi=1`
+    ? `https://www.youtube.com/embed/${videoId}?&loop=1&mute=1&playlist=${videoId}&showinfo=0&rel=0&enablejsapi=1`
     : null;
 
-  // Find and hide the YouTube title element
   useEffect(() => {
-    const player = document.getElementById("movie_player");
-    if (player) {
-      const titleElement = player.querySelector(".ytp-title");
-      if (titleElement) {
-        titleElement.style.display = "none";
+    function adjustCloseButtonPosition() {
+      const modal = document.querySelector(".modal");
+      const closeMc = document.querySelector(".close-mc");
+
+      if (modal && closeMc) {
+        const modalHeight = modal.offsetHeight;
+        const topValue = `calc(50vh - ${modalHeight / 2}px)`;
+        closeMc.style.top = topValue;
       }
     }
-  }, []);
+
+    // Run once and also on window resize
+    adjustCloseButtonPosition();
+    window.addEventListener("resize", adjustCloseButtonPosition);
+
+    return () =>
+      window.removeEventListener("resize", adjustCloseButtonPosition);
+  }, [store.modalIsOpen]); // Dependency array ensures this effect runs when modalIsOpen state changes
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    function handleClickOutside(event) {
       const modal = document.querySelector(".modal");
       if (modal && !modal.contains(event.target) && store.modalIsOpen) {
         actions.toggleModal();
       }
-    };
+    }
 
     document.addEventListener("click", handleClickOutside);
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [store.modalIsOpen]);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [store.modalIsOpen, actions]); // Adding `actions` to dependencies might not be necessary if actions do not change
 
   return (
     <div>
       {store.modalIsOpen && (
         <div className="modal">
-          <div className="together">
+          <div className="together holographic">
             <div
               className="close-mc"
               onClick={(e) => {

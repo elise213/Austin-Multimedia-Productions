@@ -38,9 +38,11 @@ const Navbar = () => {
     <>
       <nav className={`new-navbar ${store.isNavOpen ? "open" : ""}`}>
         <div className="menu-icon" onClick={toggleNav}>
-          <div className={`open-icon ${!store.isNavOpen ? "closed" : ""}`}>
-            <i className="fas fa-bars"></i>
-          </div>
+          {!store.modalIsOpen && (
+            <div className={`open-icon ${!store.isNavOpen ? "closed" : ""}`}>
+              <i className="fas fa-bars"></i>
+            </div>
+          )}
           <div className={`close-icon ${store.isNavOpen ? "open" : ""}`}>
             <span className="navbar-toggler">
               <i className="fas fa-times"></i>

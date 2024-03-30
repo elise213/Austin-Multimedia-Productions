@@ -65,7 +65,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           category: "staff",
           bullet1: "Livestream",
           description:
-            "This livestream lasts about 90 minutes, and offers guidance on some of the most common legal issues in documentary filmmaking, including aspects of fundraising, and distribution.  We encourage you to come with questions!",
+            "This 90 minute livestream offers guidance on some of the most common legal issues in documentary filmmaking, including aspects of fundraising and distribution.  We encourage you to come with questions!",
           instruction2: "",
           instruction:
             "E-mail info@ccearts.org to be notified of the next workshop.",
@@ -111,7 +111,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       toggleModal: (id = null) => {
         const store = getStore();
         if (id === null) {
-          setStore({ modalIsOpen: false, activeEventId: null }); // Also reset activeEventId when closing the modal
+          setStore({ modalIsOpen: false, activeEventId: null });
         } else {
           setStore({ modalIsOpen: true, activeEventId: id });
         }
