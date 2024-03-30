@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  width: 54vw;
+  width: 50vw;
   max-width: 800px;
-  margin-top: 40px;
+  margin-top: 50px;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");

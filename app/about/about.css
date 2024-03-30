@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 900px) {
   .about {
-    width: 80vw !important;
+    margin: 100px 50px 0;
   }
   .about span {
     line-height: 2;

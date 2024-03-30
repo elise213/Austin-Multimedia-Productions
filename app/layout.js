@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import injectContext from "./context/appContext";
 const inter = Inter({ subsets: ["latin"] });
 import "font-awesome/css/font-awesome.min.css";
@@ -18,7 +18,7 @@ function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -8,7 +8,9 @@ const Fiscal = () => {
     <>
       <div className={`fiscal-container`}>
         <div className="fake-navbar">
-          <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+          <Link href="/" passHref>
+            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+          </Link>
         </div>
         <div className="fiscal-about">
           <span className="">

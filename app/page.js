@@ -6,6 +6,7 @@ import styles from "./globals.css";
 import Sticker from "./components/Sticker";
 import Image from "next/image";
 import MovieCard from "./components/MovieCard";
+import Link from "next/link";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -59,7 +60,9 @@ const Home = () => {
   return (
     <>
       <div className="fake-navbar">
-        <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+        <Link href="/" passHref>
+          <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+        </Link>
       </div>
       <main className={styles.main}>
         <div className="home-body content">
@@ -105,7 +108,10 @@ const Home = () => {
                             alt=""
                           />
 
-                          <div className="highlights">
+                          <div
+                            className="highlights"
+                            onClick={() => actions.toggleModal(result.id)}
+                          >
                             <div className="sticker-and-review">
                               <Sticker className="sticker" sticker={result} />
                             </div>
@@ -130,10 +136,7 @@ const Home = () => {
                                       {result.bullet3}
                                     </p>
                                   )}
-
-                                  <div className="d-flex"></div>
-
-                                  <div className="more-button">
+                                  {/* <div className="more-button">
                                     <button
                                       type="button"
                                       className="btn learn-more-2"
@@ -143,7 +146,7 @@ const Home = () => {
                                     >
                                       Learn More
                                     </button>
-                                  </div>
+                                  </div> */}
                                 </>
                               )}
                             </div>
