@@ -20,10 +20,11 @@ p {
 .close-mc {
   font-size: 40px;
   justify-content: flex-end;
-  display: flex;
-  color: rgb(198, 132, 213);
+  color: #c684d5;
   top: 60px;
-  width: 96%;
+  position: absolute;
+  top: 10px;
+  right: -30px;
 }
 
 .close-mc:hover {
@@ -40,7 +41,11 @@ p {
 }
 
 .review-container {
-  margin: 10px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .movie-modal {
@@ -181,7 +186,7 @@ body.modal-open {
   line-height: 2;
   display: flex;
   align-items: center;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .review-title {
