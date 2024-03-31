@@ -5,6 +5,7 @@
 iframe {
   min-height: calc(100vh - 250px);
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 .fiscal-container {

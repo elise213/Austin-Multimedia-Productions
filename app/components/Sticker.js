@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/sticker.css";
+// import styles from "../styles/sticker.css";
 
 const Sticker = (props) => {
   let option = null;
@@ -22,11 +22,11 @@ const Sticker = (props) => {
   }
 
   return (
-    <div className="sticker-container">
+    <>
       {option && (
         <Image className="sticker" src={option} height={80} width={80} alt="" />
       )}
-    </div>
+    </>
   );
 };
 

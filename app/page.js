@@ -94,7 +94,6 @@ const Home = () => {
                           : {}
                       }
                     >
-                      {/* <div className=""> */}
                       <div
                         className="event-container"
                         onClick={() => actions.toggleModal(result.id)}
@@ -112,26 +111,26 @@ const Home = () => {
                           <div className="sticker-and-review">
                             <Sticker className="sticker" sticker={result} />
                           </div>
-                          <div className="center-column">
-                            {!store.modalIsOpen && (
-                              <>
-                                {result.title && (
-                                  <p className="highlight-title">
-                                    {result.title}
-                                  </p>
-                                )}
-                                {result.bullet && (
-                                  <p className="highlight">{result.bullet}</p>
-                                )}
-                                {result.bullet2 && (
-                                  <p className="highlight">{result.bullet2}</p>
-                                )}
-                                {result.bullet3 && (
-                                  <p className="highlight">{result.bullet3}</p>
-                                )}
-                              </>
-                            )}
-                          </div>
+                          {/* <div className="center-column"> */}
+                          {!store.modalIsOpen && (
+                            <>
+                              {result.title && (
+                                <p className="highlight-title">
+                                  {result.title}
+                                </p>
+                              )}
+                              {result.bullet && (
+                                <p className="highlight">{result.bullet}</p>
+                              )}
+                              {result.bullet2 && (
+                                <p className="highlight">{result.bullet2}</p>
+                              )}
+                              {result.bullet3 && (
+                                <p className="highlight">{result.bullet3}</p>
+                              )}
+                            </>
+                          )}
+                          {/* </div> */}
 
                           {store.modalIsOpen && (
                             <>
@@ -141,7 +140,6 @@ const Home = () => {
                           )}
                         </div>
                       </div>
-                      {/* </div> */}
                     </li>
                   );
                 })}
