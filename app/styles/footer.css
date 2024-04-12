@@ -1,13 +1,13 @@
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.foot {
+.footer-text {
   font-size: 14px;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
   color: gray;
 }
@@ -17,7 +17,7 @@
   z-index: 1000;
   justify-content: center;
   width: 100%;
-  position: absolute;
+  margin-top: auto; 
   bottom: 0;
 }
 
@@ -33,6 +33,6 @@
   color: lavender;
 }
 
-.socials i:hover {
+.fa-brands i:hover {
   color: lightgreen;
 }

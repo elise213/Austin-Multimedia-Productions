@@ -3,21 +3,23 @@
 }
 
 iframe {
-  min-height: calc(100vh - 250px);
+  min-height: calc(100vh - 280px);
   border-radius: 15px;
   margin-top: 20px;
 }
 
 .fiscal-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .fiscal-about {
-  /* text-align: justify; */
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100vw;
+  max-width: 950px;
   margin-top: 90px;
 }
 

@@ -1,6 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "./context/appContext";
+
 import Video from "./components/Video";
 import styles from "./globals.css";
 import Sticker from "./components/Sticker";
@@ -98,6 +99,8 @@ const Home = () => {
                         className="event-container"
                         onClick={() => actions.toggleModal(result.id)}
                       >
+                        <div className="movie-container">
+
                         <Image
                           width={220}
                           height={320}
@@ -105,7 +108,8 @@ const Home = () => {
                           className="movie"
                           src={result.image}
                           alt=""
-                        />
+                          />
+                          </div>
 
                         <div className="highlights">
                           <div className="sticker-and-review">

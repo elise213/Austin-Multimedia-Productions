@@ -4,10 +4,10 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  width: 600px;
-  max-width: 800px;
-  margin-top: 50px;
-  overflow-y: hidden;
+  width: 60vw;
+  max-width: 600px;
+  margin-top: 40px;
+  align-self: center;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");
@@ -27,23 +27,10 @@
   z-index: 3;
 }
 
-@media screen and (max-width: 1300px) {
-  .video-container {
-    width: 700px !important;
-    min-height: 400px !important;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .video-container {
-    width: 600px !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .video-container {
-    width: 400px !important;
-    min-height: 270px !important;
+    width: 80vw !important;
   }
 }
 
