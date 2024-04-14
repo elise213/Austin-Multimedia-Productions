@@ -2,7 +2,7 @@
 
 .fake-navbar {
   height: 90px;
-  width: 102%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   position: absolute;
@@ -91,7 +91,7 @@
 .close-icon,
 .open-icon {
   position: absolute;
-  color: lavender;
+  color: rgb(220, 160, 247);
   transition: 0.3s ease !important;
   z-index: 9997;
   left: -60px;
