@@ -6,7 +6,7 @@
   box-sizing: border-box;
   width: 60vw;
   max-width: 600px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   align-self: center;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");

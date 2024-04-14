@@ -8,6 +8,8 @@ iframe {
   margin-top: 20px;
 }
 
+
+
 .fiscal-container {
   width: 100%;
   display: flex;
@@ -20,7 +22,7 @@ iframe {
   flex-direction: column;
   width: 100vw;
   max-width: 950px;
-  margin-top: 90px;
+  /* margin-top: 90px; */
 }
 
 .FAQ-link {

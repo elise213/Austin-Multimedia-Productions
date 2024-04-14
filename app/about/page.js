@@ -5,12 +5,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <>
       <div className="fake-navbar">
         <Link href="/" passHref>
           <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
         </Link>
       </div>
+    <div className="about-container">
 
       <div className="about">
         <span className="">
@@ -20,6 +21,7 @@ const About = () => {
         </span>
       </div>
     </div>
+    </>
   );
 };
 

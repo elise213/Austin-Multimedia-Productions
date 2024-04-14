@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  position: absolute;
+  /* position: absolute; */
   background: linear-gradient(
     to bottom,
     rgb(255, 150, 50) 0%,
