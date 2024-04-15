@@ -67,7 +67,7 @@ const Contact = () => {
               id="contactTextArea"
               name="message"
               className="form-control"
-              placeholder="Messagge"
+              placeholder="Message"
             ></textarea>
           </div>
         </div>
