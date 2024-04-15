@@ -66,13 +66,13 @@ const allthatsleft = () => {
           </p>
         </div>
       </div>
-        <div className="warning" style={{maxWidth: "680px"}}>
+        <div className="warning">
 
     <span className="wire-info" style={{color: "red"}}>
     **Please be aware {" "}
     </span>
         <span className="wire-info">
-           that an additional donation to the payment platform Zeffy will automatically populate at 10%. 
+           that an additional donation to the payment platform Zeffy will automatically populate at ~10%. 
            <br/>
           To avoid making this contribution, go to the "Summary" section, choose 'Other' from the dropdown menu, and enter $0.  
           </span>
