@@ -74,13 +74,11 @@
 
 .open-icon {
   top: 10px;
-  /* color: rgb(198, 132, 213); */
-  font-size: 50px;
+  font-size: 40px;
 }
 .close-icon {
   font-size: 40px;
   top: 0px;
-  /* color: rgb(198, 132, 213); */
   font-size: 30px;
 }
 
@@ -202,7 +200,7 @@
 @media screen and (max-width: 800px) {
   .close-icon,
   .open-icon {
-    left: -60px !important;
+    /* left: -60px !important; */
     font-size: 50px !important;
   }
 }

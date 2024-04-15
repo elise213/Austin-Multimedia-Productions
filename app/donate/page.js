@@ -14,7 +14,7 @@ const donate = () => {
         height={600}
         width={600}
         quality={100}
-        className="fiscalFilms-image"
+        className="donate-image"
         src={store.fiscalFilms[0].image}
         alt=""
       ></Image>

@@ -10,17 +10,18 @@ const allthatsleft = () => {
   return (
     <div className="landing-container">
       <div className="landing-title">{store.fiscalFilms[0].title}</div>
-      <br />
-      <div>{store.fiscalFilms[0].logline}</div>
-      <br />
+      {/* <br /> */}
+
+      {/* <br /> */}
       <Image
-        height={600}
-        width={600}
+        height={200}
+        width={1000}
         quality={100}
         className="fiscalFilms-image"
         src={store.fiscalFilms[0].image}
         alt=""
       ></Image>
+      <div className="project-text">{store.fiscalFilms[0].logline}</div>
       <div className="first-section">
         <div className="basic-info">
           <span className="heading">Type: </span>
@@ -40,17 +41,17 @@ const allthatsleft = () => {
         </div>
         <div>
           <a href="#landing-title-2" className="read-more">
-            <span>Read more about the movie and the team</span>
+            <span>Read more about this project</span>
           </a>
         </div>
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          Donations ≥ $100,000 will earn an Executive Producer credit.
-          <br />
-          <br />
+          We can accept credit card payments for donations up to $1,000.
+          and ACH up to $10,000.
+          <br/>
           Please use a wire transfer for all donations ≥ $10,000
-          <br />
+
         </p>
         <div className="wire-info-2">
           <p className="wire-info">
@@ -67,10 +68,12 @@ const allthatsleft = () => {
             New York, NY 10017
           </p>
         </div>
-        <br />
         <p className="wire-info">
-          We can accept credit card payments for donations up to $1,000
-        </p>
+          **A donation to Zeffy will automatically populate at 10%. To avoid making an unnecessary contribution to the platform, go to the "Summary" section, choose 'Other' from the dropdown menu, and then enter $0.  
+          <br />
+          <br />
+          Donations ≥ $100,000 will earn an Executive Producer credit!
+          </p>
       </div>
       <div
         className="donation-form"
@@ -94,26 +97,24 @@ const allthatsleft = () => {
           allowtransparency="true"
         ></iframe>
       </div>
-
-      <br />
       <div id="landing-title-2" className="landing-title-2">
         {store.fiscalFilms[0].title}
       </div>
       <br />
       <span className="heading">Synopsis:</span>
-      <span>{store.fiscalFilms[0].synopsis}</span>
+      <span className="project-text">{store.fiscalFilms[0].synopsis}</span>
       <br />
       <br />
       <span className="heading">Director:</span>
-      <span>{store.fiscalFilms[0].directorBio}</span>
+      <span className="project-text">{store.fiscalFilms[0].directorBio}</span>
       <br />
       <br />
       <span className="heading">Producer:</span>
-      <span>{store.fiscalFilms[0].producerBio}</span>
+      <span className="project-text">{store.fiscalFilms[0].producerBio}</span>
       <br />
       <br />
       <span className="heading">Executive Producer:</span>
-      <span>{store.fiscalFilms[0].execProducerBio}</span>
+      <span className="project-text">{store.fiscalFilms[0].execProducerBio}</span>
       <br />
       <div className="donate-first">
         <a href="#donation-form" className="donate-to">
