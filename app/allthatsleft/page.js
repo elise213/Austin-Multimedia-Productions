@@ -45,11 +45,11 @@ const allthatsleft = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          We can accept credit card payments for donations up to $1,000.
-          and ACH up to $10,000.
+          We can accept credit card payments for donations up to $1,000 and ACH up to $10,000.
           <br/>
-          Please use a wire transfer for all donations ≥ $10,000
-
+          Please use a wire transfer for all donations ≥ $10,000.
+          <br />
+          Donations ≥ $100,000 will earn an Executive Producer credit.
         </p>
         <div className="wire-info-2">
           <p className="wire-info">
@@ -57,7 +57,6 @@ const allthatsleft = () => {
             <br />
             ROUTING: 021000021
           </p>
-
           <p className="wire-info">
             Chase Bank
             <br />
@@ -66,13 +65,18 @@ const allthatsleft = () => {
             New York, NY 10017
           </p>
         </div>
-        <p className="wire-info">
-          **A donation to Zeffy will automatically populate at 10%. To avoid making an unnecessary contribution to the platform, go to the "Summary" section, choose 'Other' from the dropdown menu, and then enter $0.  
-          <br />
-          <br />
-          Donations ≥ $100,000 will earn an Executive Producer credit!
-          </p>
       </div>
+        <div className="warning" style={{maxWidth: "680px"}}>
+
+    <span className="wire-info" style={{color: "red"}}>
+    **Please be aware {" "}
+    </span>
+        <span className="wire-info">
+           that an additional donation to the payment platform Zeffy will automatically populate at 10%. 
+           <br/>
+          To avoid making this contribution, go to the "Summary" section, choose 'Other' from the dropdown menu, and enter $0.  
+          </span>
+        </div>
       <div
         className="donation-form"
         id="donation-form"

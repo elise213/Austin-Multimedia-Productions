@@ -9,7 +9,7 @@
 
 
 .project-text {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: .8px;
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
   
@@ -30,6 +30,10 @@
   overflow-x: hidden !important;
   width: 100%;
   height: 1050px !important;
+  /* margin-top: 30px; */
+}
+
+.warning {
   margin-top: 30px;
 }
 
@@ -51,11 +55,12 @@
 
 .wire-info {
   font-size: 12px;
-  margin: 0 25px 0 0;
-  display: flex;
+  max-width: 700px;
+  /* margin: 0 25px 0 0; */
+  /* display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column; */
   text-align: center;
 }
 
@@ -107,8 +112,9 @@ p {
 }
 
 .donate-to:hover {
-  text-shadow: 8px 8px 18px green !important;
+  /* text-shadow: 8px 8px 18px green !important; */
   cursor: pointer;
+  color: rgb(161, 103, 179);
 }
 
 .title-2 {
