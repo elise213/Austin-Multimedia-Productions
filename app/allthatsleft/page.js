@@ -11,8 +11,9 @@ const allthatsleft = () => {
     <div className="landing-container">
       <div className="landing-title">{store.fiscalFilms[0].title}</div>
       <Image
-        height={200}
-        width={1000}
+        height={100}
+        width={500}
+        layout="responsive"
         quality={100}
         className="fiscalFilms-image"
         src={store.fiscalFilms[0].image}

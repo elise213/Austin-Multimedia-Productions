@@ -1,8 +1,12 @@
+
+
 .fiscalFilms-image {
   width: 100%;
-  aspect-ratio: 5 / 1 !important;  
+  height: auto;
+  aspect-ratio: 5 / 1 !important;
   margin: 10px 0;
 }
+
 
 .project-text {
   font-size: 13px;
