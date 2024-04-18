@@ -310,19 +310,19 @@ textarea {
 
 @media screen and (max-width: 500px) {
   .sticker {
-    left: -25px !important;
-    top: -40px !important;
+    left: -20px !important;
+    top: -20px !important;
     height: 60px;
     width: 60px;
   }
 
   .scroll-search-results ul {
-    gap: 1rem !important;
+    gap: 1.5rem !important;
   }
 }
 
 .highlights {
-  width: 150px;
+  width: 140px;
   height: 85px;
   display: flex;
   flex-direction: column;
@@ -400,16 +400,16 @@ body.modal-open {
 }
 
 .movie-container {
-  height: 240px; /* Adjust based on your needs, smaller than the image height */
-  width: 160px; /* Adjust to maintain aspect ratio or as required */
-  overflow: hidden; /* Ensures the image does not spill outside the container */
+  height: 240px;
+  width: 160px;
+  overflow: hidden;
 }
 
 .movie {
-  height: 240px; /* Original or desired full height of the image */
-  width: 160px; /* Maintain the original width or adjust as needed */
-  object-fit: none; /* Prevents the image from scaling */
-  object-position: top; /* Aligns the image to the top of the container */
+  height: 240px;
+  width: 160px;
+  /* object-fit: none; */
+  object-position: top;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 10px;
   z-index: 4;
@@ -421,25 +421,23 @@ body.modal-open {
   .highlight {
     font-size: small !important;
   }
+
   .highlights {
-    width: 160px !important;
+    width: 140px !important;
+    padding: 0 !important;
+    height: 120px !important;
+  }
+  .highlight-title {
+    font-size: medium !important;
+  }
+  .movie-container,
+  .movie {
+    width: 140px !important;
+    height: 200px !important;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .highlights {
-    width: 120px !important;
-    padding: 0 !important;
-    height: 120px !important;
-  }
-
-  .highlight-title {
-    font-size: medium !important;
-  }
-  .movie {
-    width: 120px !important;
-    height: 170px !important;
-  }
   .navbar-logo {
     margin: 10px 10px 0 0 !important;
   }

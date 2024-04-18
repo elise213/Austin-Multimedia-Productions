@@ -14,9 +14,9 @@ const Video = () => {
   return (
     <div
       className="video-container"
-      style={{
-        minHeight: "350px",
-      }}
+      // style={{
+      //   minHeight: "250px",
+      // }}
     >
       <div className="mask-reference"></div>
       <video autoPlay loop muted playsInline className="video" ref={videoRef}>
