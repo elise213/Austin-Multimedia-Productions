@@ -12,12 +12,7 @@ const Video = () => {
   }, [videoRef]);
 
   return (
-    <div
-      className="video-container"
-      // style={{
-      //   minHeight: "250px",
-      // }}
-    >
+    <div className="video-container">
       <div className="mask-reference"></div>
       <video autoPlay loop muted playsInline className="video" ref={videoRef}>
         <source src="/img/video1.mp4" type="video/mp4" />

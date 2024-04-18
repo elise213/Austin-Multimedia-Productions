@@ -84,6 +84,17 @@ const Home = () => {
               }}
             >
               <ul>
+                <li>
+                  <Link href="/retreat" passHref>
+                    <Image
+                      height={1000}
+                      width={2000}
+                      className="retreat-li"
+                      src={"/img/CCEARETREAT.png"}
+                      alt=""
+                    ></Image>
+                  </Link>
+                </li>
                 {store.events.map((result, i) => {
                   console.log(result);
                   return (
@@ -100,22 +111,20 @@ const Home = () => {
                         onClick={() => actions.toggleModal(result.id)}
                       >
                         <div className="movie-container">
-
-                        <Image
-                          width={220}
-                          height={320}
-                          quality={70}
-                          className="movie"
-                          src={result.image}
-                          alt=""
+                          <Image
+                            width={220}
+                            height={320}
+                            quality={70}
+                            className="movie"
+                            src={result.image}
+                            alt=""
                           />
-                          </div>
+                        </div>
 
                         <div className="highlights">
                           <div className="sticker-and-review">
                             <Sticker className="sticker" sticker={result} />
                           </div>
-                          {/* <div className="center-column"> */}
                           {!store.modalIsOpen && (
                             <>
                               {result.title && (
@@ -134,8 +143,6 @@ const Home = () => {
                               )}
                             </>
                           )}
-                          {/* </div> */}
-
                           {store.modalIsOpen && (
                             <>
                               <div className="modal-overlay"></div>

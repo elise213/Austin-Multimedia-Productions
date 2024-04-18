@@ -29,16 +29,16 @@ const Retreat = () => {
             <br />
             We are hosting a retreat for filmmakers who have a current project
             that would benefit from a week of dedicated time. If you want to
-            spend a week writing, outlining, researching, storyboarding, or
-            editing, this might be for you. For $350, you will get a private
-            room with a private bathroom and at least one hot meal every day.
-            This includes transportation to/from the airport and a tip for the
-            staff.
+            spend a week writing, outlining, researching, storyboarding,
+            costume-designing or editing, this might be for you. For $350, you
+            will get a private room with a private bathroom and at least one hot
+            meal every day. This includes transportation to/from the airport and
+            a tip for the staff.
             <br />
             <br />
             This retreat is an experiment in itself. There will be nightly
             feedback sessions with the group, but no formal workshops or
-            mentorships, or anything like that. The Only objective is to make
+            mentorships, or anything like that. The only objective is to make
             progress on your film project alongside others doing the same.
             <br />
             <br />

@@ -223,7 +223,7 @@ textarea {
 
 .scroll-search-results ul {
   display: flex;
-  gap: 3rem;
+  gap: 1.4rem;
   width: 100%;
   justify-content: center;
   margin: 0;
@@ -250,9 +250,11 @@ textarea {
 .sticker {
   float: left;
   position: absolute;
-  top: -60px;
-  left: -30px;
+  top: -40px;
+  left: -10px;
   z-index: 5;
+  height: 60px;
+  width: 60px;
 }
 
 .decoration {
@@ -312,13 +314,17 @@ textarea {
   .sticker {
     left: -20px !important;
     top: -20px !important;
-    height: 60px;
-    width: 60px;
   }
 
-  .scroll-search-results ul {
-    gap: 1.5rem !important;
-  }
+  /* .scroll-search-results ul {
+    gap: 1rem !important;
+  } */
+}
+
+.retreat-li {
+  height: 325px;
+  width: 200px;
+  overflow: hidden;
 }
 
 .highlights {
@@ -408,7 +414,6 @@ body.modal-open {
 .movie {
   height: 240px;
   width: 160px;
-  /* object-fit: none; */
   object-position: top;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 10px;

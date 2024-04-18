@@ -13,12 +13,11 @@
 }
 
 .retreat-image {
-  /* margin-top: 70px; */
   width: 100%;
   max-width: 500px;
   height: auto;
   box-sizing: border-box;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Horizontal offset, Vertical offset, Blur radius, Color */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .retreat-sub1 {
@@ -35,10 +34,10 @@
 }
 
 .retreat-iframe {
-  min-height: 2300px !important;
-  margin: auto;
+  /* margin-top: 30px; */
+  min-height: 2450px !important;
+  margin: 30px auto 0;
   box-sizing: border-box;
-  /* margin: 20px; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -46,5 +45,17 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .retreat-iframe {
+    min-height: 2600px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .retreat-iframe {
+    min-height: 3000px !important;
   }
 }
