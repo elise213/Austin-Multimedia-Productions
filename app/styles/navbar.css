@@ -9,7 +9,7 @@
   background: linear-gradient(
     to bottom,
     rgb(255, 150, 50) 0%,
-    rgb(255, 255, 255) 90%
+    rgb(255, 255, 255) 100%
   );
 }
 
@@ -84,6 +84,8 @@
 
 .close-icon.open {
   left: 240px;
+
+  transition: left 0.3s ease;
 }
 
 .close-icon,
@@ -94,11 +96,6 @@
   z-index: 9997;
   left: -60px;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-}
-
-.close-icon.open {
-  left: 200px;
-  transition: left 0.3s ease;
 }
 
 .open-icon.closed {
@@ -165,7 +162,6 @@
   width: 100vw;
 }
 
-
 .open-icon.closed {
   left: 295px;
 }
@@ -192,10 +188,8 @@
 }
 
 .close-icon.open {
-  left: 250px !important;
+  left: 230px !important;
 }
-
-
 
 @media screen and (max-width: 800px) {
   .close-icon,
@@ -218,7 +212,7 @@
 
 @media screen and (max-width: 500px) {
   .close-icon.open {
-    left: 250px !important;
+    left: 240px !important;
   }
 
   @media screen and (max-width: 600px) {
