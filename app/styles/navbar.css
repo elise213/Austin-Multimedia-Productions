@@ -188,14 +188,13 @@
 }
 
 .close-icon.open {
-  left: 230px !important;
+  left: 245px !important;
 }
 
 @media screen and (max-width: 800px) {
-  .close-icon,
-  .open-icon {
+  .close-icon {
     /* left: -60px !important; */
-    font-size: 50px !important;
+    font-size: 30px !important;
   }
 }
 
