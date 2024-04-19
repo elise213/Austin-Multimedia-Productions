@@ -26,10 +26,10 @@ const Retreat = () => {
             Aventuras Akumal, Quintana Roo, México.
             <br />
             <br />
-            If you need to spend a full week writing, editing, or something else
-            involving making independent movies, come work with us! For $350,
-            you will get a private room with a private bathroom and dinner every
-            night, in a big house on a beautiful beach. This fee includes
+            If you need to spend a week writing, editing, or something else
+            involving making independent movies, come join us in Mexico! For
+            $350, you will get a private room with a private bathroom and dinner
+            every night, in a big house on a beautiful beach. This fee includes
             transportation to/from the airport and a tip for the local staff.
             <br />
             <br />
@@ -40,8 +40,8 @@ const Retreat = () => {
             and snorkels to use, and a heated pool.
             <br />
             <br />
-            There are only four rooms available. Some rooms have two beds, so
-            let us know if you want to share a room with a friend. Email
+            There are only four more rooms available, some with two beds, so let
+            us know if you want to share a room with a friend. Email
             info@ccearts.org if you have questions.
           </p>
         </div>
