@@ -1,28 +1,40 @@
-
-
 .fiscalFilms-image {
   width: 100%;
   height: auto;
-  aspect-ratio: 5 / 1 !important;
+  aspect-ratio: 3 / 1 !important;
   margin: 10px 0;
+  clip-path: inset(4px 0 0 0); /* top right bottom left */
 }
 
+.image-container {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  aspect-ratio: 3 / 1.5 !important;
+  position: relative;
+}
+
+.fiscalFilms-image-ukraine {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .project-text {
   font-size: 15px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
-  
 }
 
 .first-section {
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
   font-size: 13px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .donation-form {
@@ -51,7 +63,6 @@
   justify-content: space-between;
 }
 
-
 .wire-info {
   font-size: 12px;
   max-width: 700px;
@@ -64,10 +75,10 @@
   margin: 15px 0;
 }
 
-
 .landing-container {
   width: 85%;
-  margin-top: 100px;
+  max-width: 750px;
+  margin-top: 80px;
   letter-spacing: 1px;
   line-height: 25px;
   display: flex;
@@ -100,7 +111,6 @@
   color: rgb(177, 135, 177);
 }
 
-
 p {
   margin: 0;
 }
@@ -116,7 +126,6 @@ p {
   margin-left: 5px;
 }
 
-
 .read-more {
   text-decoration: none !important;
   color: orangered;
@@ -129,29 +138,24 @@ p {
   cursor: pointer;
 }
 
-/* @media screen and (max-width: 900px) {
-  .donation-form {
-     height: 1100px !important;
-   }
- } */
-
-
 @media screen and (max-width: 800px) {
   .landing-title,
   .landing-title-2 {
     font-size: 25px;
   }
-  /* .donation-form {
-    height: 1100px !important;
-  } */
+  .landing-container {
+    width: 90%;
+  }
 }
-
 @media screen and (max-width: 700px) {
   .donation-form {
-     height: 1100px !important;
-   }
- }
- 
+    height: 1100px !important;
+  }
+
+  .project-text {
+    font-size: 13px;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .first-section {
@@ -168,7 +172,7 @@ p {
 }
 
 @media screen and (max-width: 500px) {
- .donation-form {
+  .donation-form {
     height: 1150px !important;
   }
 }

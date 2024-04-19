@@ -12,7 +12,7 @@ const allthatsleft = () => {
       <div className="landing-title">{store.fiscalFilms[0].title}</div>
       <Image
         height={100}
-        width={500}
+        width={100}
         layout="responsive"
         quality={100}
         className="fiscalFilms-image"
@@ -45,8 +45,9 @@ const allthatsleft = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          We can accept credit card payments for donations up to $1,000 and ACH up to $10,000.
-          <br/>
+          We can accept credit card payments for donations up to $1,000 and ACH
+          up to $10,000.
+          <br />
           Please use a wire transfer for all donations ≥ $10,000.
           <br />
           Donations ≥ $100,000 will earn an Executive Producer credit.
@@ -66,17 +67,18 @@ const allthatsleft = () => {
           </p>
         </div>
       </div>
-        <div className="warning">
-
-    <span className="wire-info" style={{color: "red"}}>
-    **Please be aware {" "}
-    </span>
+      <div className="warning">
+        <span className="wire-info" style={{ color: "red" }}>
+          **Please be aware,{" "}
+        </span>
         <span className="wire-info">
-           that an additional donation to the payment platform Zeffy will automatically populate at ~10%. 
-           <br/>
-          To avoid making this contribution, go to the "Summary" section, choose 'Other' from the dropdown menu, and enter $0.  
-          </span>
-        </div>
+          an additional donation to the payment platform Zeffy will
+          automatically populate at ~10%.
+          <br />
+          To avoid making this contribution, go to the 'Summary' section, choose
+          'Other' from the dropdown, and enter $0.
+        </span>
+      </div>
       <div
         className="donation-form"
         id="donation-form"
@@ -116,7 +118,9 @@ const allthatsleft = () => {
       <br />
       <br />
       <span className="heading">Executive Producer:</span>
-      <span className="project-text">{store.fiscalFilms[0].execProducerBio}</span>
+      <span className="project-text">
+        {store.fiscalFilms[0].execProducerBio}
+      </span>
       <br />
       <div className="donate-first">
         <a href="#donation-form" className="donate-to">
