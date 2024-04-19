@@ -21,19 +21,17 @@ const Retreat = () => {
         ></Image>
         <div className="retreat-text-div">
           <p className="retreat-text">
-            Last Minute Filmmakers’ Retreat!
+            Filmmakers’ Retreat. May 14-21.
+            <br />
+            Aventuras Akumal, Quintana Roo, México.
             <br />
             <br />
-            May 14-21. Akumal, Mexico.
-            <br />
-            <br />
-            We are hosting a retreat for filmmakers who have a current project
-            that would benefit from a week of dedicated time. If you want to
-            spend a week writing, outlining, researching, storyboarding,
-            costume-designing or editing, this might be for you. For $350, you
-            will get a private room with a private bathroom and at least one hot
-            meal every day. This includes transportation to/from the airport and
-            a tip for the staff.
+            If you need to spend a full week writing, costume-designing,
+            editing, or something else involving making independent movies, this
+            might be for you! For $350, you will get a private room with a
+            private bathroom and dinner every night, in a big house on a
+            beautiful beach. This fee includes transportation to/from the
+            airport and a tip for the local staff.
             <br />
             <br />
             This retreat is an experiment in itself. There will be nightly
@@ -42,14 +40,12 @@ const Retreat = () => {
             progress on your film project alongside others doing the same.
             <br />
             <br />
-            The house is on the beach, and although we try to minimize
-            distractions, there are kayaks and snorkels to use, and a heated
-            pool.
+            There will be kayaks and snorkels to use, and a heated pool.
             <br />
             <br />
-            Only four rooms are available, so apply soon. Some rooms have two
-            beds, so let us know if you want to share a room with a friend. This
-            would allow us to accommodate more people.
+            There are only four rooms available. Some rooms have two beds, so
+            let us know if you want to share a room with a friend. This would
+            allow us to accommodate more people.
             <br />
             <br />
             Email info@ccearts.org if you have questions.

@@ -33,6 +33,10 @@
   box-sizing: border-box;
 }
 
+.retreat-text-div {
+  max-width: 600px;
+}
+
 .retreat-iframe {
   /* margin-top: 30px; */
   min-height: 2450px !important;
