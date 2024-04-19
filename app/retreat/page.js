@@ -26,29 +26,23 @@ const Retreat = () => {
             Aventuras Akumal, Quintana Roo, México.
             <br />
             <br />
-            If you need to spend a full week writing, costume-designing,
-            editing, or something else involving making independent movies, this
-            might be for you! For $350, you will get a private room with a
-            private bathroom and dinner every night, in a big house on a
-            beautiful beach. This fee includes transportation to/from the
-            airport and a tip for the local staff.
+            If you need to spend a full week writing, editing, or something else
+            involving making independent movies, come work with us! For $350,
+            you will get a private room with a private bathroom and dinner every
+            night, in a big house on a beautiful beach. This fee includes
+            transportation to/from the airport and a tip for the local staff.
             <br />
             <br />
-            This retreat is an experiment in itself. There will be nightly
-            feedback sessions with the group, but no formal workshops or
-            mentorships, or anything like that. The only objective is to make
-            progress on your film project alongside others doing the same.
-            <br />
-            <br />
-            There will be kayaks and snorkels to use, and a heated pool.
+            This retreat is an experiment. There will be nightly feedback
+            sessions with the group, but no formal workshops or mentorships, or
+            anything like that. The only objective is to make progress on your
+            film project alongside others doing the same. There will be kayaks
+            and snorkels to use, and a heated pool.
             <br />
             <br />
             There are only four rooms available. Some rooms have two beds, so
-            let us know if you want to share a room with a friend. This would
-            allow us to accommodate more people.
-            <br />
-            <br />
-            Email info@ccearts.org if you have questions.
+            let us know if you want to share a room with a friend. Email
+            info@ccearts.org if you have questions.
           </p>
         </div>
       </div>

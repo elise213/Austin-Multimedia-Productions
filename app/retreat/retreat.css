@@ -22,6 +22,8 @@
 
 .retreat-sub1 {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .retreat-text {
@@ -39,7 +41,7 @@
 
 .retreat-iframe {
   /* margin-top: 30px; */
-  min-height: 2450px !important;
+  min-height: 1900px !important;
   margin: 30px auto 0;
   box-sizing: border-box;
 }
@@ -54,12 +56,12 @@
 
 @media screen and (max-width: 800px) {
   .retreat-iframe {
-    min-height: 2600px !important;
+    min-height: 2000px !important;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .retreat-iframe {
-    min-height: 3000px !important;
+    min-height: 2200px !important;
   }
 }
