@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
 import "./globals.css";
-// import Head from "next/head";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
 import injectContext from "./context/appContext";
@@ -15,23 +14,18 @@ function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      {/* <Head> */}
       <head>
         <title>CCE Arts</title>
         <meta property="og:url" content="https://ccearts.org" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Explore CCEA" />
+        <meta property="og:title" content="CCEA" />
         <meta
           property="og:description"
           content="The Center for Cinematic and Experimental Arts."
         />
-        <meta
-          property="og:image"
-          content="https://ccearts.org/img/CCEARETREATSMALLER.png"
-        />
-        <meta property="og:image:alt" content="CCEA Activities Overview" />
+        <meta property="og:image" content="https://ccearts.org/img/LOGO.png" />
+        <meta property="og:image:alt" content="CCEA Retreat" />
       </head>
-      {/* </Head> */}
 
       <body className={inter.className}>
         <Navbar />

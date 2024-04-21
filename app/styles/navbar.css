@@ -38,7 +38,11 @@
   padding: 20px;
   width: 100%;
   justify-content: space-between;
-  margin: 75px 0;
+  flex-direction: column;
+  align-items: flex-start !important;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 20px 0;
 }
 
 .active {
@@ -50,10 +54,11 @@
   letter-spacing: 1.5px;
   color: lavender;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   z-index: 999;
-  margin: 50px 0 0 0;
+  /* margin: 50px 0 0 0; */
   text-align: center;
+  /* font-family: "Inter"; */
 }
 
 .nav-item:hover,
@@ -143,13 +148,6 @@
 .new-navbar.open {
   left: 0 !important;
   transition: left 0.3s ease;
-}
-
-.navbar-content {
-  flex-direction: column;
-  align-items: flex-start !important;
-  display: flex;
-  box-shadow: none !important;
 }
 
 .nav-item {

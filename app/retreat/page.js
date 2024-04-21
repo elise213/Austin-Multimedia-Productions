@@ -7,26 +7,31 @@ import Image from "next/image";
 const Retreat = () => {
   return (
     <>
-      {/* <Head>
-        <title>Retreat Details</title>
-        <meta
-          property="og:url"
-          content="https://5d6d-2-56-190-21.ngrok-free.app/retreat"
-        />
-        <meta property="og:type" content="website" />
+      <Head>
+        <title>CCEA Filmmakers' Retreat - Quintana Roo, Mexico</title>
+        {/* <meta
+          name="description"
+          content="CCEA Filmmakers' Retreat in Quintana Roo, Mexico"
+        /> */}
         <meta
           property="og:title"
-          content="Filmmakers' Retreat in Quintana Roo"
+          content="CCEA Filmmakers' Retreat - Experience Creative Filmmaking"
         />
         <meta
           property="og:description"
-          content="Join us for a week-long filmmakers' retreat in Mexico. Get creative with like-minded individuals in a beautiful beachfront setting."
+          content="CCEA Filmmakers' Retreat in Quintana Roo, Mexico"
         />
+        {/* <meta property="og:url" content="https://ccearts.org/retreat" />
         <meta
           property="og:image"
-          content="https://5d6d-2-56-190-21.ngrok-free.app/img/CCEARETREATSMALLER.png"
+          content="https://ccearts.org/img/CCEARETREATSMALLER.png"
         />
-      </Head> */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image:alt"
+          content="Poster for the retreat in Quintana Roo"
+        /> */}
+      </Head>
 
       <div className="retreat-container">
         <div className="retreat-nav">
@@ -75,9 +80,9 @@ const Retreat = () => {
           src="https://docs.google.com/forms/d/e/1FAIpQLSewkBYeeJ5-DYAs4v3f5NdlBB1Yqj_ONxfI1kPapjkDFXcNIA/viewform?embedded=true"
           width="100%"
           height="100%"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
           className="retreat-iframe"
         >
           Loading…
