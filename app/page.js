@@ -60,7 +60,7 @@ const Home = () => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>CCEA Filmmakers' Retreat - Quintana Roo, Mexico</title>
         <meta
           name="description"
@@ -75,7 +75,7 @@ const Home = () => {
         <meta property="og:image" content="https://ccearts.org/img/LOGO.png" />
         <meta property="og:type" content="website" />
         <meta property="og:image:alt" content="CCEA LOGO" />
-      </Head>
+      </Head> */}
       <div className="fake-navbar">
         <Link href="/" passHref>
           <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
