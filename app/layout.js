@@ -17,10 +17,7 @@ function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <title>CCE Arts</title>
-        <meta
-          property="og:url"
-          content="https://5d6d-2-56-190-21.ngrok-free.app"
-        />
+        <meta property="og:url" content="https://ccearts.org" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Explore CCEA" />
         <meta
@@ -29,7 +26,7 @@ function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://5d6d-2-56-190-21.ngrok-free.app/img/CCEARETREATSMALLER.png"
+          content="https://ccearts.org/img/CCEARETREATSMALLER.png"
         />
         <meta property="og:image:alt" content="CCEA Activities Overview" />
       </Head>
