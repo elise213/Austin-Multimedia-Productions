@@ -7,8 +7,13 @@ import Image from "next/image";
 const Retreat = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Retreat Details</title>
+        <meta
+          property="og:url"
+          content="https://5d6d-2-56-190-21.ngrok-free.app/retreat"
+        />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Filmmakers' Retreat in Quintana Roo"
@@ -19,12 +24,10 @@ const Retreat = () => {
         />
         <meta
           property="og:image"
-          content="https://ccearts.org/img/CCEARETREAT.png"
+          content="https://5d6d-2-56-190-21.ngrok-free.app/img/CCEARETREATSMALLER.png"
         />
+      </Head> */}
 
-        <meta property="og:url" content="http://example.com/retreat" />
-        <meta property="og:type" content="website" />
-      </Head>
       <div className="retreat-container">
         <div className="retreat-nav">
           <Link href="/" passHref>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "./context/appContext";
-
+import Head from "next/head";
 import Video from "./components/Video";
 import styles from "./globals.css";
 import Sticker from "./components/Sticker";
@@ -60,6 +60,22 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Home - CCE Arts</title>
+        <meta property="og:url" content="https://www.ccearts.org/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Welcome to CCEA" />
+        <meta
+          property="og:description"
+          content="The Center for Cinematic and Experimental Arts"
+        />
+        <meta
+          property="og:image"
+          content="https://www.ccearts.org/img/CCEARETREATSMALLER.png"
+        />
+        <meta property="og:image:alt" content="View of the CCEA Retreat" />
+      </Head>
+
       <div className="fake-navbar">
         <Link href="/" passHref>
           <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
