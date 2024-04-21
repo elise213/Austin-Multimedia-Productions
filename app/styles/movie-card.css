@@ -20,12 +20,6 @@ p {
   background-color: transparent;
 }
 
-.event-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .close-mc {
   font-size: 40px;
   color: #c684d5;

@@ -285,16 +285,32 @@ textarea {
 @media screen and (max-width: 900px) {
   .retreat-li {
     height: 325px !important;
+    width: 190px !important;
+  }
+  .event-container {
+    width: 145px !important;
+    height: 325px !important;
   }
 }
 
-.retreat-li {
+.retreat-li,
+.event-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 165px;
   height: 350px;
-  width: 200px;
-  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-container:hover {
+  cursor: pointer;
 }
 
 .highlights {
+  z-index: 9;
+  /* bottom: -195px; */
   width: 140px;
   height: 85px;
   display: flex;
@@ -302,14 +318,11 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin: 0;
   background-color: rgb(255, 180, 100);
   border: solid 3px rgb(250, 106, 103);
   border-radius: 3%;
   position: relative;
-}
-
-.event-container:hover {
-  cursor: pointer;
 }
 
 .highlight {
@@ -336,31 +349,6 @@ textarea {
   margin-bottom: 60px;
 }
 
-.learn-more {
-  background-color: var(--color5);
-  color: rgb(252, 80, 60);
-  font-size: medium;
-  border: 1px solid lightgreen;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 50%;
-  font-family: "Urbanist", sans-serif;
-  font-size: large;
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  z-index: 4;
-  position: absolute;
-  bottom: -40px;
-  right: 9px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.learn-more:hover {
-  background-color: lightgreen;
-  border: 2px solid var(--color5);
-}
-
 .modal-open {
   overflow: hidden;
 }
@@ -372,21 +360,15 @@ body.modal-open {
   width: 100%;
 }
 
-.movie-container {
-  height: 240px;
-  width: 160px;
-  overflow: hidden;
-}
-
 .movie {
-  height: 240px;
-  width: 160px;
+  height: 230px;
+  width: 100%;
   object-position: top;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 10px;
   z-index: 4;
   margin: 0;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -401,11 +383,6 @@ body.modal-open {
   }
   .highlight-title {
     font-size: medium !important;
-  }
-  .movie-container,
-  .movie {
-    width: 140px !important;
-    height: 200px !important;
   }
 }
 

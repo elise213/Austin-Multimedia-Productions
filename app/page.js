@@ -126,16 +126,16 @@ const Home = () => {
                         className="event-container"
                         onClick={() => actions.toggleModal(result.id)}
                       >
-                        <div className="movie-container">
-                          <Image
-                            width={220}
-                            height={320}
-                            quality={70}
-                            className="movie"
-                            src={result.image}
-                            alt=""
-                          />
-                        </div>
+                        {/* <div className="movie-container"> */}
+                        <Image
+                          width={220}
+                          height={320}
+                          quality={90}
+                          className="movie"
+                          src={result.image}
+                          alt=""
+                        />
+                        {/* </div> */}
 
                         <div className="highlights">
                           <div className="sticker-and-review">
