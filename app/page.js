@@ -91,87 +91,78 @@ const Home = () => {
             </defs>
           </svg>
           <Video />
-          <div className="screenings-div">
-            <div
-              ref={scrollRef}
-              className="scroll-search-results"
-              style={{
-                justifyContent: isOverflowing ? "flex-start" : "center",
-              }}
-            >
-              <ul>
-                <li>
-                  <Link href="/retreat" passHref>
-                    <Image
-                      height={1000}
-                      width={2000}
-                      className="retreat-li"
-                      src={"/img/CCEARETREAT.png"}
-                      alt=""
-                    ></Image>
-                  </Link>
-                </li>
-                {store.events.map((result, i) => {
-                  console.log(result);
-                  return (
-                    <li
-                      key={i}
-                      style={
-                        i === store.events.length - 1
-                          ? { paddingRight: "35px" }
-                          : {}
-                      }
+          <div
+            ref={scrollRef}
+            className="scroll-search-results"
+            style={{
+              justifyContent: isOverflowing ? "flex-start" : "center",
+            }}
+          >
+            <ul>
+              <li>
+                <Link href="/retreat" passHref>
+                  <Image
+                    height={1000}
+                    width={2000}
+                    className="retreat-li"
+                    src={"/img/CCEARETREATSMALLER.png"}
+                    alt=""
+                  ></Image>
+                </Link>
+              </li>
+              {store.events.map((result, i) => {
+                console.log(result);
+                return (
+                  <li
+                    key={i}
+                    style={
+                      i === store.events.length - 1 ? { paddingRight: "" } : {}
+                    }
+                  >
+                    <div
+                      className="event-container"
+                      onClick={() => actions.toggleModal(result.id)}
                     >
-                      <div
-                        className="event-container"
-                        onClick={() => actions.toggleModal(result.id)}
-                      >
-                        {/* <div className="movie-container"> */}
-                        <Image
-                          width={220}
-                          height={320}
-                          quality={90}
-                          className="movie"
-                          src={result.image}
-                          alt=""
-                        />
-                        {/* </div> */}
-
-                        <div className="highlights">
-                          <div className="sticker-and-review">
-                            <Sticker className="sticker" sticker={result} />
-                          </div>
-                          {!store.modalIsOpen && (
-                            <>
-                              {result.title && (
-                                <p className="highlight-title">
-                                  {result.title}
-                                </p>
-                              )}
-                              {result.bullet && (
-                                <p className="highlight">{result.bullet}</p>
-                              )}
-                              {result.bullet2 && (
-                                <p className="highlight">{result.bullet2}</p>
-                              )}
-                              {result.bullet3 && (
-                                <p className="highlight">{result.bullet3}</p>
-                              )}
-                            </>
-                          )}
-                          {store.modalIsOpen && (
-                            <>
-                              <div className="modal-overlay"></div>
-                              <MovieCard result={getActiveEvent()} />
-                            </>
-                          )}
+                      <Image
+                        width={220}
+                        height={320}
+                        quality={90}
+                        className="movie"
+                        src={result.image}
+                        alt=""
+                      />
+                      <div className="highlights">
+                        <div className="sticker-and-review">
+                          <Sticker className="sticker" sticker={result} />
                         </div>
+                        {!store.modalIsOpen && (
+                          <>
+                            {result.title && (
+                              <p className="highlight-title">{result.title}</p>
+                            )}
+                            {result.bullet && (
+                              <p className="highlight">{result.bullet}</p>
+                            )}
+                            {result.bullet2 && (
+                              <p className="highlight">{result.bullet2}</p>
+                            )}
+                            {result.bullet3 && (
+                              <p className="highlight">{result.bullet3}</p>
+                            )}
+                          </>
+                        )}
+                        {store.modalIsOpen && (
+                          <>
+                            <div className="modal-overlay"></div>
+                            <MovieCard result={getActiveEvent()} />
+                          </>
+                        )}
                       </div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </main>
