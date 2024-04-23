@@ -20,7 +20,7 @@ function RootLayout({ children }) {
           />
           <meta
             property="og:image"
-            content="https://ccearts.org/img/logo.png"
+            content="https://ccearts.org/img/CCEA99.png"
           />
         </head>
         <body className={inter.className}>

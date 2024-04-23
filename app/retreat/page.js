@@ -19,7 +19,11 @@ const Retreat = () => {
       <div className="retreat-container">
         <div className="retreat-nav">
           <Link href="/" passHref>
-            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+            <img
+              src="/img/CCEA99.png"
+              alt="CCEA Logo"
+              className="navbar-logo"
+            />
           </Link>
         </div>
         <div className="retreat-sub1">

@@ -24,6 +24,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .retreat-text {
@@ -54,7 +55,7 @@
     width: 100%;
   }
   .retreat-text {
-    margin: 0 !important;
+    margin: 30px 0 5px 0 !important;
   }
 }
 

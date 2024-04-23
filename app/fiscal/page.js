@@ -6,11 +6,11 @@ import styles from "./fiscal.css";
 const Fiscal = () => {
   return (
     <>
-        <div className="fake-navbar">
-          <Link href="/" passHref>
-            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
-          </Link>
-        </div>
+      <div className="fake-navbar">
+        <Link href="/" passHref>
+          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
+        </Link>
+      </div>
       <div className={`fiscal-container`}>
         <div className="fiscal-about">
           <span className="">

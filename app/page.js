@@ -81,7 +81,7 @@ const Home = () => {
     <>
       <div className="fake-navbar">
         <Link href="/" passHref>
-          <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
         </Link>
       </div>
       <main className={styles.main}>
