@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "./context/appContext";
-import Head from "next/head";
 import Video from "./components/Video";
 import styles from "./globals.css";
 import Sticker from "./components/Sticker";
@@ -13,6 +12,26 @@ const Home = () => {
   const { store, actions } = useContext(Context);
   const scrollRef = useRef();
   const [isOverflowing, setIsOverflowing] = useState(false);
+
+  useEffect(() => {
+    const body = document.body;
+    const className = "no-scroll";
+    const homeBody = document.querySelector(".home-body");
+
+    if (store.isNavOpen || store.showContactModal) {
+      body.classList.add(className);
+    } else {
+      body.classList.remove(className);
+    }
+
+    if (homeBody) {
+      if (store.isNavOpen || store.showContactModal) {
+        homeBody.classList.add(className);
+      } else {
+        homeBody.classList.remove(className);
+      }
+    }
+  }, [store.isNavOpen, store.showContactModal]);
 
   const checkOverflow = () => {
     if (!scrollRef.current) return;
@@ -60,22 +79,6 @@ const Home = () => {
 
   return (
     <>
-      {/* <Head>
-        <title>CCEA Filmmakers' Retreat - Quintana Roo, Mexico</title>
-        <meta
-          name="description"
-          content="CCEA Filmmakers' Retreat in Quintana Roo, Mexico"
-        />
-        <meta property="og:title" content="CCEA" />
-        <meta
-          property="og:description"
-          content="The Center for Cinematic and Experimental Arts"
-        />
-        <meta property="og:url" content="https://ccearts.org/" />
-        <meta property="og:image" content="https://ccearts.org/img/LOGO.png" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image:alt" content="CCEA LOGO" />
-      </Head> */}
       <div className="fake-navbar">
         <Link href="/" passHref>
           <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />

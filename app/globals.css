@@ -1,4 +1,3 @@
-/* Regular font */
 @font-face {
   font-family: "AwsumSans";
   src: url("/fonts/AwsumSans-BF64c0855677e49.ttf") format("truetype"),
@@ -7,16 +6,10 @@
   font-style: normal;
 }
 
-/* Bold font
-@font-face {
-  font-family: "AwsumSans";
-  src: url("/fonts/AwsumSansBold-BF64c08556665f3.ttf") format("truetype"),
-    url("/fonts/AwsumSansBold-BF64c08556c5095.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
+/* * {
+  outline: 1px solid red;
 } */
 
-/* Italic font */
 @font-face {
   font-family: "AwsumSans";
   src: url("/fonts/AwsumSansItalic-BF64c085561b552.otf") format("opentype"),
@@ -25,7 +18,6 @@
   font-style: italic;
 }
 
-/* Bold Italic font */
 @font-face {
   font-family: "AwsumSans";
   src: url("/fonts/AwsumSansBoldItalic-BF64c0855650966.ttf") format("truetype"),
@@ -52,16 +44,15 @@ ___________________________________________________________________GLOBAL
 }
 
 body {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   overflow-x: hidden;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
-  height: 100%;
-  /* overflow: hidden !important; */
+  /* height: 100%; */
 }
 
 body.navbar-open {
@@ -101,9 +92,8 @@ main {
 
 .home-body {
   width: 100%;
-  height: calc(100vh - 90px);
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }

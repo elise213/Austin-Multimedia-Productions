@@ -1,38 +1,21 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import styles from "./retreat.css";
 import Image from "next/image";
 
+export async function generateMetadata({ params, searchParams }, parent) {
+  return {
+    title: "Filmmakers' Retreat",
+    openGraph: {
+      description: "CCEA hosts 2024 Filmmakers' Retreat",
+      images: ["https://ccearts.org/img/CCEARETREATSMALLER.png"],
+    },
+  };
+}
+
 const Retreat = () => {
   return (
     <>
-      <Head>
-        <title>CCEA Filmmakers' Retreat - Quintana Roo, Mexico</title>
-        {/* <meta
-          name="description"
-          content="CCEA Filmmakers' Retreat in Quintana Roo, Mexico"
-        /> */}
-        <meta
-          property="og:title"
-          content="CCEA Filmmakers' Retreat - Experience Creative Filmmaking"
-        />
-        <meta
-          property="og:description"
-          content="CCEA Filmmakers' Retreat in Quintana Roo, Mexico"
-        />
-        {/* <meta property="og:url" content="https://ccearts.org/retreat" />
-        <meta
-          property="og:image"
-          content="https://ccearts.org/img/CCEARETREATSMALLER.png"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image:alt"
-          content="Poster for the retreat in Quintana Roo"
-        /> */}
-      </Head>
-
       <div className="retreat-container">
         <div className="retreat-nav">
           <Link href="/" passHref>
