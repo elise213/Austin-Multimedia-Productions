@@ -79,10 +79,9 @@ const ukraine = () => {
         </span>
         <span className="wire-info">
           an additional donation to the payment platform Zeffy will
-          automatically populate at ~10%.
-          <br />
-          To avoid making this contribution, go to the 'Summary' section, choose
-          'Other' from the dropdown, and enter $0.
+          automatically populate at ~10%. To avoid making this contribution, go
+          to the 'Summary' section, choose 'Other' from the dropdown, and enter
+          $0.
         </span>
       </div>
       <div
