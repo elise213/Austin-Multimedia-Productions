@@ -83,7 +83,9 @@
   top: 10px;
   font-size: 40px;
   color: black;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
+
 .close-icon {
   font-size: 40px;
   top: 0px;
@@ -93,11 +95,9 @@
 .close-icon,
 .open-icon {
   position: absolute;
-
   transition: 0.3s ease !important;
   z-index: 9997;
   left: -60px;
-  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .open-icon.closed {

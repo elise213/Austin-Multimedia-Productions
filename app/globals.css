@@ -317,15 +317,12 @@ body.modal-open {
   border-radius: 3px 3px 0 0;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .highlights {
     padding: 0 !important;
     height: 120px !important;
   }
-  .highlight-title {
-    font-size: medium !important;
-  }
-}
+} */
 
 @media screen and (max-width: 800px) {
   .scroll-search-results {
