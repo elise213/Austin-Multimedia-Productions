@@ -84,7 +84,7 @@
 .landing-container {
   width: 85%;
   max-width: 750px;
-  margin-top: 80px;
+  margin-top: 90px;
   letter-spacing: 1px;
   line-height: 25px;
   display: flex;
@@ -164,20 +164,20 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .first-section {
-    flex-direction: column !important;
-  }
   .donation-page {
     height: 2000px !important;
   }
 
-  .basic-info span,
-  .read-more {
+  .basic-info span {
     font-size: 13px !important;
   }
 }
 
 @media screen and (max-width: 500px) {
+  .first-section {
+    flex-direction: column !important;
+  }
+
   .donation-form {
     height: 1150px !important;
   }

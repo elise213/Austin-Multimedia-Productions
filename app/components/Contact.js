@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <div className="contact-nav">
+      <div className="fake-navbar">
         <Link href="/" passHref>
           <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
         </Link>

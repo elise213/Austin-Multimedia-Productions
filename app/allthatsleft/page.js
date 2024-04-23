@@ -9,6 +9,11 @@ const allthatsleft = () => {
   const { store, actions } = useContext(Context);
   return (
     <div className="landing-container">
+      <div className="fake-navbar">
+        <Link href="/" passHref>
+          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
+        </Link>
+      </div>
       <div className="landing-title">{store.fiscalFilms[0].title}</div>
       <Image
         height={100}
