@@ -15,7 +15,6 @@
   font-family: "Urbanist", sans-serif;
   line-height: 1.5;
   font-size: x-large;
-  font-family: "Urbanist", sans-serif;
   line-height: 2;
   font-size: 20px;
   font-weight: 400;
@@ -27,15 +26,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  .about {
-    margin: 90px 0 0 0;
-  }
-
-  .about span {
-    font-size: medium !important;
-    margin: 0 20px !important;
-  }
-
   .contact-div-footer {
     padding: 20px;
   }
@@ -43,6 +33,6 @@
 
 @media screen and (max-width: 600px) {
   .about span {
-    font-size: medium !important;
+    margin: 30px 20px;
   }
 }

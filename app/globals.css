@@ -44,7 +44,7 @@ ___________________________________________________________________GLOBAL
 }
 
 body {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -228,26 +228,27 @@ textarea {
   width: 65px;
 }
 
-@media screen and (max-width: 900px) {
-  .retreat-li {
-    height: 325px !important;
-    width: 190px !important;
-  }
-  .event-container {
-    width: 190px !important;
-    height: 325px !important;
-  }
+.retreat-li {
+  filter: grayscale(100%);
 }
 
 .retreat-li,
 .event-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 200px;
-  height: 355px;
+  /* width: 200px;
+  height: 355px; */
+  width: 250px;
+  height: 390px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.event-container {
+  padding: 10px;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .event-container:hover {
@@ -265,8 +266,8 @@ textarea {
   align-items: center;
   padding: 10px;
   margin: 0;
-  background-color: rgb(255, 180, 100);
-  border: solid 3px rgb(250, 106, 103);
+  background-color: white;
+  /* border: solid 1px black; */
   border-radius: 3%;
   position: relative;
 }
@@ -309,7 +310,7 @@ body.modal-open {
 .movie {
   width: 100%;
   object-position: top;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin-left: 10px;
   z-index: 4;
   margin: 0;
@@ -326,7 +327,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .scroll-search-results {
     width: 100%;
     overflow-x: hidden !important;
@@ -343,9 +344,6 @@ body.modal-open {
     margin: 0 !important;
   }
 
-  .movie-scroll-labels span {
-    font-size: 20px !important;
-  }
   .navbar-logo {
     margin: 10px !important;
   }
@@ -353,8 +351,8 @@ body.modal-open {
   .movie-scroll-labels {
     flex-direction: column;
   }
+}
 
-  .sticker {
-    display: none !important;
-  }
+.sticker {
+  display: none !important;
 }
