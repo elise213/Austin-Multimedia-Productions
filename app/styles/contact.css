@@ -5,21 +5,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 1);
+  background-color: #fffdf3;
 }
 
 .close-contact {
   padding: 0;
   margin: 0;
-  font-size: xx-large;
+  font-size: large;
   border: none;
   background-color: transparent;
   align-self: flex-end;
-  color: lavender;
+  color: black;
 }
 
 .close-contact:hover {
-  color: lightgreen;
+  color: lavender;
   cursor: pointer;
 }
 
@@ -38,7 +38,6 @@
 .form-control,
 .send-button {
   letter-spacing: 2px;
-  /* font-size: 30px; */
   border: 1px solid black;
   border-radius: 2px;
   width: 100%;
@@ -47,18 +46,14 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.send-button {
-  /* margin-top: 30px; */
-  color: rgb(250, 106, 103);
-  font-weight: bolder;
-  transition: 0.3s;
-  font-size: 20px !important;
-  border: solid 3px rgb(250, 106, 103);
-  background-color: rgb(245, 186, 77);
+.contact-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .send-button:hover {
-  background-color: lightgreen;
+  background-color: lavender;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -98,10 +93,10 @@
 }
 
 .contact-logo {
-  height: 70px;
+  height: 60px;
   position: absolute;
-  right: 10px;
-  bottom: -3px;
+  right: 45px;
+  bottom: 27px;
 }
 
 .circle-font {
@@ -119,14 +114,7 @@ input textarea {
     padding: 20px 45px 20px 30px !important;
   }
 
-  .send-button {
-    font-size: small;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 140px;
-  }
-
   .contact-logo {
-    right: 30px !important;
+    right: 50px !important;
   }
 }

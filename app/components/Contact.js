@@ -1,12 +1,13 @@
 "use client";
 import React, { useContext, useRef } from "react";
-import { Context } from "../context/appContext"; // Adjust the import path as necessary
+import { Context } from "../context/appContext";
 import styles from "../styles/contact.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import Link from "next/link";
 
 const Contact = () => {
-  const { actions } = useContext(Context); // Using useContext to access actions
+  const { actions } = useContext(Context);
   const form = useRef();
   const SERVICE_ID = "service_betnze8";
   const TEMPLATE_ID = "template_99iigjc";
@@ -35,6 +36,11 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <div className="contact-nav">
+        <Link href="/" passHref>
+          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
+        </Link>
+      </div>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="contact-call">
           <span className="close-contact" onClick={actions.toggleContactModal}>
@@ -71,14 +77,13 @@ const Contact = () => {
             ></textarea>
           </div>
         </div>
-        <img src="/img/logo2.png" alt="CCEA Logo" className="contact-logo" />
+        {/* <img src="/img/CCEA99.png" alt="CCEA Logo" className="contact-logo" /> */}
         <div className="form-col-full">
           <button className="send-button" type="submit">
-            SEND TO
+            Send
           </button>
         </div>
       </form>
-      {/* <Image className="contact-sticker" src="/../public/img/rewind.png" height={100} width={100} alt="" /> */}
     </div>
   );
 };
