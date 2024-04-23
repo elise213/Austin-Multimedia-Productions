@@ -50,12 +50,9 @@ const allthatsleft = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          We can accept credit card payments for donations up to $1,000 and ACH
-          up to $10,000.
-          <br />
-          Please use a wire transfer for all donations ≥ $10,000.
-          <br />
-          Donations ≥ $100,000 will earn an Executive Producer credit.
+          We can accept credit card payments up to $1,000 and ACH payments up to
+          $10,000. Please use a wire transfer for donations of $10,000 or more.
+          Contributions of $100,000 will earn Executive Producer credit.
         </p>
         <div className="wire-info-2">
           <p className="wire-info">
@@ -72,15 +69,22 @@ const allthatsleft = () => {
           </p>
         </div>
       </div>
-      <div className="warning">
-        <span className="wire-info" style={{ color: "red" }}>
-          **Please be aware,{" "}
-        </span>
+      <div className="wire-container">
         <span className="wire-info">
-          an additional donation to the payment platform Zeffy will
-          automatically populate at ~10%. To avoid making this contribution, go
-          to the 'Summary' section, choose 'Other' from the dropdown, and enter
-          $0.
+          <span
+            style={{
+              color: "red",
+              textDecoration: "underline",
+              textAlign: "left",
+            }}
+          >
+            **Please be aware
+          </span>{" "}
+          when using the Zeffy form below, that an{" "}
+          <span style={{ textDecoration: "underline" }}>additional</span>{" "}
+          donation to the payment platform Zeffy will automatically populate at
+          ~10%. To avoid this, before submitting your payment, go to the
+          'Summary' section, choose 'Other' from the dropdown, and enter $0.
         </span>
       </div>
       <div

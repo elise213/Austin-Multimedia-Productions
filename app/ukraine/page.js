@@ -56,12 +56,8 @@ const ukraine = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          We can accept credit card payments for donations up to $1,000 and ACH
-          up to $10,000.
-          <br />
-          Please use a wire transfer for all donations ≥ $10,000.
-          <br />
-          Donations ≥ $100,000 will earn an Executive Producer credit.
+          We can accept credit card payments up to $1,000 and ACH payments up to
+          $10,000. Please use a wire transfer for donations of $10,000 or more.
         </p>
         <div className="wire-info-2">
           <p className="wire-info">
