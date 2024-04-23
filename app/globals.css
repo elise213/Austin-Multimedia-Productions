@@ -51,7 +51,6 @@ body {
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
-  width: 100%;
   background-color: #fffdf3;
 }
 
@@ -62,7 +61,7 @@ body.navbar-open {
 .navbar-logo {
   width: 200px;
   height: 70px;
-  margin: 10px;
+  margin: 0 25px 0 0;
 }
 
 body.no-scroll {
@@ -339,10 +338,6 @@ body.modal-open {
     margin: 0 !important;
     align-items: center;
     margin: 0 !important;
-  }
-
-  .navbar-logo {
-    margin: 10px !important;
   }
 
   .movie-scroll-labels {
