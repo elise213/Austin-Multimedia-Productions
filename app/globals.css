@@ -25,13 +25,25 @@
   font-weight: bold;
   font-style: italic;
 }
-___________________________________________________________________GLOBAL
-  :root {
+
+:root {
   --color1: rgb(251, 120, 106);
   --color2: rgb(246, 179, 91);
   --color3: rgb(153, 161, 168);
   --color4: rgb(212, 180, 124);
   --color5: rgb(183, 227, 168);
+}
+
+.fake-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90px;
 }
 
 .FAQ-link {

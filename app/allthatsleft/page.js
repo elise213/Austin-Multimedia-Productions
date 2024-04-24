@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import { Context } from "../context/appContext";
 import Image from "next/image";
+import FakeNavBar from "../components/FakeNavbar";
 import styles from "./allthatsleft.css";
 import Link from "next/link";
 import Head from "next/head";
@@ -12,15 +13,19 @@ const allthatsleft = () => {
   return (
     <>
       <Head>
-        <meta property="og:title" content="All That's Left" />
+        <meta property="og:title" content="All That's Left of You" />
         <meta
           property="og:description"
-          content="Donation Page for All That's Left"
+          content="Donation Page for All That's Left of You"
         />
-        <meta property="og:image" content="www.ccearts.org/img/CCEA99.png" />
+        <meta
+          property="og:image"
+          content="www.ccearts.org/img/all-thats-left-of-you.jpeg"
+        />
       </Head>
       <div className="landing-container">
-        <div className="fake-navbar">
+        <FakeNavBar />
+        {/* <div className="fake-navbar">
           <Link href="/" passHref>
             <img
               src="/img/CCEA99.png"
@@ -28,7 +33,7 @@ const allthatsleft = () => {
               className="navbar-logo"
             />
           </Link>
-        </div>
+        </div> */}
         <div className="landing-title">{store.fiscalFilms[0].title}</div>
         <Image
           height={100}
@@ -85,7 +90,7 @@ const allthatsleft = () => {
         </div>
         <div className="wire-container">
           <span className="wire-info">
-            We can accept credit-card payments up to $1,000 and ACH payments up
+            We can accept credit card payments up to $1,000 and ACH payments up
             to $10,000 using the form below.
             <br />
             <br />
@@ -96,14 +101,13 @@ const allthatsleft = () => {
                 textAlign: "left",
               }}
             >
-              Warning: An additional contribution to Zeffy will automatically
-              populate at ~10%. This is an optional donation to the payment
-              platform.
-            </span>{" "}
-            To avoid this charge, enter the amount of your donation to this
-            project, then choose "Other" from the dropdown menu of percentages
-            in the Summary section, and enter $0.00 in the box labeled
-            "Contribution."
+              Warning: An additional contribution to the payment platform Zeffy
+              will automatically populate at ~10%. To avoid this optional
+              charge, enter the amount of your donation to this project, then
+              choose "Other" from the dropdown menu of percentages in the
+              Summary section. Then enter $0.00 in the box labeled
+              "Contribution."
+            </span>
           </span>
         </div>
         <div
