@@ -22,7 +22,7 @@
 }
 
 .project-text {
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 0.8px;
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
 }
@@ -127,14 +127,12 @@ p {
 }
 
 .donate-to:hover {
-  /* text-shadow: 8px 8px 18px green !important; */
   cursor: pointer;
   color: rgb(161, 103, 179);
 }
 
 .title-2 {
   font-weight: 600;
-  /* margin-left: 5px; */
 }
 
 .read-more {
@@ -158,6 +156,7 @@ p {
     width: 90%;
   }
 }
+
 @media screen and (max-width: 700px) {
   .donation-form {
     height: 1100px !important;
@@ -169,9 +168,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .donation-page {
-    height: 2000px !important;
-  }
+  /* .donation-page {
+    height: 1300px !important;
+  } */
 
   .basic-info span {
     font-size: 13px !important;
@@ -182,20 +181,16 @@ p {
   .first-section {
     flex-direction: column !important;
   }
-
-  .donation-form {
-    height: 1150px !important;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .donation-form {
-    height: 1250px !important;
+    height: 1200px !important;
   }
 }
 
 @media screen and (max-width: 300px) {
   .donation-form {
-    height: 1450px !important;
+    height: 1300px !important;
   }
 }

@@ -10,27 +10,22 @@ const Navbar = () => {
   const { store, actions } = useContext(Context);
 
   const toggleNav = () => {
-    actions.toggleNavOpen(!store.isNavOpen); // Corrected to use actions for state update
+    actions.toggleNavOpen(!store.isNavOpen);
   };
 
-  // Function to toggle the contact modal state
   const toggleContactModal = () => {
-    actions.setShowContactModal(!store.showContactModal); // Corrected to use actions for state update
+    actions.setShowContactModal(!store.showContactModal);
   };
 
   useEffect(() => {
-    // Function to handle clicks outside the navbar
     const handleClickOutside = (event) => {
       const nav = document.querySelector(".new-navbar");
       if (nav && !nav.contains(event.target) && store.isNavOpen) {
-        actions.setIsNavOpen(false); // Use actions to update the state
+        actions.setIsNavOpen(false);
       }
     };
-
-    // Add event listener for clicks
     document.addEventListener("click", handleClickOutside);
     return () => {
-      // Clean up the event listener on component unmount
       document.removeEventListener("click", handleClickOutside);
     };
   }, [store.isNavOpen, actions.setIsNavOpen]);
@@ -45,13 +40,9 @@ const Navbar = () => {
             </div>
           )}
           <div className={`close-icon ${store.isNavOpen ? "open" : ""}`}>
-            <span className="navbar-toggler">
-              <i class="fa-solid fa-xmark"></i>
-            </span>
+            <i className="fa-solid fa-xmark"></i>
           </div>
         </div>
-
-        {/* )} */}
 
         <div className={`navbar-content ${store.isNavOpen ? "open" : ""}`}>
           <span

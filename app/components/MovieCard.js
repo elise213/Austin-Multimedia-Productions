@@ -48,7 +48,7 @@ const MovieCard = ({ result }) => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [store.modalIsOpen, actions]);
   return (
-    <div>
+    <>
       {store.modalIsOpen && (
         <div className="modal">
           <div className="together">
@@ -101,7 +101,7 @@ const MovieCard = ({ result }) => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

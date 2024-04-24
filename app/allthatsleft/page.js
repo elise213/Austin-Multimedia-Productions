@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Context } from "../context/appContext";
 import Image from "next/image";
 import styles from "./allthatsleft.css";
@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const allthatsleft = () => {
   const { store, actions } = useContext(Context);
+
   return (
     <div className="landing-container">
       <div className="fake-navbar">
@@ -50,8 +51,7 @@ const allthatsleft = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          We can accept credit card payments up to $1,000 and ACH payments up to
-          $10,000. Please use a wire transfer for donations of $10,000 or more.
+          Please use a wire transfer for donations of $10,000 or more.
           Contributions of $100,000 will earn Executive Producer credit.
         </p>
         <div className="wire-info-2">
@@ -71,20 +71,25 @@ const allthatsleft = () => {
       </div>
       <div className="wire-container">
         <span className="wire-info">
+          We can accept credit-card payments up to $1,000 and ACH payments up to
+          $10,000 using the form below.
+          <br />
+          <br />
           <span
             style={{
               color: "red",
-              textDecoration: "underline",
+              // textDecoration: "underline",
               textAlign: "left",
             }}
           >
-            **Please be aware
+            Please be aware when using this form that an additional contribution
+            to Zeffy will automatically populate at ~10%. This is an optional
+            donation to the payment platform.
           </span>{" "}
-          when using the Zeffy form below, that an{" "}
-          <span style={{ textDecoration: "underline" }}>additional</span>{" "}
-          donation to the payment platform Zeffy will automatically populate at
-          ~10%. To avoid this, before submitting your payment, go to the
-          'Summary' section, choose 'Other' from the dropdown, and enter $0.
+          To avoid this charge, after entering the amount of your donation, find
+          the dropdown menu of percentages in the 'Summary' section, choose
+          'Other' from the dropdown, and enter $0.00 or more in the input
+          labeled "Contribution."
         </span>
       </div>
       <div
