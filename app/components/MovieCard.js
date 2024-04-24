@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useContext } from "react";
 import { Context } from "../context/appContext";
 import Image from "next/image";

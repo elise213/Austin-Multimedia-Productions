@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext, useRef } from "react";
 import styles from "../styles/emailList.css";
 import emailjs from "@emailjs/browser";

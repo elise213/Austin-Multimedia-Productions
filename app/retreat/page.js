@@ -16,6 +16,29 @@ export async function generateMetadata({ params, searchParams }, parent) {
 const Retreat = () => {
   return (
     <>
+      <Head>
+        <title>{store.fiscalFilms[0].title || "Filmmakers' Retreat"}</title>
+        <meta
+          name="description"
+          content="This is a test for the Metadata of All That's Left of You."
+        />
+        <meta
+          property="og:title"
+          content={store.fiscalFilms[0].title || "All that's left"}
+        />
+        <meta
+          property="og:description"
+          content="Learn more about our exclusive Filmmakers' Retreat."
+        />
+        <meta
+          property="og:image"
+          content={
+            store.fiscalFilms[0].image ||
+            "https://ccearts.org/img/CCEARETREATSMALLER.png"
+          }
+        />
+      </Head>
+
       <div className="retreat-container">
         <div className="retreat-nav">
           <Link href="/" passHref>

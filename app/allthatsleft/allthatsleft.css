@@ -3,7 +3,7 @@
   height: auto;
   aspect-ratio: 3 / 1 !important;
   margin: 10px 0;
-  clip-path: inset(4px 0 0 0); /* top right bottom left */
+  clip-path: inset(4px 0 0 0);
 }
 
 .image-container {
@@ -168,10 +168,6 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  /* .donation-page {
-    height: 1300px !important;
-  } */
-
   .basic-info span {
     font-size: 13px !important;
   }
