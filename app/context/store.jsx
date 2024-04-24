@@ -71,7 +71,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           category: "new",
           // bullet2: "Austin, TX",
           description:
-            "Get hands-on experience shooting with a Bolex Reflex camera, processing film using non-toxic household items, and editing by hand using analog editing equipment. The workshop will take place in Austin Texas. (If you have access to the necessary equipment you're welcome to join us online!)",
+            "Get hands-on experience shooting with a Bolex Reflex camera, processing film using non-toxic household items, and editing by hand using analog equipment. The workshop will take place in Austin Texas. (If you have access to the necessary equipment you're welcome to join online!)",
           instruction2: "",
           instruction:
             "E-mail info@ccearts.org to be included in the next cohort.",
@@ -85,7 +85,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           category: "staff",
           bullet1: "Livestream",
           description:
-            "This 90 minute livestream offers guidance on some of the most common legal issues in documentary filmmaking, including aspects of fundraising and distribution.  We encourage you to come with questions!",
+            "This 90 minute workshop offers guidance on some of the most common legal issues in documentary filmmaking, including aspects of fundraising and distribution.  We encourage you to come with questions!",
           instruction2: "",
           instruction:
             "E-mail info@ccearts.org to be notified of the next workshop.",

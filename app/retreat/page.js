@@ -28,18 +28,20 @@ const Retreat = () => {
         </div>
         <div className="retreat-sub1">
           <Image
-            height={1000}
-            width={2000}
+            height={1300}
+            width={900}
             className="retreat-image"
             src={"/img/CCEARETREAT.png"}
             alt=""
           ></Image>
           <div className="retreat-text-div">
             <p className="retreat-text">
-              Filmmakers’ Retreat. May 14-21.
-              <br />
-              Aventuras Akumal, Quintana Roo, México.
-              <br />
+              <p style={{ textAlign: "center", fontWeight: "bolder" }}>
+                Filmmakers’ Retreat, May 14-21
+                <br />
+                Aventuras Akumal, Quintana Roo, México
+                <br />
+              </p>
               <br />
               If you need to spend a week writing, editing, or something else
               involving making independent movies, come join us in Mexico! For
@@ -62,18 +64,22 @@ const Retreat = () => {
             </p>
           </div>
         </div>
-
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSewkBYeeJ5-DYAs4v3f5NdlBB1Yqj_ONxfI1kPapjkDFXcNIA/viewform?embedded=true"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          className="retreat-iframe"
-        >
-          Loading…
-        </iframe>
+        <div className="iframe-div">
+          <iframe
+            // width="50%"
+            // height="100%"
+            // frameborder="0"
+            // className="retreat-iframe"
+            // >
+            src="https://docs.google.com/forms/d/e/1FAIpQLSewkBYeeJ5-DYAs4v3f5NdlBB1Yqj_ONxfI1kPapjkDFXcNIA/viewform?embedded=true"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            className="retreat-iframe"
+          >
+            Loading…
+          </iframe>
+        </div>
       </div>
     </>
   );

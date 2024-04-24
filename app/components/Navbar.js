@@ -46,7 +46,7 @@ const Navbar = () => {
           )}
           <div className={`close-icon ${store.isNavOpen ? "open" : ""}`}>
             <span className="navbar-toggler">
-              <i className="fas fa-times"></i>
+              <i class="fa-solid fa-xmark"></i>
             </span>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
             }}
           >
             <Link href="/fiscal" passHref>
-              FISCAL SPONSORSHIP
+              SPONSORSHIP
             </Link>
           </span>
           <span
@@ -98,7 +98,7 @@ const Navbar = () => {
           >
             CONTACT
           </span>
-          <EmailList />
+          {/* <EmailList /> */}
         </div>
       </nav>
 

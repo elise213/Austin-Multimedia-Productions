@@ -29,13 +29,12 @@ const MovieCard = ({ result }) => {
       }
     }
 
-    // Run once and also on window resize
     adjustCloseButtonPosition();
     window.addEventListener("resize", adjustCloseButtonPosition);
 
     return () =>
       window.removeEventListener("resize", adjustCloseButtonPosition);
-  }, [store.modalIsOpen]); // Dependency array ensures this effect runs when modalIsOpen state changes
+  }, [store.modalIsOpen]);
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -47,13 +46,12 @@ const MovieCard = ({ result }) => {
 
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
-  }, [store.modalIsOpen, actions]); // Adding `actions` to dependencies might not be necessary if actions do not change
-
+  }, [store.modalIsOpen, actions]);
   return (
     <div>
       {store.modalIsOpen && (
         <div className="modal">
-          <div className="together holographic">
+          <div className="together">
             <div
               className="close-mc"
               onClick={(e) => {
@@ -67,7 +65,7 @@ const MovieCard = ({ result }) => {
             <Image
               width={300}
               height={450}
-              className="movie-modal"
+              className="movie-modal-image"
               src={result.image}
               alt=""
             />
@@ -80,11 +78,12 @@ const MovieCard = ({ result }) => {
                 <p className="review">{result.description}</p>
               )}
               {result.instruction && (
-                <p className="review">{result.instruction}</p>
+                <span className="review">
+                  {result.instruction}
+                  {result.instruction2 && <span>{result.instruction2}</span>}
+                </span>
               )}
-              {result.instruction2 && (
-                <p className="review">{result.instruction2}</p>
-              )}
+
               {trailerUrl ? (
                 <div className="streaming-trailer-div">
                   <div className="trailer-container">

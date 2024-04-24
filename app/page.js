@@ -84,7 +84,7 @@ const Home = () => {
           <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
         </Link>
       </div>
-      <main className={styles.main}>
+      <div className={styles.main}>
         <div className="home-body content">
           <svg width="0" height="0">
             <defs>
@@ -168,7 +168,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };

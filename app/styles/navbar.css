@@ -9,6 +9,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  height: 100px;
 }
 
 .new-navbar {
@@ -19,7 +20,6 @@
   top: 0;
   left: -277px;
   display: flex;
-  justify-content: flex-start;
   transition: left 0.3s ease;
   background-color: #464646;
   height: 100vh;
@@ -27,7 +27,7 @@
   border-left: none;
   border-top: none;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .new-navbar.open {
@@ -85,8 +85,7 @@
 
 .close-icon {
   font-size: 40px;
-  top: 0px;
-  color: #fffdf3;
+  color: salmon;
 }
 
 .close-icon,
@@ -132,10 +131,8 @@
 }
 
 .close-icon:hover,
-.close-icon:focus,
-.open-icon:hover,
-.open-icon:focus {
-  color: rgb(220, 160, 247);
+.open-icon:hover {
+  color: gray;
   cursor: pointer;
 }
 
