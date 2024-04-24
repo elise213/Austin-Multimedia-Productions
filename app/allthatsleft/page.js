@@ -4,144 +4,159 @@ import { Context } from "../context/appContext";
 import Image from "next/image";
 import styles from "./allthatsleft.css";
 import Link from "next/link";
+import Head from "next/head";
 
 const allthatsleft = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <div className="landing-container">
-      <div className="fake-navbar">
-        <Link href="/" passHref>
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
-        </Link>
-      </div>
-      <div className="landing-title">{store.fiscalFilms[0].title}</div>
-      <Image
-        height={100}
-        width={100}
-        layout="responsive"
-        quality={100}
-        className="fiscalFilms-image"
-        src={store.fiscalFilms[0].image}
-        alt=""
-      ></Image>
-      <div className="project-text">{store.fiscalFilms[0].logline}</div>
-      <div className="first-section">
-        <div className="basic-info">
-          <span className="heading">Type: </span>
-          <span>{store.fiscalFilms[0].type}</span>
-          <br />
-          <span className="heading">Status: </span>
-          <span>{store.fiscalFilms[0].status}</span>
-          <br />
-          <span className="heading">Director:</span>
-          <span>{store.fiscalFilms[0].director}</span>
-          <br />
-          <span className="heading">Producer: </span>
-          <span>{store.fiscalFilms[0].producer}</span>
-          <br />
-          <span className="heading">Executive Producer: </span>
-          <span>{store.fiscalFilms[0].execProducer}</span>
+    <>
+      <Head>
+        <meta property="og:title" content="All That's Left" />
+        <meta
+          property="og:description"
+          content="Donation Page for All That's Left"
+        />
+        <meta property="og:image" content="www.ccearts.org/img/CCEA99.png" />
+      </Head>
+      <div className="landing-container">
+        <div className="fake-navbar">
+          <Link href="/" passHref>
+            <img
+              src="/img/CCEA99.png"
+              alt="CCEA Logo"
+              className="navbar-logo"
+            />
+          </Link>
         </div>
-        <div>
-          <a href="#landing-title-2" className="read-more">
-            <span>Read more about this project</span>
+        <div className="landing-title">{store.fiscalFilms[0].title}</div>
+        <Image
+          height={100}
+          width={100}
+          layout="responsive"
+          quality={100}
+          className="fiscalFilms-image"
+          src={store.fiscalFilms[0].image}
+          alt=""
+        ></Image>
+        <div className="project-text">{store.fiscalFilms[0].logline}</div>
+        <div className="first-section">
+          <div className="basic-info">
+            <span className="heading">Type: </span>
+            <span>{store.fiscalFilms[0].type}</span>
+            <br />
+            <span className="heading">Status: </span>
+            <span>{store.fiscalFilms[0].status}</span>
+            <br />
+            <span className="heading">Director:</span>
+            <span>{store.fiscalFilms[0].director}</span>
+            <br />
+            <span className="heading">Producer: </span>
+            <span>{store.fiscalFilms[0].producer}</span>
+            <br />
+            <span className="heading">Executive Producer: </span>
+            <span>{store.fiscalFilms[0].execProducer}</span>
+          </div>
+          <div>
+            <a href="#landing-title-2" className="read-more">
+              <span>Read more about this project</span>
+            </a>
+          </div>
+        </div>
+        <div className="wire-container">
+          <p className="wire-info">
+            Please use a wire transfer for donations of $10,000 or more.
+            Contributions of $100,000 will earn Executive Producer credit.
+          </p>
+          <div className="wire-info-2">
+            <p className="wire-info">
+              ACCT: 583331023
+              <br />
+              ROUTING: 021000021
+            </p>
+            <p className="wire-info">
+              Chase Bank
+              <br />
+              270 Park Ave.
+              <br />
+              New York, NY 10017
+            </p>
+          </div>
+        </div>
+        <div className="wire-container">
+          <span className="wire-info">
+            We can accept credit-card payments up to $1,000 and ACH payments up
+            to $10,000 using the form below.
+            <br />
+            <br />
+            <span
+              style={{
+                color: "red",
+                // textDecoration: "underline",
+                textAlign: "left",
+              }}
+            >
+              Warning: An additional contribution to Zeffy will automatically
+              populate at ~10%. This is an optional donation to the payment
+              platform.
+            </span>{" "}
+            To avoid this charge, enter the amount of your donation to this
+            project, then choose "Other" from the dropdown menu of percentages
+            in the Summary section, and enter $0.00 in the box labeled
+            "Contribution."
+          </span>
+        </div>
+        <div
+          className="donation-form"
+          id="donation-form"
+          style={{ height: "1700px" }}
+        >
+          <iframe
+            title="Donation form powered by Zeffy"
+            style={{
+              position: "absolute",
+              border: "0",
+              top: "0",
+              left: "0",
+              bottom: "0",
+              right: "0",
+              width: "100%",
+              height: "100%",
+            }}
+            src="https://www.zeffy.com/en-US/embed/donation-form/0f0acc32-8176-4e42-8fcc-181879a6a219"
+            allowpaymentrequest="true"
+            allowtransparency="true"
+          ></iframe>
+        </div>
+        <div id="landing-title-2" className="landing-title-2">
+          {store.fiscalFilms[0].title}
+        </div>
+        <br />
+        <span className="heading">Synopsis:</span>
+        <span className="project-text">{store.fiscalFilms[0].synopsis}</span>
+        <br />
+        <br />
+        <span className="heading">Director:</span>
+        <span className="project-text">{store.fiscalFilms[0].directorBio}</span>
+        <br />
+        <br />
+        <span className="heading">Producer:</span>
+        <span className="project-text">{store.fiscalFilms[0].producerBio}</span>
+        <br />
+        <br />
+        <span className="heading">Executive Producer:</span>
+        <span className="project-text">
+          {store.fiscalFilms[0].execProducerBio}
+        </span>
+        <br />
+        <div className="donate-first">
+          <a href="#donation-form" className="donate-to">
+            <p>Make a donation to </p>
+            <p className="title-2">{store.fiscalFilms[0].title}</p>
           </a>
         </div>
       </div>
-      <div className="wire-container">
-        <p className="wire-info">
-          Please use a wire transfer for donations of $10,000 or more.
-          Contributions of $100,000 will earn Executive Producer credit.
-        </p>
-        <div className="wire-info-2">
-          <p className="wire-info">
-            ACCT: 583331023
-            <br />
-            ROUTING: 021000021
-          </p>
-          <p className="wire-info">
-            Chase Bank
-            <br />
-            270 Park Ave.
-            <br />
-            New York, NY 10017
-          </p>
-        </div>
-      </div>
-      <div className="wire-container">
-        <span className="wire-info">
-          We can accept credit-card payments up to $1,000 and ACH payments up to
-          $10,000 using the form below.
-          <br />
-          <br />
-          <span
-            style={{
-              color: "red",
-              // textDecoration: "underline",
-              textAlign: "left",
-            }}
-          >
-            Please be aware when using this form that an additional contribution
-            to Zeffy will automatically populate at ~10%. This is an optional
-            donation to the payment platform.
-          </span>{" "}
-          To avoid this charge, after entering the amount of your donation, find
-          the dropdown menu of percentages in the 'Summary' section, choose
-          'Other' from the dropdown, and enter $0.00 or more in the input
-          labeled "Contribution."
-        </span>
-      </div>
-      <div
-        className="donation-form"
-        id="donation-form"
-        style={{ height: "1700px" }}
-      >
-        <iframe
-          title="Donation form powered by Zeffy"
-          style={{
-            position: "absolute",
-            border: "0",
-            top: "0",
-            left: "0",
-            bottom: "0",
-            right: "0",
-            width: "100%",
-            height: "100%",
-          }}
-          src="https://www.zeffy.com/en-US/embed/donation-form/0f0acc32-8176-4e42-8fcc-181879a6a219"
-          allowpaymentrequest="true"
-          allowtransparency="true"
-        ></iframe>
-      </div>
-      <div id="landing-title-2" className="landing-title-2">
-        {store.fiscalFilms[0].title}
-      </div>
-      <br />
-      <span className="heading">Synopsis:</span>
-      <span className="project-text">{store.fiscalFilms[0].synopsis}</span>
-      <br />
-      <br />
-      <span className="heading">Director:</span>
-      <span className="project-text">{store.fiscalFilms[0].directorBio}</span>
-      <br />
-      <br />
-      <span className="heading">Producer:</span>
-      <span className="project-text">{store.fiscalFilms[0].producerBio}</span>
-      <br />
-      <br />
-      <span className="heading">Executive Producer:</span>
-      <span className="project-text">
-        {store.fiscalFilms[0].execProducerBio}
-      </span>
-      <br />
-      <div className="donate-first">
-        <a href="#donation-form" className="donate-to">
-          <p>Make a donation to </p>
-          <p className="title-2">{store.fiscalFilms[0].title}</p>
-        </a>
-      </div>
-    </div>
+    </>
   );
 };
 
