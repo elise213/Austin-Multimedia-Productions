@@ -5,11 +5,25 @@ const Video = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
+  // useEffect(() => {
+  //   if (videoRef.current) {
+  //     videoRef.current.play();
+  //   }
+  // }, [videoRef]);
+
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  }, [videoRef]);
+    const playVideo = async () => {
+      if (videoRef.current) {
+        try {
+          await videoRef.current.play();
+        } catch (err) {
+          console.error("Error attempting to play video: ", err);
+        }
+      }
+    };
+
+    playVideo();
+  }, []);
 
   return (
     <div className="video-container">

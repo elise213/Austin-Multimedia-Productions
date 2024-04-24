@@ -97,16 +97,14 @@ const allthatsleft = () => {
             <span
               style={{
                 color: "red",
-                // textDecoration: "underline",
                 textAlign: "left",
               }}
             >
               Warning: An additional contribution to the payment platform Zeffy
-              will automatically populate at ~10%. To avoid this optional
-              charge, enter the amount of your donation to this project, then
-              choose "Other" from the dropdown menu of percentages in the
-              Summary section. Then enter $0.00 in the box labeled
-              "Contribution."
+              will automatically populate at ~9%. To avoid this optional charge,
+              enter the amount of your donation to this project, then choose
+              "Other" from the dropdown menu of percentages in the Summary
+              section. Then enter $0.00 in the box labeled "Contribution."
             </span>
           </span>
         </div>
