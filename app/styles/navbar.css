@@ -71,9 +71,8 @@
 }
 
 .close-icon {
-  /* font-size: 40px; */
   font-size: xx-large;
-  /* color: lightgray; */
+  color: lightgray;
 }
 
 .close-icon,

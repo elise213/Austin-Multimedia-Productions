@@ -40,32 +40,18 @@ const MovieCard = ({ result }) => {
   useEffect(() => {
     function handleClickOutside(event) {
       const modal = document.querySelector(".modal");
-      // Check if the modal is open and if the click target is outside the modal
       if (store.modalIsOpen && modal && !modal.contains(event.target)) {
         actions.toggleModal();
       }
     }
 
-    // Add the event listener to the document
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      // Clean up the event listener when the component unmounts or the dependencies change
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [store.modalIsOpen, actions]); // Ensure the effect runs only if these dependencies change
+  }, [store.modalIsOpen, actions]);
 
-  // useEffect(() => {
-  //   function handleClickOutside(event) {
-  //     const modal = document.querySelector(".modal");
-  //     if (modal && !modal.contains(event.target) && store.modalIsOpen) {
-  //       actions.toggleModal();
-  //     }
-  //   }
-
-  //   document.addEventListener("click", handleClickOutside);
-  //   return () => document.removeEventListener("click", handleClickOutside);
-  // }, [store.modalIsOpen, actions]);
   return (
     <>
       {store.modalIsOpen && (
