@@ -19,7 +19,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 90px;
+  height: 85px;
 }
 
 .FAQ-link {
@@ -338,6 +338,10 @@ body.modal-open {
 
   .movie-scroll-labels {
     flex-direction: column;
+  }
+
+  .fake-navbar {
+    height: 75px !important;
   }
 }
 
