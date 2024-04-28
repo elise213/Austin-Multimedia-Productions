@@ -92,11 +92,11 @@ const Navbar = () => {
           {/* <EmailList /> */}
         </div>
         <div className="nav-footer">
-          <div className="socials">
+          {/* <div className="socials">
             <i className="fa-brands fa-instagram" />
             <i className="fa-brands fa-twitter" />
             <i className="fa-brands fa-facebook-f" />
-          </div>
+          </div> */}
           <p className="footer-text">
             The Center for Cinematic and Experimental Arts ©2024
           </p>
