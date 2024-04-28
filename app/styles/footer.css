@@ -17,20 +17,8 @@
   z-index: 1000;
   justify-content: center;
   width: 100%;
-  margin-top: auto; 
+  margin-top: auto;
   bottom: 0;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-  font-size: large;
-  color: gray;
-  justify-content: space-around;
-  box-sizing: border-box;
-  margin: 15px 0;
-  font-size: 25px;
-  color: lavender;
 }
 
 .fa-brands i:hover {

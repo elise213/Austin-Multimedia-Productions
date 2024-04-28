@@ -3,10 +3,10 @@
 .new-navbar {
   border-radius: 0 15px 0 0;
   position: absolute;
-  width: 275px;
+  width: 300px;
   z-index: 799999999;
   top: 0;
-  left: -277px;
+  left: -302px;
   display: flex;
   transition: left 0.3s ease;
   background-color: #464646;
@@ -14,16 +14,39 @@
   border: 1px solid black;
   border-left: none;
   border-top: none;
-  display: flex;
   align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .new-navbar.open {
   left: 0;
 }
 
+.nav-footer {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #464646, #000000);
+}
+
+.socials {
+  display: flex;
+  font-size: large;
+  color: gray;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-text {
+  color: gray;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .navbar-content {
-  margin-left: 20px;
   align-self: center;
   display: flex;
   max-height: 600px;
@@ -31,6 +54,8 @@
   flex-direction: column;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 .active {
@@ -159,11 +184,11 @@
 }
 
 .close-icon {
-  left: -40px !important;
+  left: -60px !important;
 }
 
 .close-icon.open {
-  left: 240px !important;
+  left: 260px !important;
   top: 5px;
   transition: left 0.3s ease;
 }
@@ -185,5 +210,5 @@
   }
 }
 .open-icon.closed {
-  left: 290px !important;
+  left: 315px !important;
 }
