@@ -71,8 +71,9 @@
 }
 
 .close-icon {
-  font-size: 40px;
-  color: lightgray;
+  /* font-size: 40px; */
+  font-size: xx-large;
+  /* color: lightgray; */
 }
 
 .close-icon,
@@ -163,7 +164,7 @@
 }
 
 .close-icon.open {
-  left: 235px !important;
+  left: 240px !important;
   top: 5px;
   transition: left 0.3s ease;
 }

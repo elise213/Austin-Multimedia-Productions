@@ -5,6 +5,7 @@ import styles from "../styles/contact.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Link from "next/link";
+import FakeNavbar from "./FakeNavbar";
 
 const Contact = () => {
   const { actions } = useContext(Context);
@@ -36,11 +37,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <div className="fake-navbar">
-        <Link href="/" passHref>
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
-        </Link>
-      </div>
+      <FakeNavbar />
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="contact-call">
           <span className="close-contact" onClick={actions.toggleContactModal}>

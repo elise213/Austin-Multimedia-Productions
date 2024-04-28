@@ -2,15 +2,12 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./fiscal.css";
+import FakeNavbar from "../components/FakeNavbar";
 
 const Fiscal = () => {
   return (
     <>
-      <div className="fake-navbar">
-        <Link href="/" passHref>
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
-        </Link>
-      </div>
+      <FakeNavbar />
       <div className={`fiscal-container`}>
         <div className="fiscal-about">
           <span className="">

@@ -5,12 +5,6 @@ const Video = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
-  // useEffect(() => {
-  //   if (videoRef.current) {
-  //     videoRef.current.play();
-  //   }
-  // }, [videoRef]);
-
   useEffect(() => {
     const playVideo = async () => {
       if (videoRef.current) {

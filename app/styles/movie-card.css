@@ -22,10 +22,12 @@ p {
 }
 
 .close-mc {
-  font-size: 40px;
-  color: salmon;
-  position: absolute;
-  right: 10px;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px 5px 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .close-mc:hover {
@@ -42,7 +44,7 @@ p {
 }
 
 .review-container {
-  margin: 20px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,20 +55,22 @@ p {
   color: transparent;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 0 15px;
   height: auto;
 }
 
 .together {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   width: 500px;
-  display: flex;
+  /* display: flex;
   flex-direction: column !important;
-  align-items: center;
+  align-items: center; */
+  max-height: 75vh;
   background-color: white;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
+  margin: auto;
 }
 
 .iframe-2 {
@@ -204,7 +208,6 @@ body.modal-open {
     align-items: flex-start !important;
   }
   .together {
-    margin-top: 20px;
     max-width: unset !important;
   }
 }

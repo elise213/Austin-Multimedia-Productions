@@ -2,15 +2,12 @@ import React from "react";
 import Link from "next/link";
 import styles from "./about.css";
 import Image from "next/image";
+import FakeNavBar from "../components/FakeNavbar";
 
 const About = () => {
   return (
     <>
-      <div className="fake-navbar">
-        <Link href="/" passHref>
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
-        </Link>
-      </div>
+      <FakeNavBar />
       <div className="about-container">
         <div className="about">
           <span className="">

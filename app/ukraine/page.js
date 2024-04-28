@@ -4,16 +4,13 @@ import { Context } from "../context/appContext";
 import Image from "next/image";
 import styles from "../allthatsleft/allthatsleft.css";
 import Link from "next/link";
+import FakeNavbar from "../components/FakeNavbar";
 
 const ukraine = () => {
   const { store, actions } = useContext(Context);
   return (
     <div className="landing-container">
-      <div className="fake-navbar">
-        <Link href="/" passHref>
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
-        </Link>
-      </div>
+      <FakeNavbar />
       <div className="landing-title">{store.fiscalFilms[1].title}</div>
       <div className="image-container">
         <Image
@@ -56,8 +53,7 @@ const ukraine = () => {
       </div>
       <div className="wire-container">
         <p className="wire-info">
-          We can accept credit card payments up to $1,000 and ACH payments up to
-          $10,000. Please use a wire transfer for donations of $10,000 or more.
+          Please use a wire transfer for donations of $10,000 or more.
         </p>
         <div className="wire-info-2">
           <p className="wire-info">
@@ -74,17 +70,29 @@ const ukraine = () => {
           </p>
         </div>
       </div>
-      <div className="warning">
-        <span className="wire-info" style={{ color: "red" }}>
-          **Please be aware,{" "}
-        </span>
+      <div className="wire-container">
         <span className="wire-info">
-          an additional donation to the payment platform Zeffy will
-          automatically populate at ~10%. To avoid making this contribution, go
-          to the 'Summary' section, choose 'Other' from the dropdown, and enter
-          $0.
+          We can accept credit card payments up to $1,000 and ACH up to $10,000
+          using the form below.
+          <br />
+          <br />
+          <span
+            style={{
+              color: "red",
+              textAlign: "left",
+            }}
+          >
+            Warning!!
+          </span>{" "}
+          A donation to the payment platform Zeffy will automatically populate
+          at ~9% of your donation to this project. To prevent this charge, enter
+          the amount of your donation to this project, choose "other" from the
+          dropdown menu of percentages in the Summary section, then enter the
+          amount that you want to donate to Zeffy in the box labeled
+          "Contribution".
         </span>
       </div>
+
       <div
         className="donation-form"
         id="donation-form"

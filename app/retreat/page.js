@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "./retreat.css";
 import Image from "next/image";
+import FakeNavbar from "../components/FakeNavbar";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   return {
@@ -17,15 +18,7 @@ const Retreat = () => {
   return (
     <>
       <div className="retreat-container">
-        <div className="retreat-nav">
-          <Link href="/" passHref>
-            <img
-              src="/img/CCEA99.png"
-              alt="CCEA Logo"
-              className="navbar-logo"
-            />
-          </Link>
-        </div>
+        <FakeNavbar />
         <div className="retreat-sub1">
           <Image
             height={1300}

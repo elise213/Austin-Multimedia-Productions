@@ -7,6 +7,7 @@ import Sticker from "./components/Sticker";
 import Image from "next/image";
 import MovieCard from "./components/MovieCard";
 import Link from "next/link";
+import FakeNavBar from "./components/FakeNavbar";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -79,11 +80,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="fake-navbar">
-        <Link href="/" passHref>
-          <img src="/img/CCEA99.png" alt="CCEA Logo" className="navbar-logo" />
-        </Link>
-      </div>
+      <FakeNavBar />
       <div className={`${styles.main} home-body content`}>
         <svg width="0" height="0">
           <defs>
@@ -134,9 +131,9 @@ const Home = () => {
                       alt=""
                     />
                     <div className="highlights">
-                      <div className="sticker-and-review">
+                      {/* <div className="sticker-and-review">
                         <Sticker className="sticker" sticker={result} />
-                      </div>
+                      </div> */}
                       {!store.modalIsOpen && (
                         <>
                           {result.title && (
@@ -153,13 +150,13 @@ const Home = () => {
                           )}
                         </>
                       )}
-                      {store.modalIsOpen && (
-                        <>
-                          <div className="modal-overlay"></div>
-                          <MovieCard result={getActiveEvent()} />
-                        </>
-                      )}
                     </div>
+                    {store.modalIsOpen && (
+                      <>
+                        <div className="modal-overlay"></div>
+                        <MovieCard result={getActiveEvent()} />
+                      </>
+                    )}
                   </div>
                 </li>
               );
