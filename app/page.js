@@ -151,7 +151,7 @@ const Home = () => {
                         </>
                       )}
                     </div>
-                    {store.modalIsOpen && (
+                    {store.modalIsOpen && store.activeEventId === result.id && (
                       <>
                         <div className="modal-overlay"></div>
                         <MovieCard result={getActiveEvent()} />
