@@ -116,7 +116,6 @@ const ukraine = () => {
       <div id="landing-title-2" className="landing-title-2">
         {store.fiscalFilms[1].title}
       </div>
-      <br />
       <span className="heading">Synopsis:</span>
 
       <p className="project-text" style={{ textIndent: "40px" }}>
