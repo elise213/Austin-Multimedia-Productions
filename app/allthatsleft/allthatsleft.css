@@ -76,9 +76,10 @@
 
 .wire-info-2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 15px 0;
   font-size: 15px;
+  min-width: 70%;
 }
 
 .wire-info-2 p {
@@ -98,7 +99,8 @@
 .landing-title,
 .landing-title-2 {
   font-size: 35px;
-  margin: 10px 0;
+  margin: 0 0 20px 0;
+  text-align: center;
 }
 
 .heading {

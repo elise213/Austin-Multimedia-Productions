@@ -72,8 +72,8 @@ const ukraine = () => {
       </div>
       <div className="wire-container">
         <span className="wire-info">
-          We can accept credit card payments up to $1,000 and ACH up to $10,000
-          using the form below.
+          For credit card donations up to $1,000 and ACH up to $10,000, please
+          use the form below.
           <br />
           <br />
           <span
@@ -88,11 +88,9 @@ const ukraine = () => {
           at ~9% of your donation to this project. To prevent this charge, enter
           the amount of your donation to this project, choose "other" from the
           dropdown menu of percentages in the Summary section, then enter the
-          amount that you want to donate to Zeffy in the box labeled
-          "Contribution".
+          amount that you want to donate to Zeffy in the "Contribution" box.
         </span>
       </div>
-
       <div
         className="donation-form"
         id="donation-form"
@@ -120,7 +118,50 @@ const ukraine = () => {
       </div>
       <br />
       <span className="heading">Synopsis:</span>
-      <span className="project-text">{store.fiscalFilms[1].synopsis}</span>
+
+      <p className="project-text" style={{ textIndent: "40px" }}>
+        Follow world-class cellist Matt Haimowitz as he travels from far West
+        Texas to Ukraine to perform a lost masterpiece by Ukrainian-born
+        composer Thomas deHartmann in collaboration with the Odesa Philharmonic
+        Orchestra, on a four city tour of war-weary Ukraine.
+      </p>
+      <p className="project-text" style={{ textIndent: "40px" }}>
+        This hour-long documentary is an exploration of the transformative power
+        of music amidst the current conflict in Ukraine, offering a lens through
+        which to understand the echoes of cultural, historical, political, and
+        social context of the conflict.
+      </p>
+      <p className="project-text" style={{ textIndent: "40px" }}>
+        The deHartmann Cello Concerto was written in 1935 as a defiant
+        anti-fascist statement in contrast to growing anti-semitism in Eastern
+        Europe. This Cello Concerto has never been performed in Ukraine — until
+        now.
+      </p>
+      <p className="project-text" style={{ textIndent: "40px" }}>
+        Against the backdrop of Ukraine's complex history of conflict with
+        Russia, the film dips into the resonant narratives of resilience and
+        perseverance embodied by the musicians in the Odesa Philharmonic. As the
+        eighty-piece orchestra embarks on their first tour since the war, our
+        documentary illuminates their individual stories, weaving a rich
+        tapestry of human experience that reflects the indomitable spirit of the
+        Ukrainian people. Amidst the challenges of war and political upheaval,
+        music emerges as a universal language, capable of bridging divides and
+        offering a beacon of light in dark times.
+      </p>
+      <p className="project-text" style={{ textIndent: "40px" }}>
+        This film is a joint effort between American filmmakers and a Ukrainian
+        filmmaking team — a collaboration that mirrors the journey that Matt
+        Haimovitz is sharing with his contemporaries in the Odesa Philharmonic.
+        These artists are giving voice to the enduring power of art amidst
+        adversity, where classical music becomes an anthem of defiance and a
+        rallying cry for justice. Their story is the story of Ukraine, past &
+        present. It’s the story of a people who’ve fought oppression and
+        overcome — and must do it again.
+      </p>
+      <p className="project-text" style={{ textIndent: "40px" }}>
+        Please consider supporting this film with a tax-deductible contribution.
+        Thank you.
+      </p>
       <br />
       <br />
       <span className="heading">Director:</span>
@@ -131,7 +172,6 @@ const ukraine = () => {
       <span className="project-text">{store.fiscalFilms[1].producerBio}</span>
       <br />
       <br />
-
       {store.fiscalFilms[1].producer2Bio && (
         <>
           <span className="heading">Producer:</span>

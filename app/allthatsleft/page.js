@@ -82,8 +82,8 @@ const allthatsleft = () => {
         </div>
         <div className="wire-container">
           <span className="wire-info">
-            We can accept credit card payments up to $1,000 and ACH up to
-            $10,000 using the form below.
+            For credit card donations up to $1,000 and ACH up to $10,000, please
+            use the form below.
             <br />
             <br />
             <span
