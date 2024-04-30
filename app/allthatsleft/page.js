@@ -127,7 +127,6 @@ const allthatsleft = () => {
         <div id="landing-title-2" className="landing-title-2">
           {store.fiscalFilms[0].title}
         </div>
-        <br />
         <span className="heading">Synopsis:</span>
         <span className="project-text">{store.fiscalFilms[0].synopsis}</span>
         <br />

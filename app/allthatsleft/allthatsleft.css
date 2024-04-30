@@ -96,10 +96,16 @@
   flex-direction: column;
 }
 
+.landing-title-2 {
+  margin: 20px 0 0 0;
+}
+.landing-title {
+  margin: 0px;
+}
+
 .landing-title,
 .landing-title-2 {
   font-size: 35px;
-  margin: 20px 0;
   text-align: center;
 }
 
