@@ -6,12 +6,12 @@ import styles from "../allthatsleft/allthatsleft.css";
 import Link from "next/link";
 import FakeNavbar from "../components/FakeNavbar";
 
-const ukraine = () => {
+const theschoolofhope = () => {
   const { store, actions } = useContext(Context);
   return (
     <div className="landing-container">
       <FakeNavbar />
-      <div className="landing-title">{store.fiscalFilms[1].title}</div>
+      <div className="landing-title">{store.fiscalFilms[2].title}</div>
       <br />
       <div className="image-container">
         <Image
@@ -20,29 +20,29 @@ const ukraine = () => {
           layout="responsive"
           quality={100}
           className="fiscalFilms-image-ukraine"
-          src={store.fiscalFilms[1].image}
+          src={store.fiscalFilms[2].image}
           alt=""
         ></Image>
       </div>
-      <div className="project-text">{store.fiscalFilms[1].logline}</div>
+      <div className="project-text">{store.fiscalFilms[2].logline}</div>
       <div className="first-section">
         <div className="basic-info">
           <span className="heading">Type: </span>
-          <span>{store.fiscalFilms[1].type}</span>
+          <span>{store.fiscalFilms[2].type}</span>
           <br />
           <span className="heading">Status: </span>
-          <span>{store.fiscalFilms[1].status}</span>
+          <span>{store.fiscalFilms[2].status}</span>
           <br />
-          <span className="heading">Director:</span>
-          <span>{store.fiscalFilms[1].director}</span>
+          <span className="heading">Director: </span>
+          <span>{store.fiscalFilms[2].director}</span>
           <br />
           <span className="heading">Producer: </span>
-          <span>{store.fiscalFilms[1].producer}</span>
+          <span>{store.fiscalFilms[2].producer}</span>
           <br />
-          {store.fiscalFilms[1].execProducer && (
+          {store.fiscalFilms[2].execProducer && (
             <>
               <span className="heading">Executive Producer: </span>
-              <span>{store.fiscalFilms[1].execProducer}</span>
+              <span>{store.fiscalFilms[2].execProducer}</span>
             </>
           )}
         </div>
@@ -89,7 +89,7 @@ const ukraine = () => {
           at ~9% of your donation to this project. To prevent this charge, enter
           the amount of your donation to this project, choose "other" from the
           dropdown menu of percentages in the Summary section, then enter the
-          amount that you want to donate to Zeffy in the "Contribution" box.
+          amount that you want to donate to Zeffy ($0.00 is fine).
         </span>
       </div>
       <div
@@ -115,73 +115,27 @@ const ukraine = () => {
         ></iframe>
       </div>
       <div id="landing-title-2" className="landing-title-2">
-        {store.fiscalFilms[1].title}
+        {store.fiscalFilms[2].title}
       </div>
-      <br />
       <span className="heading">Synopsis:</span>
+      <span className="project-text">{store.fiscalFilms[2].synopsis}</span>
 
-      <p className="project-text">
-        Follow world-class cellist Matt Haimowitz as he travels from far West
-        Texas to Ukraine to perform a lost masterpiece by Ukrainian-born
-        composer Thomas deHartmann in collaboration with the Odesa Philharmonic
-        Orchestra, on a four city tour of war-weary Ukraine.
-      </p>
-      <br />
-      <p className="project-text">
-        This hour-long documentary is an exploration of the transformative power
-        of music amidst the current conflict in Ukraine, offering a lens through
-        which to understand the echoes of cultural, historical, political, and
-        social context of the conflict.
-      </p>
-      <br />
-      <p className="project-text">
-        The deHartmann Cello Concerto was written in 1935 as a defiant
-        anti-fascist statement in contrast to growing anti-semitism in Eastern
-        Europe. This Cello Concerto has never been performed in Ukraine — until
-        now.
-      </p>
-      <br />
-      <p className="project-text">
-        Against the backdrop of Ukraine's complex history of conflict with
-        Russia, the film dips into the resonant narratives of resilience and
-        perseverance embodied by the musicians in the Odesa Philharmonic. As the
-        eighty-piece orchestra embarks on their first tour since the war, our
-        documentary illuminates their individual stories, weaving a rich
-        tapestry of human experience that reflects the indomitable spirit of the
-        Ukrainian people. Amidst the challenges of war and political upheaval,
-        music emerges as a universal language, capable of bridging divides and
-        offering a beacon of light in dark times.
-      </p>
-      <br />
-      <p className="project-text">
-        This film is a joint effort between American filmmakers and a Ukrainian
-        filmmaking team — a collaboration that mirrors the journey that Matt
-        Haimovitz is sharing with his contemporaries in the Odesa Philharmonic.
-        These artists are giving voice to the enduring power of art amidst
-        adversity, where classical music becomes an anthem of defiance and a
-        rallying cry for justice. Their story is the story of Ukraine, past &
-        present. It’s the story of a people who’ve fought oppression and
-        overcome — and must do it again.
-      </p>
-      <p className="project-text">
-        Please consider supporting this film with a tax-deductible contribution.
-        Thank you.
-      </p>
+      <p className="project-text" style={{ textIndent: "40px" }}></p>
       <br />
       <br />
       <span className="heading">Director:</span>
-      <span className="project-text">{store.fiscalFilms[1].directorBio}</span>
+      <span className="project-text">{store.fiscalFilms[2].directorBio}</span>
       <br />
       <br />
       <span className="heading">Producer:</span>
-      <span className="project-text">{store.fiscalFilms[1].producerBio}</span>
+      <span className="project-text">{store.fiscalFilms[2].producerBio}</span>
       <br />
       <br />
-      {store.fiscalFilms[1].producer2Bio && (
+      {store.fiscalFilms[2].producer2Bio && (
         <>
           <span className="heading">Producer:</span>
           <span className="project-text">
-            {store.fiscalFilms[1].producer2Bio}
+            {store.fiscalFilms[2].producer2Bio}
           </span>
         </>
       )}
@@ -189,11 +143,11 @@ const ukraine = () => {
       <div className="donate-first">
         <a href="#donation-form" className="donate-to">
           <p>Make a donation to </p>
-          <p className="title-2">{store.fiscalFilms[1].title}</p>
+          <p className="title-2">{store.fiscalFilms[2].title}</p>
         </a>
       </div>
     </div>
   );
 };
 
-export default ukraine;
+export default theschoolofhope;
