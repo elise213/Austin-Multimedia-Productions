@@ -14,7 +14,7 @@ const theschoolofhope = () => {
       <div className="landing-title">{store.fiscalFilms[2].title}</div>
       <br />
       <div className="image-container">
-        <Image
+        {/* <Image
           height={100}
           width={100}
           layout="responsive"
@@ -22,7 +22,14 @@ const theschoolofhope = () => {
           className="fiscalFilms-image-ukraine"
           src={store.fiscalFilms[2].image}
           alt=""
-        ></Image>
+        ></Image> */}
+        <Image
+          quality={80}
+          className="fiscalFilms-image-ukraine"
+          src={store.fiscalFilms[2].image}
+          alt=""
+          fill
+        />
       </div>
       <div className="project-text">{store.fiscalFilms[2].logline}</div>
       <div className="first-section">
@@ -133,7 +140,7 @@ const theschoolofhope = () => {
       <br />
       {store.fiscalFilms[2].producer2Bio && (
         <>
-          <span className="heading">Producer:</span>
+          <span className="heading">Director of Photography:</span>
           <span className="project-text">
             {store.fiscalFilms[2].producer2Bio}
           </span>

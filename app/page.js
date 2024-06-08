@@ -103,6 +103,7 @@ const Home = () => {
                 <Image
                   height={1000}
                   width={2000}
+                  quality={80}
                   className="retreat-li"
                   src={"/img/CCEARETREATSMALLER.png"}
                   alt=""
