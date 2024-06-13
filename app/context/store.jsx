@@ -9,6 +9,8 @@ const getState = ({ getStore, getActions, setStore }) => {
       isLargeScreen: false,
       isClient: false,
       windowWidth: 0,
+      zeffyWarningText:
+        "A donation to the payment platform Zeffy will automatically populate at ~9% of your donation to this project. To prevent this charge, enter the amount of your donation to this project, choose 'Other' from the dropdown menu of percentages in the Summary section, then enter the amount that you want to donate to Zeffy ($0 is fine).",
       fiscalFilms: [
         {
           title: "All That's Left Of You",
@@ -54,7 +56,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           type: "Short Documentary",
           status: "Pre-Production",
           director: "Amy Martinez",
-          producer: "Chelsea Hernandez and Amy Martinez",
+          producer: "Chelsea Hernandez",
           image: "/img/tsoh.png",
           directorBio:
             "Amy is an Emmy®-nominated Mexican American filmmaker, with a long successful career in documentary features, series and branded content for works featured on Netflix, Prime Video, Hulu, PBS, and National Geographic whose production work was selected for the 2020 Telluride Film Festival. She has produced acclaimed documentaries such as FARMLAND (Netflix), directed by Academy Award winner James Moll and A WHISPER TO A ROAR (Prime). Currently developing a career as an independent film director based in Austin, Texas, after years of living and working in Chicago and Los Angeles, Amy is drawn to stories that center dignity, joy and tenderness discovered in unexpected places, especially centered on women’s interconnected care for one another and their communities. She is an active member of the Documentary Producers Alliance, Video Consortium and Brown Girls Doc Mafia. Originally from South Texas, Amy is a graduate of Northwestern University’s Medill School of Journalism.",

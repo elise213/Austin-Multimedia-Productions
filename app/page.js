@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "./context/appContext";
 import Video from "./components/Video";
 import styles from "./globals.css";
-import Sticker from "./components/Sticker";
 import Image from "next/image";
 import MovieCard from "./components/MovieCard";
 import Link from "next/link";
@@ -132,9 +131,6 @@ const Home = () => {
                       alt=""
                     />
                     <div className="highlights">
-                      {/* <div className="sticker-and-review">
-                        <Sticker className="sticker" sticker={result} />
-                      </div> */}
                       {!store.modalIsOpen && (
                         <>
                           {result.title && (

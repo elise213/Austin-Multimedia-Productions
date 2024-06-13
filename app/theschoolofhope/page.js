@@ -14,15 +14,6 @@ const theschoolofhope = () => {
       <div className="landing-title">{store.fiscalFilms[2].title}</div>
       <br />
       <div className="image-container">
-        {/* <Image
-          height={100}
-          width={100}
-          layout="responsive"
-          quality={100}
-          className="fiscalFilms-image-ukraine"
-          src={store.fiscalFilms[2].image}
-          alt=""
-        ></Image> */}
         <Image
           quality={80}
           className="fiscalFilms-image-ukraine"
@@ -40,7 +31,7 @@ const theschoolofhope = () => {
           <span className="heading">Status: </span>
           <span>{store.fiscalFilms[2].status}</span>
           <br />
-          <span className="heading">Director: </span>
+          <span className="heading">Director/Producer: </span>
           <span>{store.fiscalFilms[2].director}</span>
           <br />
           <span className="heading">Producer: </span>
@@ -88,15 +79,12 @@ const theschoolofhope = () => {
             style={{
               color: "red",
               textAlign: "left",
+              textDecoration: "underline",
             }}
           >
-            Warning!
+            Warning:
           </span>{" "}
-          A donation to the payment platform Zeffy will automatically populate
-          at ~9% of your donation to this project. To prevent this charge, enter
-          the amount of your donation to this project, choose "other" from the
-          dropdown menu of percentages in the Summary section, then enter the
-          amount that you want to donate to Zeffy ($0.00 is fine).
+          <span className="wire-info">{store.zeffyWarningText}</span>
         </span>
       </div>
       <div
