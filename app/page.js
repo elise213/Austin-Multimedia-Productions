@@ -7,6 +7,7 @@ import Image from "next/image";
 import MovieCard from "./components/MovieCard";
 import Link from "next/link";
 import FakeNavBar from "./components/FakeNavbar";
+import { auto } from "@popperjs/core";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -100,8 +101,8 @@ const Home = () => {
             <li>
               <Link href="/retreat" passHref>
                 <Image
-                  height={1000}
-                  width={2000}
+                  height={500}
+                  width={500}
                   quality={80}
                   className="retreat-li"
                   src={"/img/CCEARETREATSMALLER.png"}
@@ -110,7 +111,7 @@ const Home = () => {
               </Link>
             </li>
             {store.events.map((result, i) => {
-              console.log(result);
+              // console.log(result);
               return (
                 <li
                   key={i}

@@ -307,9 +307,8 @@ body.modal-open {
 }
 
 .movie {
-  width: 100%;
+  /* width: 100%; */
   object-position: top;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin-left: 10px;
   z-index: 4;
   margin: 0;

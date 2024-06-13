@@ -10,7 +10,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       isClient: false,
       windowWidth: 0,
       zeffyWarningText:
-        "A donation to the payment platform Zeffy will automatically populate at ~9% of your donation to this project. To prevent this charge, enter the amount of your donation to this project, choose 'Other' from the dropdown menu of percentages in the Summary section, then enter the amount that you want to donate to Zeffy ($0 is fine).",
+        "A donation to the payment platform Zeffy will automatically populate at ~9% of your donation to this project. To prevent this charge, enter the amount of your donation to this project, choose Other from the dropdown menu in the Summary section, then enter the amount that you want to donate to Zeffy ($0 is fine).",
       fiscalFilms: [
         {
           title: "All That's Left Of You",
