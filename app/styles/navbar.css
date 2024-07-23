@@ -16,11 +16,15 @@
   border-top: none;
   align-items: flex-end;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .new-navbar.open {
   left: 0;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .nav-footer {
@@ -97,7 +101,7 @@
 
 .close-icon {
   font-size: xx-large;
-  color: lightgray;
+  color: rgb(226, 54, 35);
 }
 
 .close-icon,
@@ -150,11 +154,6 @@
 .new-navbar.open {
   left: 0 !important;
   transition: left 0.3s ease;
-}
-
-.nav-item {
-  margin: 15px 0;
-  text-align: start !important;
 }
 
 .nav-container {

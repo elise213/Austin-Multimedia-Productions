@@ -17,15 +17,36 @@ const Navbar = () => {
     actions.setShowContactModal(!store.showContactModal);
   };
 
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     const nav = document.querySelector(".new-navbar");
+  //     if (nav && !nav.contains(event.target) && store.isNavOpen) {
+  //       actions.setIsNavOpen(false);
+  //     }
+  //   };
+  //   document.addEventListener("click", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, [store.isNavOpen, actions.setIsNavOpen]);
+
   useEffect(() => {
+    if (store.isNavOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
     const handleClickOutside = (event) => {
       const nav = document.querySelector(".new-navbar");
       if (nav && !nav.contains(event.target) && store.isNavOpen) {
         actions.setIsNavOpen(false);
       }
     };
+
     document.addEventListener("click", handleClickOutside);
     return () => {
+      document.body.classList.remove("no-scroll"); // Clean up the class
       document.removeEventListener("click", handleClickOutside);
     };
   }, [store.isNavOpen, actions.setIsNavOpen]);
@@ -90,16 +111,6 @@ const Navbar = () => {
             CONTACT
           </span>
           {/* <EmailList /> */}
-        </div>
-        <div className="nav-footer">
-          {/* <div className="socials">
-            <i className="fa-brands fa-instagram" />
-            <i className="fa-brands fa-twitter" />
-            <i className="fa-brands fa-facebook-f" />
-          </div> */}
-          <p className="footer-text">
-            The Center for Cinematic and Experimental Arts ©2024
-          </p>
         </div>
       </nav>
 
