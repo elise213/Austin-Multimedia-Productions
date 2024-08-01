@@ -2,27 +2,47 @@
 import React, { useContext, useState, useEffect } from "react";
 import styles from "../styles/footer.css";
 import { Context } from "../context/appContext";
+import EmailList from "./EmailList";
+import Link from "next/link";
 
 const Footer = () => {
   const { store, actions } = useContext(Context);
-  // const [isNavOpen, setIsNavOpen] = useState(store.isNaVOpen);
+  const [isNavOpen, setIsNavOpen] = useState(store.isNaVOpen);
 
-  // useEffect(() => {
-  //   setIsNavOpen(store.isNavOpen);
-  // }, [store.isNavOpen]);
+  useEffect(() => {
+    setIsNavOpen(store.isNavOpen);
+  }, [store.isNavOpen]);
 
   return (
-    <footer className={styles.footer}>
-      {/* {!isNavOpen && (
-        <p className="footer-text">
-          2024© Center for Cinematic and Experimental Arts
-        </p>
-      )}
-      <div className="socials">
-        <i className="fa-brands fa-instagram" />
-        <i className="fa-brands fa-twitter" />
-        <i className="fa-brands fa-facebook-f" /> 
-      </div> */}
+    <footer>
+      <div className="footer-div-1">
+        <div className="sitemap">
+          <Link href="/" passHref>
+            HOME
+          </Link>
+          <Link href="/about" passHref>
+            ABOUT
+          </Link>
+          <Link href="/fiscal-sponsorship" passHref>
+            FISCAL SPONSORSHIP
+          </Link>
+          <Link href="/contact" passHref>
+            CONTACT
+          </Link>
+        </div>
+        <div className="socials">
+          <p>FOLLOW</p>
+          <Link href="https://www.instagram.com/ccexarts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <i className="fa-brands fa-instagram" />
+          </Link>
+        </div>
+      </div>
+      <div className="footer-div-2">
+        <EmailList />
+      </div>
+      <p className="footer-text">
+        THE CENTER FOR CINEMATIC AND EXPERIMENTAL ARTS
+      </p>
     </footer>
   );
 };

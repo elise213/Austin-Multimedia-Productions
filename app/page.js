@@ -8,6 +8,7 @@ import MovieCard from "./components/MovieCard";
 import Link from "next/link";
 import FakeNavBar from "./components/FakeNavbar";
 import { auto } from "@popperjs/core";
+import Footer from "./components/Footer";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -161,6 +162,7 @@ const Home = () => {
             })}
           </ul>
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -3,10 +3,10 @@
 .new-navbar {
   border-radius: 0 15px 0 0;
   position: absolute;
-  width: 300px;
+  width: 350px;
   z-index: 799999999;
   top: 0;
-  left: -302px;
+  left: -360px;
   display: flex;
   transition: left 0.3s ease;
   background-color: #464646;
@@ -34,16 +34,6 @@ body.no-scroll {
   background: linear-gradient(to bottom, #464646, #000000);
 }
 
-.socials {
-  display: flex;
-  font-size: large;
-  color: gray;
-  justify-content: space-around;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px;
-}
-
 .footer-text {
   color: gray;
   letter-spacing: 1px;
@@ -53,7 +43,7 @@ body.no-scroll {
 .navbar-content {
   align-self: center;
   display: flex;
-  max-height: 600px;
+  max-height: 500px;
   justify-content: space-between;
   flex-direction: column;
   box-sizing: border-box;
@@ -69,7 +59,7 @@ body.no-scroll {
 .nav-item,
 .nav-item a {
   letter-spacing: 2px;
-  color: lightgray;
+  color: white;
   text-decoration: none;
   font-size: 22px;
   z-index: 999;
@@ -101,7 +91,7 @@ body.no-scroll {
 
 .close-icon {
   font-size: xx-large;
-  color: rgb(226, 54, 35);
+  color: white;
 }
 
 .close-icon,
@@ -113,7 +103,7 @@ body.no-scroll {
 }
 
 .open-icon.closed {
-  left: -200px;
+  left: 385px;
   transition: left 0.3s ease;
 }
 
@@ -161,10 +151,6 @@ body.no-scroll {
   width: 100vw;
 }
 
-.open-icon.closed {
-  left: 295px;
-}
-
 .nav-container {
   position: absolute;
 }
@@ -187,7 +173,7 @@ body.no-scroll {
 }
 
 .close-icon.open {
-  left: 260px !important;
+  left: 310px !important;
   top: 5px;
   transition: left 0.3s ease;
 }
@@ -207,7 +193,4 @@ body.no-scroll {
   .open-icon {
     top: 5px !important;
   }
-}
-.open-icon.closed {
-  left: 315px !important;
 }

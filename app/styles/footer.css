@@ -1,26 +1,136 @@
-.main {
-  position: relative;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.footer-text {
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 1.2px;
-  color: gray;
-}
-
-.footer {
-  display: flex;
-  z-index: 1000;
-  justify-content: center;
   width: 100%;
-  margin-top: auto;
-  bottom: 0;
 }
 
-.fa-brands i:hover {
-  color: lightgreen;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* Footer Content */
+.footer-text {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  color: white;
+}
+
+.footer-div-1,
+.footer-div-2 {
+  display: flex;
+  flex-direction: row !important;
+  max-width: unset !important;
+}
+
+.footer-div-1 {
+  justify-content: space-between;
+}
+
+.footer-div-2 {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.socials p {
+  color: white;
+  margin: 5px;
+}
+
+.socials i {
+  color: white;
+}
+
+.socials a {
+  text-align: center;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.sitemap p {
+  color: white;
+  margin: 0;
+}
+
+.sitemap a {
+  color: white;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .scroll-search-results {
+    width: 100%;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    flex-direction: column;
+    min-height: auto;
+    justify-content: flex-start !important;
+    margin: 0;
+    padding: 15px 0 23px 0;
+  }
+
+  .scroll-search-results ul {
+    flex-direction: column;
+    margin: 0 !important;
+    align-items: center;
+  }
+
+  .movie-scroll-labels {
+    flex-direction: column;
+  }
+
+  .fake-navbar {
+    height: 75px !important;
+  }
+
+  .sticker {
+    display: none !important;
+  }
+
+  .wrapper {
+    min-height: 100vh; /* Ensure the wrapper covers the full viewport height */
+  }
+
+  .content {
+    flex: 1; /* Allow content to grow and push the footer down */
+  }
 }

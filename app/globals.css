@@ -22,29 +22,22 @@
   height: 75px;
 }
 
-.FAQ-link {
-  text-decoration: none;
-  color: salmon !important;
-}
-
 .FAQ-link:hover {
   color: #709f93 !important;
   cursor: pointer;
 }
 
+html,
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   height: 100%;
-  overflow-y: auto;
-  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
   background-color: #fffdf3;
-  scroll-behavior: smooth;
 }
 
 body.navbar-open {
@@ -63,7 +56,6 @@ body.no-scroll {
 .iframe-div {
   width: 104%;
   overflow: hidden;
-  /* margin-top: 100px; */
 }
 
 .no-scroll {
@@ -83,7 +75,6 @@ label {
 .home-body {
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -140,10 +131,6 @@ label {
   height: 45% !important;
   display: flex;
   justify-content: center;
-}
-
-.card-img {
-  object-fit: contain;
 }
 
 .dropdown-toggle {
@@ -288,13 +275,6 @@ textarea {
   font-family: "AwsumSans", sans-serif;
 }
 
-.center-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
 .modal-open {
   overflow: hidden;
 }
@@ -307,7 +287,6 @@ body.modal-open {
 }
 
 .movie {
-  /* width: 100%; */
   object-position: top;
   margin-left: 10px;
   z-index: 4;
@@ -318,10 +297,9 @@ body.modal-open {
 @media screen and (max-width: 800px) {
   .scroll-search-results {
     width: 100%;
-    overflow-x: hidden !important;
-    overflow-y: auto;
+    overflow: hidden !important;
     flex-direction: column;
-    min-height: 1350px;
+    min-height: 1300px !important;
     justify-content: center;
     margin: 0;
     padding: 15px 0 23px 0;
@@ -341,6 +319,10 @@ body.modal-open {
 
   .fake-navbar {
     height: 75px !important;
+  }
+  .home-body {
+    overflow-y: auto !important;
+    overflow-x: hidden;
   }
 }
 

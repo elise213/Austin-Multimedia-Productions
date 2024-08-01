@@ -16,19 +16,13 @@
 }
 
 .emailListInput {
-  width: 100px;
-  border: none;
-  border-bottom: 1px solid salmon !important;
+  border-width: 0px 0px 1px 0px;
+  border-color: salmon !important;
   background-color: transparent;
   font-family: "Urbanist", sans-serif;
-  /* min-width: 150px; */
-  margin-right: 20px;
-}
-
-.email-list-input-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 150px;
+  margin-right: 10px;
+  height: 100%;
 }
 
 .email-list-container p,
@@ -40,6 +34,7 @@
 
 .email-list-form {
   display: flex;
+  padding: 10px;
 }
 
 .newsletter:hover {
@@ -47,17 +42,41 @@
   color: lavender !important;
 }
 
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form span {
+  color: white;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.sign-up-form-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  margin: 0 !important;
+}
+
 .send-2 {
   border: none;
-  font-size: medium;
-  background-color: transparent;
+  font-size: 14px;
+  background-color: white;
   color: grey;
-  padding: 0;
+  padding: 5px;
   letter-spacing: 1px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, "Lucida Console", "DejaVu Sans Mono",
+    monospace;
 }
 
 .send-2:hover {
-  color: lightgreen;
+  background-color: ivory;
 }
 
 .email-logo {

@@ -38,31 +38,31 @@ const EmailList = () => {
   return (
     <div className="email-list-container">
       {/* <img className="email-logo" src="/img/LOGO2.png" /> */}
-      {/* <div className="socials">
-        <i className="fa-brands fa-instagram" />
-        <i className="fa-brands fa-twitter" />
-        <i className="fa-brands fa-facebook-f" />
-      </div> */}
       {/* <p className="nav-item newsletter">NEWSLETTER</p> */}
       <form
         ref={form}
         onSubmit={signUpForMailingList}
         className="email-list-form"
       >
-        <div className="email-list-input-div">
-          <input
-            type="text"
-            id="emailListInput"
-            name="email"
-            className="emailListInput"
-            placeholder="E-mail"
-            required
-          />
+        <div className="sign-up-form">
+          <span> Subscribe to our Newsletter</span>
+          <div className="sign-up-form-2">
+            <div className="email-list-input-div">
+              <input
+                type="text"
+                id="emailListInput"
+                name="email"
+                className="emailListInput"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <button className="send-2" type="submit">
+              Subscribe
+              {/* <i className="fa-solid fa-angle-right"></i> */}
+            </button>
+          </div>
         </div>
-        <button className="send-2" type="submit">
-          Subscribe
-          <i className="fa-solid fa-angle-right"></i>
-        </button>
       </form>
     </div>
   );

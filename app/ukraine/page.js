@@ -109,11 +109,12 @@ const ukraine = () => {
             width: "100%",
             height: "100%",
           }}
-          src="https://www.zeffy.com/en-US/embed/donation-form/0c2c095a-2ce2-44d0-b409-fbcf18afa0ad"
+          src="https://www.zeffy.com/embed/donation-form/0c2c095a-2ce2-44d0-b409-fbcf18afa0ad"
           allowpaymentrequest="true"
           allowtransparency="true"
         ></iframe>
       </div>
+
       <div id="landing-title-2" className="landing-title-2">
         {store.fiscalFilms[1].title}
       </div>

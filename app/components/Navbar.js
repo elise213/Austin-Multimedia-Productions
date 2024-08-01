@@ -3,8 +3,6 @@ import React, { useContext, useEffect } from "react";
 import { Context } from "../context/appContext";
 import Link from "next/link";
 import styles from "../styles/navbar.css";
-import EmailList from "./EmailList";
-import Contact from "./Contact";
 
 const Navbar = () => {
   const { store, actions } = useContext(Context);
@@ -12,23 +10,6 @@ const Navbar = () => {
   const toggleNav = () => {
     actions.toggleNavOpen(!store.isNavOpen);
   };
-
-  const toggleContactModal = () => {
-    actions.setShowContactModal(!store.showContactModal);
-  };
-
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     const nav = document.querySelector(".new-navbar");
-  //     if (nav && !nav.contains(event.target) && store.isNavOpen) {
-  //       actions.setIsNavOpen(false);
-  //     }
-  //   };
-  //   document.addEventListener("click", handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener("click", handleClickOutside);
-  //   };
-  // }, [store.isNavOpen, actions.setIsNavOpen]);
 
   useEffect(() => {
     if (store.isNavOpen) {
@@ -70,7 +51,6 @@ const Navbar = () => {
             className="nav-item"
             onClick={() => {
               actions.setIsNavOpen(false);
-              actions.setShowContactModal(false);
             }}
           >
             <Link href="/" passHref>
@@ -82,7 +62,6 @@ const Navbar = () => {
             className="nav-item"
             onClick={() => {
               actions.setIsNavOpen(false);
-              actions.setShowContactModal(false);
             }}
           >
             <Link href="/about" passHref>
@@ -94,33 +73,26 @@ const Navbar = () => {
             className="nav-item"
             onClick={() => {
               actions.setIsNavOpen(false);
-              actions.setShowContactModal(false);
             }}
           >
-            <Link href="/fiscal" passHref>
-              SPONSORSHIP
+            <Link href="/fiscal-sponsorship" passHref>
+              FISCAL SPONSORSHIP
             </Link>
           </span>
           <span
             className="nav-item"
             onClick={() => {
               actions.setIsNavOpen(false);
-              toggleContactModal();
             }}
           >
-            CONTACT
+            <Link href="/contact" passHref>
+              CONTACT
+            </Link>
           </span>
+
           {/* <EmailList /> */}
         </div>
       </nav>
-
-      {store.showContactModal && (
-        <div className="modal-contact">
-          <div className="modal-content-contact">
-            <Contact />
-          </div>
-        </div>
-      )}
     </>
   );
 };

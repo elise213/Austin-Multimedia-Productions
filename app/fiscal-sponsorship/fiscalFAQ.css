@@ -1,24 +1,55 @@
+.qaa {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+.qaa-2 {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 30px;
+}
+
+.question {
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+.answer {
+  margin-top: 5px;
+  font-size: medium;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
 .fiscal-page {
   margin: 120px 0px 0px 0px;
 }
 
 iframe {
-  min-height: calc(100vh - 280px);
-  border-radius: 15px;
+  height: 3300px !important;
+  /* border-radius: 15px; */
   margin-top: 20px;
 }
 
 .fiscal-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .fiscal-about {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   max-width: 950px;
   margin-top: 100px;
 }

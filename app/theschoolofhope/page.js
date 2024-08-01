@@ -87,6 +87,7 @@ const theschoolofhope = () => {
           <span className="wire-info">{store.zeffyWarningText}</span>
         </span>
       </div>
+
       <div
         className="donation-form"
         id="donation-form"
@@ -104,7 +105,7 @@ const theschoolofhope = () => {
             width: "100%",
             height: "100%",
           }}
-          src="https://www.zeffy.com/en-US/embed/donation-form/0c2c095a-2ce2-44d0-b409-fbcf18afa0ad"
+          src="https://www.zeffy.com/embed/donation-form/741b1da1-b097-4b0e-8778-aaab0e4bf1bb"
           allowpaymentrequest="true"
           allowtransparency="true"
         ></iframe>
