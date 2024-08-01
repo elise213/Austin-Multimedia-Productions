@@ -11,6 +11,7 @@
 .screenings-image {
   border-radius: 1%;
   height: auto;
+  width: auto;
   margin: 100px 0 50px 0;
 }
 

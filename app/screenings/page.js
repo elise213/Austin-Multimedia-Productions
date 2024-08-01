@@ -35,34 +35,10 @@ const Screenings = () => {
               style={
                 i === store.events.length - 1 ? { paddingRight: "35px" } : {}
               }
-            >
-              {/* <div>
-                <FrontPageCard id={i} result={result} />
-              </div> */}
-            </li>
+            ></li>
           ))}
         </ul>
       </div>
-
-      {/* <div className="movie-scroll-labels">
-        <p>PAST EVENTS</p>
-      </div> */}
-      {/* <div className="scroll-search-results">
-        <ul style={{ listStyleType: "none" }}>
-          {store.movies.map((result, i) => (
-            <li
-              key={i}
-              style={
-                i === store.movies.length - 1 ? { paddingRight: "35px" } : {}
-              }
-            >
-              <div>
-                <FrontPageCard id={i} result={result} />
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div> */}
     </div>
   );
 };
