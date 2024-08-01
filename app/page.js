@@ -81,8 +81,8 @@ const Home = () => {
 
   return (
     <>
-      <FakeNavBar />
       <div className={`${styles.main} home-body content`}>
+        <FakeNavBar />
         <svg width="0" height="0">
           <defs>
             <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">

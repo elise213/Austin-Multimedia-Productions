@@ -118,10 +118,6 @@ footer {
     flex-direction: column;
   }
 
-  .fake-navbar {
-    height: 75px !important;
-  }
-
   .sticker {
     display: none !important;
   }
