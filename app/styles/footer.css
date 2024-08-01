@@ -96,6 +96,7 @@ footer {
 .sitemap a {
   color: white;
   padding: 5px 0;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {

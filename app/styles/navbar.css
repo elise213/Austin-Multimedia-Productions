@@ -43,7 +43,7 @@ body.no-scroll {
 .navbar-content {
   align-self: center;
   display: flex;
-  max-height: 500px;
+  max-height: 400px;
   justify-content: space-between;
   flex-direction: column;
   box-sizing: border-box;
@@ -61,7 +61,7 @@ body.no-scroll {
   letter-spacing: 2px;
   color: white;
   text-decoration: none;
-  font-size: 22px;
+  /* font-size: 22px; */
   z-index: 999;
   text-align: center;
 }
