@@ -187,6 +187,10 @@ body.no-scroll {
     right: 20px;
     top: 20px;
   }
+
+  .open-icon.closed {
+    left: 370px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
