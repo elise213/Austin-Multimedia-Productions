@@ -28,10 +28,9 @@ footer {
   background-color: black;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   box-sizing: border-box;
   justify-content: center;
-  padding-bottom: env(safe-area-inset-bottom);
+  padding: 10px 10px 120px 10px !important;
 }
 
 /* Footer Content */

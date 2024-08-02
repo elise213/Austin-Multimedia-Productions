@@ -1,8 +1,8 @@
 .fiscalFilms-image {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 1 !important;
-  margin: 10px 0;
+  /* aspect-ratio: 3 / 1 !important; */
+  margin: 0;
   clip-path: inset(4px 0 0 0);
 }
 
@@ -99,14 +99,14 @@
   align-items: center;
 }
 
-.landing-container div {
-  margin: 30px;
+.landing-container-2 {
+  margin: 30px 0 0 0;
   max-width: 700px;
   justify-content: center;
 }
 
 .landing-title-2 {
-  margin: 20px 0 0 0;
+  margin: 20px;
 }
 
 .landing-title {
@@ -125,7 +125,7 @@
 }
 
 .donate-first {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .donate-to {

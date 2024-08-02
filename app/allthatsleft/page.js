@@ -24,7 +24,7 @@ const allthatsleft = () => {
         />
       </Head>
       <div className="landing-container">
-        <div>
+        <div className="landing-container-2">
           <FakeNavBar />
           <div className="landing-title">{store.fiscalFilms[0].title}</div>
           <Image
