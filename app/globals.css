@@ -305,7 +305,7 @@ body.modal-open {
     min-height: 1300px !important;
     justify-content: center;
     margin: 0;
-    padding: 15px 0 23px 0;
+    padding: 0 !important;
     justify-content: flex-start !important;
   }
 

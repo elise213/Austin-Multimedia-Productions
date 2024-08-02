@@ -16,13 +16,14 @@
 }
 
 .qaa-2 p {
-  margin: 15px 15px 0;
+  margin: 10px 10px 0;
 }
 
 .question {
   font-size: x-large;
   margin-bottom: 5px;
   font-weight: bolder;
+  padding-top: 20px;
 }
 
 .answer {

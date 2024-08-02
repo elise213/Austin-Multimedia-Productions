@@ -16,13 +16,20 @@
 }
 
 .emailListInput {
-  border-width: 0px 0px 1px 0px;
-  border-color: salmon !important;
+  width: 100%;
+  border: none;
   background-color: transparent;
   font-family: "Urbanist", sans-serif;
-  min-width: 150px;
-  margin-right: 10px;
   height: 100%;
+  color: white;
+  box-sizing: border-box;
+}
+
+.email-list-input-div {
+  width: 100%;
+  margin: 0 5px 0 0;
+  height: 100%;
+  border: 0.5px solid white;
 }
 
 .email-list-container p,
@@ -46,12 +53,13 @@
 .sign-up-form {
   display: flex;
   flex-direction: column;
+  min-width: 200px;
 }
 
 .sign-up-form span {
   color: white;
   padding-bottom: 5px;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Urbanist", sans-serif;
   text-align: center;
   letter-spacing: 1.2px;
@@ -59,26 +67,28 @@
 
 .sign-up-form-2 {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
   margin: 0 !important;
 }
 
 .send-2 {
-  border: none;
+  border: 1px solid white;
   font-size: 14px;
-  background-color: white;
-  color: grey;
-  padding: 5px;
+  background-color: black;
+  color: white;
   letter-spacing: 1px;
   border-radius: 4px;
   font-family: "Courier New", Courier, "Lucida Console", "DejaVu Sans Mono",
     monospace;
+  padding: 3px;
 }
 
 .send-2:hover {
-  background-color: ivory;
+  background-color: ivory !important;
+  color: black !important;
   cursor: pointer;
+  border-color: black !important;
 }
 
 .email-logo {
