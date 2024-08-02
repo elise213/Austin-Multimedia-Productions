@@ -30,15 +30,15 @@ const Footer = () => {
             CONTACT
           </Link>
         </div>
-        <div className="socials">
-          <p>FOLLOW</p>
-          <Link href="https://www.instagram.com/ccexarts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-            <i className="fa-brands fa-instagram" />
-          </Link>
+        <div className="footer-div-2">
+          <div className="socials">
+            <p>FOLLOW</p>
+            <Link href="https://www.instagram.com/ccexarts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <i className="fa-brands fa-instagram" />
+            </Link>
+          </div>
+          <EmailList />
         </div>
-      </div>
-      <div className="footer-div-2">
-        <EmailList />
       </div>
       <p className="footer-text">
         THE CENTER FOR CINEMATIC AND EXPERIMENTAL ARTS
