@@ -15,7 +15,7 @@
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
-  padding: 10px;
+  /* padding: 10px; */
   position: absolute;
   top: 0;
   right: 10px;
@@ -26,6 +26,7 @@
 .navbar-logo {
   width: auto;
   height: 50px;
+  margin: 10px 0;
 }
 
 .FAQ-link:hover {
