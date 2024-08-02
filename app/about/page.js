@@ -13,8 +13,8 @@ const About = () => {
         <div className="about-div">
           <span className="">
             The Center for Cinematic and Experimental Arts is a nonprofit
-            501(c)3 offering workshops for the public and fiscal-sponsorships
-            for independent artists.
+            501(c)3 offering workshops and screenings for the public and
+            fiscal-sponsorships for independent artists.
           </span>
         </div>
         <Footer />

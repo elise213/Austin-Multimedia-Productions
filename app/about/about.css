@@ -6,8 +6,6 @@
 }
 
 .about-page {
-  letter-spacing: 1px;
-  line-height: 25px;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -22,15 +20,17 @@
   max-width: 500px;
   margin: 100px 0;
   height: 100%;
+  justify-content: center;
 }
 
 .about-div span {
-  font-family: "Urbanist", sans-serif;
   line-height: 2;
-  font-size: 20px;
   font-weight: 400;
   text-align: justify;
-  margin: 20px;
+  margin: 20px 0;
+  font-size: large;
+  max-width: 90%;
+  box-sizing: border-box;
 }
 
 .download-section {
@@ -41,7 +41,8 @@
   .about span {
     margin: 30px 20px;
   }
+
   .about-div span {
-    font-size: large;
+    font-size: medium;
   }
 }

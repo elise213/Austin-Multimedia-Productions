@@ -37,8 +37,6 @@ const EmailList = () => {
 
   return (
     <div className="email-list-container">
-      {/* <img className="email-logo" src="/img/LOGO2.png" /> */}
-      {/* <p className="nav-item newsletter">NEWSLETTER</p> */}
       <form
         ref={form}
         onSubmit={signUpForMailingList}
