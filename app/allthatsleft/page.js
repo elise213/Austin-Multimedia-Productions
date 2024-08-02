@@ -54,7 +54,7 @@ const allthatsleft = () => {
               <span className="heading">Executive Producer: </span>
               <span>{store.fiscalFilms[0].execProducer}</span>
             </div>
-            <div>
+            <div className="read-more-about-this-project-div">
               <a href="#landing-title-2" className="read-more">
                 <span>Read more about this project</span>
               </a>
