@@ -38,51 +38,53 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <FakeNavbar />
-      <form ref={form} onSubmit={sendEmail} className="contact-form">
-        {/* <div className="contact-call">
+      <div className="contact-div">
+        <FakeNavbar />
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          {/* <div className="contact-call">
           <span className="close-contact" onClick={actions.toggleContactModal}>
             <i className="fa-solid fa-x"></i>
           </span>
         </div> */}
-        <div className="contact-form-div">
-          <div className="form-col">
-            <input
-              type="text"
-              id="nameInput"
-              name="name"
-              className="form-control"
-              placeholder="Name"
-            />
+          <div className="contact-form-div">
+            <div className="form-col">
+              <input
+                type="text"
+                id="nameInput"
+                name="name"
+                className="form-control"
+                placeholder="Name"
+              />
+            </div>
+            <div className="form-col">
+              <input
+                type="text"
+                id="emailInput"
+                name="email"
+                className="form-control"
+                placeholder="Email address"
+              />
+            </div>
           </div>
-          <div className="form-col">
-            <input
-              type="text"
-              id="emailInput"
-              name="email"
-              className="form-control"
-              placeholder="Email address"
-            />
+          <div className="contact-form-div">
+            <div className="form-col-full">
+              <textarea
+                id="contactTextArea"
+                name="message"
+                className="form-control"
+                placeholder="Message"
+              ></textarea>
+            </div>
           </div>
-        </div>
-        <div className="contact-form-div">
+          {/* <img src="/img/CCEA99.png" alt="CCEA Logo" className="contact-logo" /> */}
           <div className="form-col-full">
-            <textarea
-              id="contactTextArea"
-              name="message"
-              className="form-control"
-              placeholder="Message"
-            ></textarea>
+            <button className="send-button" type="submit">
+              Send
+            </button>
           </div>
-        </div>
-        {/* <img src="/img/CCEA99.png" alt="CCEA Logo" className="contact-logo" /> */}
-        <div className="form-col-full">
-          <button className="send-button" type="submit">
-            Send
-          </button>
-        </div>
-      </form>
-      <Footer />
+        </form>
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -9,14 +9,16 @@ const About = () => {
   return (
     <>
       <FakeNavBar />
-      <div className="about">
-        <span className="">
-          The Center for Cinematic and Experimental Arts is a nonprofit 501(c)3
-          offering workshops for the public and fiscal-sponsorships for
-          independent artists.
-        </span>
+      <div className="about-page">
+        <div className="about-div">
+          <span className="">
+            The Center for Cinematic and Experimental Arts is a nonprofit
+            501(c)3 offering workshops for the public and fiscal-sponsorships
+            for independent artists.
+          </span>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

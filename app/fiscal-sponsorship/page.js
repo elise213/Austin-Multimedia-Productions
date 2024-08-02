@@ -6,8 +6,8 @@ import FakeNavbar from "../components/FakeNavbar";
 const page = () => {
   return (
     <>
-      <FakeNavbar />
       <div className="qaa">
+        <FakeNavbar />
         <div className="qaa-2">
           <p className="question">What does Fiscal Sponsorship mean?</p>
           <p className="answer">

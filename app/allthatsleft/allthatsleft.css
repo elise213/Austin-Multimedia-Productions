@@ -95,7 +95,6 @@
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  letter-spacing: 1px;
   align-items: center;
 }
 
@@ -110,7 +109,7 @@
 }
 
 .landing-title {
-  margin-top: 50px;
+  margin: 50px 0 10px 0;
 }
 
 .landing-title,
