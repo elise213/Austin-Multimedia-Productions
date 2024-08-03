@@ -36,7 +36,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         {
           title: "Apocalypse Now",
           year: "1979",
-          image: "/img/apocalypse-now-1979.jpeg",
+          image: "",
           category: "suspense",
           category2: "new",
           trailer: "https://youtu.be/9l-ViOOFH-s",

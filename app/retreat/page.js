@@ -20,13 +20,6 @@ const Retreat = () => {
       <div className="retreat-container">
         <FakeNavbar />
         <div className="retreat-sub1">
-          <Image
-            height={1300}
-            width={900}
-            className="retreat-image"
-            src={"/img/CCEARETREAT.png"}
-            alt=""
-          ></Image>
           <div className="retreat-text-div">
             <p className="retreat-text">
               <p style={{ textAlign: "center", fontWeight: "bolder" }}>
@@ -59,11 +52,6 @@ const Retreat = () => {
         </div>
         <div className="iframe-div">
           <iframe
-            // width="50%"
-            // height="100%"
-            // frameborder="0"
-            // className="retreat-iframe"
-            // >
             src="https://docs.google.com/forms/d/e/1FAIpQLSewkBYeeJ5-DYAs4v3f5NdlBB1Yqj_ONxfI1kPapjkDFXcNIA/viewform?embedded=true"
             frameBorder="0"
             marginHeight="0"
