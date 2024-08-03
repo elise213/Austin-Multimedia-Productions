@@ -83,15 +83,15 @@ const Home = () => {
     <>
       <div className={`${styles.main} home-body content`}>
         <FakeNavBar />
-        <svg width="0" height="0">
+        {/* <svg width="0" height="0">
           <defs>
             <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
               <path d="M 0,0 L 1,0 L 1,1 Q 0.5,1 0,1 Z" />
             </clipPath>
           </defs>
         </svg>
-        <Video />
-        <div
+        <Video /> */}
+        {/* <div
           ref={scrollRef}
           className="scroll-search-results"
           style={{
@@ -161,7 +161,16 @@ const Home = () => {
               );
             })}
           </ul>
-        </div>
+        </div> */}
+        <Image
+          height={100}
+          width={100}
+          layout="responsive"
+          quality={100}
+          className="amp-1"
+          src="/img/amp1.png"
+          alt=""
+        ></Image>
         <Footer />
       </div>
     </>

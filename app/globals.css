@@ -10,17 +10,24 @@
   --color5: rgb(183, 227, 168);
 }
 
+.amp-1 {
+  margin: 100px 0 0 0;
+}
+
 .fake-navbar {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
-  /* padding: 10px; */
   position: absolute;
   top: 0;
   right: 10px;
   height: 75px;
   margin: 0px !important;
+}
+
+.fake-navbar a {
+  text-decoration: none !important;
 }
 
 .navbar-logo {
