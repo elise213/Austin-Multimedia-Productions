@@ -1,10 +1,10 @@
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-public/img/*.jpeg filter=lfs diff=lfs merge=lfs -text
-public/img/*.png filter=lfs diff=lfs merge=lfs -text
-public/img/AMP-mask.png filter=lfs diff=lfs merge=lfs -text
-public/img/amp1.png filter=lfs diff=lfs merge=lfs -text
-public/img/bolex2.jpg filter=lfs diff=lfs merge=lfs -text
+# *.psd filter=lfs diff=lfs merge=lfs -text
+# *.jpg filter=lfs diff=lfs merge=lfs -text
+# *.jpeg filter=lfs diff=lfs merge=lfs -text
+# *.png filter=lfs diff=lfs merge=lfs -text
+# *.mp4 filter=lfs diff=lfs merge=lfs -text
+# public/img/*.jpeg filter=lfs diff=lfs merge=lfs -text
+# public/img/*.png filter=lfs diff=lfs merge=lfs -text
+# public/img/AMP-mask.png filter=lfs diff=lfs merge=lfs -text
+# public/img/amp1.png filter=lfs diff=lfs merge=lfs -text
+# public/img/bolex2.jpg filter=lfs diff=lfs merge=lfs -text
